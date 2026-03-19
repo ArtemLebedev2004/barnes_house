@@ -20,9 +20,9 @@
             Отдых для большой компании друзей
         </div>
 
-        <div class="md:w-[45%] relative border-daorange border-3 p-[3.5%] md:p-[1.65%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[9.4%] md:mt-0">
+        <div class="md:w-[43%] relative border-daorange border-3 p-[3.5%] md:p-[1.65%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] md:rounded-[6vw] mt-[9.4%] md:mt-0">
             <div class="relative">
-                <img src="../../../../assets/img/main_img.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] pointer-events-none">
+                <img src="../../../../assets/img/main_img.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] md:rounded-[4.3vw]  pointer-events-none">
 
                 <div class="absolute flex gap-[9px] right-[7%] top-[6%]">
                     <div class="bg-white text-[4.5vw] min-[450px]:text-[20px] md:text-[2.2vw] px-5 flex items-center rounded-full">
@@ -35,8 +35,8 @@
 
                 </div>
 
-                <div class="absolute inset-x-0 top-[72.5%] bottom-0 rounded-b-[9.2vw] min-[450px]:rounded-b-[41.4px] bg-linear-to-t from-black/65 from-53% ">
-                    <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] bottom-[20%] md:bottom-[22%] leading-[7vw] min-[450px]:leading-[31px] md:leading-[120%] text-white text-[6.5vw] min-[450px]:text-[29px] md:text-[3vw]">
+                <div class="absolute inset-x-0 top-[72.5%] bottom-0 rounded-b-[9.2vw] md:rounded-b-[4.3vw] min-[450px]:rounded-b-[41.4px] bg-linear-to-t from-black/65 from-53% ">
+                    <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] md:left-[6%] bottom-[20%] md:bottom-[22%] leading-[7vw] min-[450px]:leading-[31px] md:leading-[120%] text-white text-[6.5vw] min-[450px]:text-[29px] md:text-[3vw]">
                         <div class="w-max ">
                             <span class="font-bold italic">Место</span> для вашего
                             <div class="bg-daorange h-[2px]">
@@ -54,8 +54,8 @@
             </div>
         </div>
 
-        <div class="md:w-[55%] relative text-[10vw] min-[450px]:text-[45px] md:text-[5.5vw] mt-[9.5%] md:mt-0 pt-[16.7%] md:pt-[10.5%] md:pr-[4%]">
-            <div class="absolute font-bold italic text-white bg-daorange rounded-r-[4.5vw] min-[450px]:rounded-r-[20.25px] min-[450px]:rounded-l-[20.25px] md:rounded-l-none -left-[6%] min-[450px]:left-0 md:-left-[6%] top-1 md:top-3 w-[55%] md:w-[53%] h-[12.5%] md:h-auto md:py-[0.8%] pl-[18px] md:pl-[23px] -z-1 flex items-center">
+        <div class="md:w-[57%] relative text-[10vw] min-[450px]:text-[45px] md:text-[5.5vw] mt-[9.5%] md:mt-0 pt-[16.7%] md:pt-[10%] md:pr-[4.8%]">
+            <div class="absolute font-bold italic text-white bg-daorange rounded-r-[4.5vw] min-[450px]:rounded-r-[20.25px] min-[450px]:rounded-l-[20.25px] md:rounded-l-none -left-[6%] min-[450px]:left-0 md:-left-[6%] top-1 md:top-2 w-[55%] md:w-[53%] h-[12.5%] md:h-auto md:py-[0.8%] pl-[18px] md:pl-[23px] -z-1 flex items-center">
                 Новый
             </div>
 

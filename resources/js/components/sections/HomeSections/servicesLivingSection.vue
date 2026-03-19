@@ -90,53 +90,53 @@
         </div>
     </div>
 
-    <div class="max-w-[450px] md:max-w-[820px] text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw] leading-[170%] px-4.5 mt-[285%] min-[450px]:mt-[1279px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_80%] bg-no-repeat">
+    <div class="max-w-[450px] md:max-w-[820px] text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw] leading-[170%] px-4.5 mt-[285%]  min-[450px]:mt-[1279px] md:mt-[160%] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_80%] md:bg-size-[80%] bg-no-repeat">
         В уютной гостиной можно расслабиться на диване и посмотреть телевизор.
         Красивая современная кухня, чтобы готовить с комфортом. На первом этаже также находится душевая кабина с туалетом и стиральной машиной. На втором этаже две спальни с большими кроватями и телевизорами.
     </div>
 
-    <div class="max-w-[450px] md:max-w-[820px] text-[4.5vw] min-[450px]:text-[20.25px] leading-[170%] px-4.5 mt-[8%] min-[450px]:mt-[36px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_60%] bg-no-repeat">
+    <div class="max-w-[450px] md:max-w-[820px] text-[4.5vw] min-[450px]:text-[20.25px] leading-[170%] px-4.5 mt-[8%] min-[450px]:mt-[36px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_60%] md:bg-size-[80%] bg-no-repeat">
 
         <div class="font-black text-daorange uppercase ">
             Мы регулярно проводим генеральную уборку и готовим для вас чистые белоснежные полотенца с резиновыми тапочками
         </div>
 
-        <div class="mt-[11.2%]">
-            <div class="flex gap-[5vw] min-[450px]:gap-[18px] items-center">
-                <div class="relative font-bold text-[6vw] text-white w-[13.5vw] min-[450px]:w-[60.75px] h-[13.5vw] min-[450px]:h-[60.75px] rounded-full bg-daorange flex items-center justify-center">
+        <div class="mt-[11.2%] md:mt-[6%] md:w-max md:m-auto">
+            <div class="flex gap-[5vw] min-[450px]:gap-[18px] md:gap-[3vw] items-center">
+                <div class="relative font-bold text-[6vw] min-[450px]:text-[27px] md:text-[6vw] text-white w-[13.5vw] min-[450px]:w-[60.75px] md:w-[10vw] h-[13.5vw] min-[450px]:h-[60.75px] md:h-[10vw] rounded-full bg-daorange flex items-center justify-center">
                     6
                 </div>
 
-                <div class=" text-[5.5vw] min-[450px]:text-[24.75px] font-bold">
+                <div class=" text-[5.5vw] min-[450px]:text-[24.75px] md:text-[4vw] font-bold">
                     <div>
                         Спальных мест
                     </div>
 
-                    <div class=" h-[1px] bg-daorange">
+                    <div class=" h-[1px] md:h-[1.5px] bg-daorange">
 
                     </div>
 
-                    <div class=" h-[1px] bg-daorange mt-[3px]">
+                    <div class=" h-[1px] md:h-[1.5px] bg-daorange mt-[3px] md:mt-[4px]">
 
                     </div>
                 </div>
             </div>
 
-            <div class="flex gap-[5vw] min-[450px]:gap-[18px] items-center mt-[5%] min-[380px]:mt-[7%]">
-                <div class="relative font-bold text-[6vw] text-white w-[13.5vw] min-[450px]:w-[60.75px] h-[13.5vw] min-[450px]:h-[60.75px] rounded-full bg-daorange flex items-center justify-center">
+            <div class="flex gap-[5vw] min-[450px]:gap-[18px] md:gap-[3vw] items-center mt-[5%] min-[380px]:mt-[7%] md:mt-[10%]">
+                <div class="relative font-bold text-[6vw] min-[450px]:text-[27px] md:text-[6vw] text-white w-[13.5vw] min-[450px]:w-[60.75px] md:w-[10vw] h-[13.5vw] min-[450px]:h-[60.75px] md:h-[10vw] rounded-full bg-daorange flex items-center justify-center">
                     12
                 </div>
 
-                <div class=" text-[5.5vw] min-[450px]:text-[24.75px] font-bold">
+                <div class=" text-[5.5vw] min-[450px]:text-[24.75px] md:text-[4vw]  font-bold">
                     <div>
                         Человек вместимость
                     </div>
 
-                    <div class="h-[1px] bg-daorange">
+                    <div class="h-[1px] md:h-[1.5px] bg-daorange">
 
                     </div>
 
-                    <div class="h-[1px] bg-daorange mt-[3px]">
+                    <div class="h-[1px] md:h-[1.5px] bg-daorange mt-[3px] md:mt-[4px]">
 
                     </div>
                 </div>
@@ -144,55 +144,55 @@
         </div>
     </div>
 
-    <div class="max-w-[450px] md:max-w-[820px] leading-[170%] px-4.5 mt-[17%] min-[450px]:mt-[67.5px] m-auto">
+    <div class="max-w-[450px] md:max-w-[820px] leading-[170%] px-4.5 mt-[17%] min-[450px]:mt-[67.5px] md:mt-[13%] m-auto">
         <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] md:text-[3vw] text-daorange">УЮТНАЯ ГОСТИНАЯ</div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[227%]">
+            <div class="absolute -inset-x-4.5 top-[227%] md:top-[290%]">
                 <swiper
                     :imgs="livingRoom"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] md:mt-[69%]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] md:text-[3vw] text-daorange">БОЛЬШИЕ СПАЛЬНИ</div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[227%]">
+            <div class="absolute -inset-x-4.5 top-[227%] md:top-[290%]">
                 <swiper
                     :imgs="bedRoom"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] md:mt-[69%]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] md:text-[3vw] text-daorange">ДУШ И ТУАЛЕТ</div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[227%]">
+            <div class="absolute -inset-x-4.5 top-[227%] md:top-[290%]">
                 <swiper
                     :imgs="bathRoom"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] md:mt-[69%]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] md:text-[3vw] text-daorange">СОВРЕМЕННАЯ КУХНЯ</div>
             </div>
 
-            <div class="text-center text-[4.5vw] min-[450px]:text-[20.25px]">
+            <div class="text-center text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw] md:leading-[170%]">
                 У нас есть всё для вашего комфортного приготовления еды:
-                духовой шкаф, микроволновка, холодильник, варочная поверхность. <br/> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
+                духовой шкаф, микроволновка, холодильник, варочная поверхность. <br class="md:hidden" /> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
             </div>
 
             <div class="absolute -inset-x-4.5 top-[120%]">

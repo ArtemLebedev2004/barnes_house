@@ -1,114 +1,162 @@
 <template>
-    <div class="max-lg:max-w-[450px] px-4.5 m-auto">
-        <div class="relative border-daorange border-3 p-[3.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%]">
-            <div class="relative">
-                <img src="../../../../assets/img/booking.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] pointer-events-none">
+    <div class="max-w-[450px] md:max-w-[820px] px-4.5 md:px-[23px] m-auto ">
+        <div class="hidden md:block mt-[75%]">
+            <div class=" mt-[12.5%] relative right-0 font-bold text-[9vw] leading-[120%] flex flex-col items-center">
+                <div class=" w-max ">
+                    Забронируйте
+                    <div class="bg-daorange h-[2px]">
+                    </div>
+                </div>
 
-                <div class="absolute top-[5%] font-light text-white inset-x-0 w-max text-center m-auto">
-                    <div class="text-[4.5vw] min-[450px]:text-[20px]">
-                        бронирование
+                <div class=" w-max">
+                    свой <span class="italic text-daorange">отдых</span>
+                    <div class="bg-daorange h-[2px]">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex justify-center mt-[7%] gap-[3.4vw]  text-[3.2vw] font-light">
+                <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[7%]">
+                    <path d="M14 19.2H14.0104M14 8.8V15.3M27 14C27 6.8201 21.1799 1 14 1C6.8201 1 1 6.8201 1 14C1 21.1799 6.8201 27 14 27C21.1799 27 27 21.1799 27 14Z" stroke="#D58637" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <div class="">
+                    <div>
+                        Перед бронированием ознакомьтесь
                     </div>
 
-                    <svg  viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto mt-[6%] w-[6%]">
-                        <path d="M18 20C17.046 20 15.6214 20.9163 14.4257 21.8438C12.8829 23.0363 11.5367 24.4612 10.5094 26.095C9.73929 27.32 9 28.805 9 30M9 30C9 28.805 8.26071 27.3187 7.49057 26.095C6.462 24.4612 5.11586 23.0362 3.57557 21.8437C2.37857 20.9162 0.951428 20 -5.56284e-07 20M9 30L9 2.07422e-06" stroke="white" stroke-width="0.5"/>
+                    <div class="w-max leading-[115%]">
+                        с правилами дома
+
+                        <div class=" h-[1px] bg-daorange">
+
+                        </div>
+
+                        <div class=" h-[1px] bg-daorange mt-[2.8%]">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:flex md:mt-[7%] md:gap-[5vw]">
+            <div class="md:w-[45%] relative border-daorange border-3 p-[3.5%] md:p-[2%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-0">
+                <div class="relative">
+                    <img src="../../../../assets/img/booking.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] pointer-events-none">
+
+                    <div class="absolute top-[5%] font-light text-white inset-x-0 w-max text-center m-auto">
+                        <div class="text-[4.5vw] min-[450px]:text-[20px]">
+                            бронирование
+                        </div>
+
+                        <svg  viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto mt-[6%] w-[6%]">
+                            <path d="M18 20C17.046 20 15.6214 20.9163 14.4257 21.8438C12.8829 23.0363 11.5367 24.4612 10.5094 26.095C9.73929 27.32 9 28.805 9 30M9 30C9 28.805 8.26071 27.3187 7.49057 26.095C6.462 24.4612 5.11586 23.0362 3.57557 21.8437C2.37857 20.9162 0.951428 20 -5.56284e-07 20M9 30L9 2.07422e-06" stroke="white" stroke-width="0.5"/>
+                        </svg>
+                    </div>
+
+                    <div class="absolute left-[8%] bottom-[5%] text-white flex flex-col gap-[3.4vw] min-[450px]:gap-[15.3px]">
+                        <div class="leading-[140%] w-[85%] text-[5.6vw] min-[450px]:text-[25.2px]">
+                            <span class="font-bold italic">Отдых</span> с уютом для большой компании
+                        </div>
+
+                        <div class="bg-daorange w-[38%] h-[2px]">
+                        </div>
+
+                        <div class="font-light w-[70%] text-[11vw] min-[450px]:text-[49.5px] leading-[112%] text-daorange">
+                            BARNES HOUSE
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-[55%]">
+                <div class="md:hidden mt-[12.5%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] leading-[120%] flex flex-col items-end">
+                    <div class=" w-max ">
+                        Забронируйте
+                        <div class="bg-daorange h-[2px]">
+                        </div>
+                    </div>
+
+                    <div class=" w-max">
+                        свой <span class="italic text-daorange">отдых</span>
+                        <div class="bg-daorange h-[2px]">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="md:hidden flex items-center mt-[10%] gap-[3.4vw] min-[450px]:gap-[15.3px] text-[3.9vw] min-[450px]:text-[17.55px] font-light">
+                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[8.6%]">
+                        <path d="M14 19.2H14.0104M14 8.8V15.3M27 14C27 6.8201 21.1799 1 14 1C6.8201 1 1 6.8201 1 14C1 21.1799 6.8201 27 14 27C21.1799 27 27 21.1799 27 14Z" stroke="#D58637" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </div>
 
-                <div class="absolute left-[8%] bottom-[5%] text-white flex flex-col gap-[3.4vw] min-[450px]:gap-[15.3px]">
-                    <div class="leading-[140%] w-[85%] text-[5.6vw] min-[450px]:text-[25.2px]">
-                        <span class="font-bold italic">Отдых</span> с уютом для большой компании
-                    </div>
+                    <div class="">
+                        <div>
+                            Перед бронированием ознакомьтесь
+                        </div>
 
-                    <div class="bg-daorange w-[38%] h-[2px]">
-                    </div>
+                        <div class="w-max leading-[115%]">
+                            с правилами дома
 
-                    <div class="font-light w-[70%] text-[11vw] min-[450px]:text-[49.5px] leading-[112%] text-daorange">
-                        BARNES HOUSE
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div class=" h-[1px] bg-daorange">
 
-
-        <div class="mt-[12.5%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] leading-[120%] flex flex-col items-end">
-            <div class=" w-max ">
-                Забронируйте
-                <div class="bg-daorange h-[2px]">
-                </div>
-            </div>
-
-            <div class=" w-max">
-                свой <span class="italic text-daorange">отдых</span>
-                <div class="bg-daorange h-[2px]">
-                </div>
-            </div>
-        </div>
-
-        <div class="flex items-center mt-[10%] gap-[3.4vw] min-[450px]:gap-[15.3px] text-[3.9vw] min-[450px]:text-[17.55px] font-light">
-            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[8.6%]">
-                <path d="M14 19.2H14.0104M14 8.8V15.3M27 14C27 6.8201 21.1799 1 14 1C6.8201 1 1 6.8201 1 14C1 21.1799 6.8201 27 14 27C21.1799 27 27 21.1799 27 14Z" stroke="#D58637" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-
-            <div class="">
-                <div>
-                    Перед бронированием ознакомьтесь
-                </div>
-
-                <div class="w-max leading-[115%]">
-                    с правилами дома
-
-                    <div class=" h-[1px] bg-daorange">
-
-                    </div>
-
-                    <div class=" h-[1px] bg-daorange mt-[2.8%]">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="relative border-daorange border-2 py-10 px-9 rounded-[10vw] min-[450px]:rounded-[45px] mt-[12%]">
-            <div class="absolute w-max inset-x-0 m-auto px-[4%] -top-[2.5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] text-daorange">ПЕРВЫЙ ВАРИАНТ</div>
-
-            <a href="tel:89374541087" class="block text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] px-[69px] py-[5%] bg-daorange rounded-full text-white">
-                Позвонить
-            </a>
-
-            <div class="relative mt-[10%]">
-                <div class="absolute inset-0 h-px w-[60%] m-auto bg-daorange -z-1"></div>
-                <div class="w-max m-auto px-[3%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] text-daorange">ИЛИ</div>
-            </div>
-
-            <div class="mt-[10%]">
-                <input type="text" name="Имя" required class="text-[4.5vw] min-[450px]:text-[20.25px] w-full border-2 xl:border-3 border-daorange text-center rounded-full py-[4%] px-4 outline-none placeholder:text-daorange" placeholder="Фамилия и Имя">
-                <input type="phone" name="Телефон" required class="text-[4.5vw] min-[450px]:text-[20.25px] w-full border-2 xl:border-3 border-daorange text-center rounded-full py-[4%] px-4 mt-[5%] outline-none placeholder:text-daorange" placeholder="Телефон">
-
-                <div class="group mt-[7%]">
-                    <input id="check_circle" type="checkbox" class="hidden" required>
-
-                    <label for="check_circle" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] items-center">
-                        <div class="w-[6vw] min-[450px]:w-[27px] h-[6vw] min-[450px]:h-[27px] rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 xl:border-3 border-daorange group-has-checked:bg-white"></div>
-
-                        <div class=" w-fit text-[3.9vw] min-[450px]:text-[17.55px] leading-[130%]">
-                            <div class="relative">
-                                Даю согласие на обработку
-                                <div class="absolute top-[90%] right-[4%] bg-daorange w-[80%] h-px">
-                                </div>
                             </div>
 
-                            <div>
-                                своих персональных данных
+                            <div class=" h-[1px] bg-daorange mt-[2.8%]">
+
                             </div>
                         </div>
-                    </label>
+                    </div>
                 </div>
 
-                <div class="mt-[7%] font-semibold text-[4.8vw] min-[450px]:text-[21.6px] text-center px-[30px] py-[5%] bg-daorange rounded-full text-white">
-                    Заказать звонок
+                <div class=" relative border-daorange border-2 py-10 px-9 rounded-[10vw] min-[450px]:rounded-[45px] mt-[12%] md:mt-0">
+                    <div class="absolute w-max inset-x-0 m-auto px-[4%] -top-[2.5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] text-daorange">ПЕРВЫЙ ВАРИАНТ</div>
+
+                    <a href="tel:89374541087" class="block text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] px-[69px] py-[5%] bg-daorange rounded-full text-white">
+                        Позвонить
+                    </a>
+
+                    <div class="relative mt-[10%]">
+                        <div class="absolute inset-0 h-px w-[60%] m-auto bg-daorange -z-1"></div>
+                        <div class="w-max m-auto px-[3%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] text-daorange">ИЛИ</div>
+                    </div>
+
+                    <div class="mt-[10%]">
+                        <input type="text" name="Имя" required class="text-[4.5vw] min-[450px]:text-[20.25px] w-full border-2 xl:border-3 border-daorange text-center rounded-full py-[4%] px-4 outline-none placeholder:text-daorange" placeholder="Фамилия и Имя">
+                        <input type="phone" name="Телефон" required class="text-[4.5vw] min-[450px]:text-[20.25px] w-full border-2 xl:border-3 border-daorange text-center rounded-full py-[4%] px-4 mt-[5%] outline-none placeholder:text-daorange" placeholder="Телефон">
+
+                        <div class="group mt-[7%] md:mt-[9%]">
+                            <input id="check_circle" type="checkbox" class="hidden" required>
+
+                            <label for="check_circle" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] items-center">
+                                <div class="w-[6vw] min-[450px]:w-[27px] h-[6vw] min-[450px]:h-[27px] rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 xl:border-3 border-daorange group-has-checked:bg-white"></div>
+
+                                <div class=" w-fit text-[3.9vw] min-[450px]:text-[17.55px] md:text-[1.8vw] leading-[130%]">
+                                    <div class="relative">
+                                        Даю согласие на обработку
+                                        <div class="absolute top-[90%] right-[4%] bg-daorange w-[80%] h-px">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        своих персональных данных
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="mt-[7%] md:mt-[9%] font-semibold text-[4.8vw] min-[450px]:text-[21.6px] text-center px-[30px] py-[5%] bg-daorange rounded-full text-white">
+                            Заказать звонок
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
+
+
 
         <div class="relative border-daorange border-2 p-[4%] rounded-[10vw] min-[450px]:rounded-[45px] mt-[12%]">
             <div class="absolute w-max inset-x-0 m-auto px-[4%] -top-[2.8%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] text-daorange">ВТОРОЙ ВАРИАНТ</div>
