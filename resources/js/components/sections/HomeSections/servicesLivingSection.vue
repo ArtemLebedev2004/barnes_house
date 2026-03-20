@@ -20,7 +20,7 @@
             </div>
             <!-- <img src="../../../../assets/img/generalPlan/gp_photo2.jpg" alt=""> -->
 
-            <div class="md:w-[50%] md:m-auto text-center text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw]">
+            <div class="md:w-[51%] md:m-auto text-center text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw]">
                 Закрытая парковка на 2 авто.
                 Благоустроенная территория с газонами и туями
             </div>
@@ -190,7 +190,7 @@
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] md:text-[3vw] text-daorange">СОВРЕМЕННАЯ КУХНЯ</div>
             </div>
 
-            <div class="text-center text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw] md:leading-[170%]">
+            <div class="md:w-[90%] md:m-auto text-center text-[4.5vw] min-[450px]:text-[20.25px] md:text-[3vw] md:leading-[170%]">
                 У нас есть всё для вашего комфортного приготовления еды:
                 духовой шкаф, микроволновка, холодильник, варочная поверхность. <br class="md:hidden" /> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
             </div>
