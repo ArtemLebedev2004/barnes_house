@@ -1,49 +1,31 @@
 <template>
   <nav class="
-    fixed z-20
+    fixed min-[1024px]:relative z-20
     left-0 right-0 top-0
     text-white
-    bg-liorange
+    bg-liorange min-[1024px]:bg-transparent
+    min-[1024px]:mt-[10px]
   ">
-    <div class="bg-liorange max-w-[450px] md:max-w-[820px] m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
-      <div class="w-[10%]">
+    <div class="min-[1024px]:hidden bg-liorange max-w-[450px] md:max-w-[820px] lg:max-w-full m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
+      <div class="w-[10%] min-[1024px]:w-[8%]">
         <router-link to="/">
-            <img src="../../../assets/icons/main_logo.svg" alt="" >
+            <img src="../../../assets/icons/main_logo.svg" alt="" class="w-full">
         </router-link>
       </div>
-
-      <div class="hidden lg:flex text-[18px] gap-14 xl:gap-20 text-black ">
-        <div>
-          <router-link to="/#services" v-scroll-to="'#services'" class="transition-all duration-75 hover:border-b-5 border-[#4F7A23] pb-2">Услуги</router-link>
-        </div>
-
-        <div class="">
-          <router-link to="/#projects" v-scroll-to="'#projects'" class="transition-all duration-75 hover:border-b-5 border-[#4F7A23] pb-2">Проекты</router-link>
-        </div>
-
-        <div>
-          <router-link to="/#about" v-scroll-to="'#about'" class="transition-all duration-75 hover:border-b-5 border-[#4F7A23] pb-2">О нас</router-link>
-        </div>
-
-        <div>
-          <router-link to="/#contacts" v-scroll-to="'#contacts'" class="transition-all duration-75 hover:border-b-5 border-[#4F7A23] pb-2">Контакты</router-link>
-        </div>
-      </div>
-
 
       <a href="" class="
         min-w-[176px]
         w-[55%]
         p-1.25
         border-daorange border
-        rounded-[4.2vw] min-[450px]:rounded-[18.9px]
+        rounded-[4.2vw] min-[450px]:rounded-[18.9px] min-[1024px]:rounded-[2.1vw]
       ">
         <div class="
             flex items-center justify-center
             font-semibold
             bg-daorange hover:bg-[#4F7A23]/0
-            text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2vw] min-[820px]:text-[16.4px] text-center text-white hover:text-[#4F7A23]
-            rounded-[2.8vw] min-[450px]:rounded-[12.6px]
+            text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2vw] min-[820px]:text-[16.4px] min-[1024px]:text-[2vw] text-center text-white
+            rounded-[2.8vw] min-[450px]:rounded-[12.6px] min-[1024px]:rounded-[1.6vw]
             transition-all duration-200
             cursor-pointer
             px-3.5 md:px-5 py-1.5 md:py-2
@@ -52,27 +34,34 @@
         </div>
       </a>
 
-      <div class="hidden md:block font-black text-daorange text-center text-[1.7vw] min-[820px]:text-[13.94px]">
+      <div class="hidden md:block font-black text-daorange text-center text-[1.7vw] min-[820px]:text-[13.94px] min-[1024px]:text-[1.5vw]">
         Отдых для большой компании друзей
       </div>
 
       <div class="md:flex gap-[4vw] items-center">
         <div class="hidden md:flex gap-[2vw]">
-            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] rounded-full bg-daorange flex items-center justify-center">
+            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] min-[1024px]:w-[5.5vw] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] min-[1024px]:h-[5.5vw] rounded-full bg-daorange flex items-center justify-center">
                 <img src="../../../assets/icons/phone.svg" alt="" class="w-[45%]">
             </div>
 
-            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] rounded-full bg-daorange flex items-center justify-center">
+            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] min-[1024px]:w-[5.5vw] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] min-[1024px]:h-[5.5vw] rounded-full bg-daorange flex items-center justify-center">
                 <img src="../../../assets/icons/mail.svg" alt="" class="w-[50%]">
             </div>
         </div>
 
-        <div @click="openMenu = !openMenu" class="w-[38px] lg:hidden">
-            <svg v-if="!openMenu" width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="2" y1="24" x2="36" y2="24" stroke="#D58637" stroke-width="4" stroke-linecap="round"/>
-                <line x1="2" y1="13" x2="36" y2="13" stroke="#D58637" stroke-width="4" stroke-linecap="round"/>
-                <line x1="2" y1="2" x2="36" y2="2" stroke="#D58637" stroke-width="4" stroke-linecap="round"/>
+        <div @click="openMenu = !openMenu" class="w-[38px] min-[1024px]:w-[44px]">
+
+            <svg v-if="!openMenu" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="min-[1024px]:hidden w-full h-[26px]">
+                <line x1="2" y1="24" x2="36" y2="24" stroke="#D58637" stroke-linecap="round" class="stroke-4"/>
+                <line x1="2" y1="13" x2="36" y2="13" stroke="#D58637"  stroke-linecap="round" class="stroke-4"/>
+                <line x1="2" y1="2" x2="36" y2="2" stroke="#D58637"  stroke-linecap="round" class="stroke-4"/>
             </svg>
+
+            <div v-if="!openMenu" class="hidden min-[1024px]:flex flex-col gap-2">
+                <div class="bg-daorange h-[6px]"></div>
+                <div class="bg-daorange h-[6px]"></div>
+                <div class="bg-daorange h-[6px]"></div>
+            </div>
 
             <svg v-if="openMenu" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 16L30 30M16 16L2 2M16 16L2 30M16 16L30 2" stroke="#D58637" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,7 +71,7 @@
 
 
       <div class="
-        lg:hidden
+
         absolute
         inset-0
         h-screen
@@ -171,6 +160,55 @@
       </div>
 
     </div>
+
+    <div class="hidden min-[1024px]:flex justify-between  items-center  max-w-[450px] md:max-w-[820px] lg:max-w-full m-auto  px-4.5 md:px-[23px] py-4 " >
+        <div class="w-[49px] ">
+            <router-link to="/">
+                <img src="../../../assets/icons/main_logo.svg" alt="" class="w-full">
+            </router-link>
+        </div>
+
+        <div class="flex gap-[3vw] text-[16.3px] text-black">
+            <div>
+                Условия проживания
+                <div class="bg-daorange h-[1px]"></div>
+            </div>
+            <div>
+                Бронирование
+                <div class="bg-daorange h-[1px]"></div>
+            </div>
+            <div>
+                Наши правила
+                <div class="bg-daorange h-[1px]"></div>
+            </div>
+            <div>
+                Наш адрес
+                <div class="bg-daorange h-[1px]"></div>
+            </div>
+        </div>
+
+        <a href="" class="
+            min-w-[176px]
+
+            p-1.25
+            border-daorange border
+            rounded-[4.2vw] min-[450px]:rounded-[18.9px] min-[1024px]:rounded-[21.5px]
+        ">
+            <div class="
+                flex items-center justify-center
+                font-semibold
+                bg-daorange hover:bg-[#4F7A23]/0
+                text-[15.3px] text-center text-white
+                rounded-[2.8vw] min-[450px]:rounded-[12.6px] min-[1024px]:rounded-[16.3px]
+                transition-all duration-200
+                cursor-pointer
+                px-3.5 md:px-5 py-1.5 md:py-2
+            ">
+            ЗАБРОНИРОВАТЬ
+            </div>
+        </a>
+    </div>
+
   </nav>
 
 </template>

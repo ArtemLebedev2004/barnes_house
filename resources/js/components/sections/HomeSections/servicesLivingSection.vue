@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] px-4.5 min-[768px]:px-[23px] mt-[15%] min-[450px]:mt-[67.5px] min-[768px]:mt-[10%] min-[820px]:mt-[82px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_1.5%] min-[768px]:bg-none bg-no-repeat">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-full px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] mt-[15%] min-[450px]:mt-[67.5px] min-[768px]:mt-[10%] min-[820px]:mt-[82px] min-[1024px]:mt-[100px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_1.5%] min-[768px]:bg-none bg-no-repeat">
         <div class="">
             <div class="leading-[120%] min-[768px]:w-[80%] min-[768px]:m-auto text-center text-[11vw] min-[450px]:text-[45px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] font-semibold">
                 Условия проживания
@@ -25,7 +25,7 @@
                 Благоустроенная территория с газонами и туями
             </div>
 
-            <div class="absolute -inset-x-4.5 min-[768px]:-inset-x-[23px] top-[127%]">
+            <div class="absolute -inset-x-4.5 min-[768px]:-inset-x-[23px] min-[1024px]:-inset-x-[30px] top-[127%]">
                 <swiper
                     :imgs="generalPlanImgs"
                     styles=""
@@ -44,14 +44,14 @@
                 В мангальной зоне есть шампуры и решетка, а также печь-казан с дровами
             </div>
 
-            <div class="absolute -inset-x-4.5 min-[768px]:-inset-x-[23px] top-[127%]">
+            <div class="absolute -inset-x-4.5 min-[768px]:-inset-x-[23px] min-[1024px]:-inset-x-[30px] top-[127%]">
                 <swiper
                     :imgs="barbecueArea"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[72%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] min-[1024px]:gap-12 mt-[127%] min-[768px]:mt-[72%]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] text-daorange">БАНЯ С ЧАНОМ</div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[106%] min-[768px]:top-[110%] flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px]">
+            <div class="absolute -inset-x-4.5 top-[106%] min-[768px]:top-[110%] min-[1024px]:top-[540px] flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px]">
                 <swiper
                     :imgs="bathHouse1"
                 />
@@ -90,19 +90,19 @@
         </div>
     </div>
 
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] leading-[170%] px-4.5 mt-[285%]  min-[450px]:mt-[1279px] min-[768px]:mt-[160%] min-[820px]:mt-[1312px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_80%] min-[768px]:bg-size-[80%] bg-no-repeat">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-full text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] leading-[170%] px-4.5 mt-[285%]  min-[450px]:mt-[1279px] min-[768px]:mt-[160%] min-[820px]:mt-[1312px] min-[1024px]:mt-[1580px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_80%] min-[768px]:bg-size-[80%] bg-no-repeat">
         В уютной гостиной можно расслабиться на диване и посмотреть телевизор.
         Красивая современная кухня, чтобы готовить с комфортом. На первом этаже также находится душевая кабина с туалетом и стиральной машиной. На втором этаже две спальни с большими кроватями и телевизорами.
     </div>
 
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] leading-[170%] px-4.5 mt-[8%] min-[450px]:mt-[36px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_60%] min-[768px]:bg-size-[80%] bg-no-repeat">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-full text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] leading-[170%] px-4.5 mt-[8%] min-[450px]:mt-[36px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_60%] min-[768px]:bg-size-[80%] bg-no-repeat">
 
         <div class="font-black text-daorange uppercase ">
             Мы регулярно проводим генеральную уборку и готовим для вас чистые белоснежные полотенца с резиновыми тапочками
         </div>
 
-        <div class="mt-[11.2%] min-[768px]:mt-[6%] min-[768px]:w-max min-[768px]:m-auto">
-            <div class="flex gap-[5vw] min-[450px]:gap-[18px] min-[768px]:gap-[3vw] items-center">
+        <div class="mt-[11.2%] min-[768px]:mt-[6%] min-[768px]:w-max min-[768px]:m-auto min-[1024px]:flex gap-15 items-center">
+            <div class="flex gap-[5vw] min-[450px]:gap-[18px] min-[768px]:gap-[3vw] min-[1024px]:gap-5 items-center">
                 <div class="relative font-bold text-[6vw] min-[450px]:text-[27px] min-[768px]:text-[6vw] min-[820px]:text-[49.2px] text-white w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[10vw] min-[820px]:w-[82px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[10vw] min-[820px]:h-[82px] rounded-full bg-daorange flex items-center justify-center">
                     6
                 </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="flex gap-[5vw] min-[450px]:gap-[18px] min-[768px]:gap-[3vw] items-center mt-[5%] min-[380px]:mt-[7%] min-[768px]:mt-[8%] ">
+            <div class="flex gap-[5vw] min-[450px]:gap-[18px] min-[768px]:gap-[3vw] min-[1024px]:gap-5 items-center mt-[5%] min-[380px]:mt-[7%] min-[768px]:mt-[8%] min-[1024px]:mt-0">
                 <div class="relative font-bold text-[6vw] min-[450px]:text-[27px] min-[768px]:text-[6vw] min-[820px]:text-[49.2px] text-white w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[10vw] min-[820px]:w-[82px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[10vw] min-[820px]:h-[82px] rounded-full bg-daorange flex items-center justify-center">
                     12
                 </div>
@@ -144,47 +144,47 @@
         </div>
     </div>
 
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] leading-[170%] px-4.5 mt-[17%] min-[450px]:mt-[67.5px] min-[768px]:mt-[13%] min-[820px]:mt-[106.6px] m-auto">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-full leading-[170%] px-4.5 mt-[17%] min-[450px]:mt-[67.5px] min-[768px]:mt-[13%] min-[820px]:mt-[106.6px] m-auto">
         <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] text-daorange">УЮТНАЯ ГОСТИНАЯ</div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[227%] min-[768px]:top-[290%]">
+            <div class="absolute -inset-x-4.5 top-[227%] min-[768px]:top-[290%] min-[1024px]:top-23">
                 <swiper
                     :imgs="livingRoom"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[69%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[69%] min-[1024px]:mt-[660px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] text-daorange">БОЛЬШИЕ СПАЛЬНИ</div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[227%] min-[768px]:top-[290%]">
+            <div class="absolute -inset-x-4.5 top-[227%] min-[768px]:top-[290%] min-[1024px]:top-23">
                 <swiper
                     :imgs="bedRoom"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[69%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[69%] min-[1024px]:mt-[660px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] text-daorange">ДУШ И ТУАЛЕТ</div>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[227%] min-[768px]:top-[290%]">
+            <div class="absolute -inset-x-4.5 top-[227%] min-[768px]:top-[290%] min-[1024px]:top-23">
                 <swiper
                     :imgs="bathRoom"
                 />
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[69%]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[127%] min-[768px]:mt-[69%] min-[1024px]:mt-[660px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-white text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] text-daorange">СОВРЕМЕННАЯ КУХНЯ</div>
@@ -195,7 +195,7 @@
                 духовой шкаф, микроволновка, холодильник, варочная поверхность. <br class="min-[768px]:hidden" /> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
             </div>
 
-            <div class="absolute -inset-x-4.5 top-[120%]">
+            <div class="absolute -inset-x-4.5 top-[120%] ">
                 <swiper
                     :imgs="modernCitchen"
                 />
