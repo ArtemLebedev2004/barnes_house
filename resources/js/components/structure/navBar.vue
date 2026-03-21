@@ -5,14 +5,14 @@
     text-white
     bg-liorange
   ">
-    <div class="bg-liorange max-md:max-w-[450px] m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
+    <div class="bg-liorange max-w-[450px] md:max-w-[820px] m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
       <div class="w-[10%]">
         <router-link to="/">
             <img src="../../../assets/icons/main_logo.svg" alt="" >
         </router-link>
       </div>
 
-      <div class="max-lg:hidden lg:flex text-[18px] gap-14 xl:gap-20 text-black ">
+      <div class="hidden lg:flex text-[18px] gap-14 xl:gap-20 text-black ">
         <div>
           <router-link to="/#services" v-scroll-to="'#services'" class="transition-all duration-75 hover:border-b-5 border-[#4F7A23] pb-2">Услуги</router-link>
         </div>
@@ -42,7 +42,7 @@
             flex items-center justify-center
             font-semibold
             bg-daorange hover:bg-[#4F7A23]/0
-            text-[4vw] min-[450px]:text-[18px] md:text-[2vw] text-center text-white hover:text-[#4F7A23]
+            text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2vw] min-[820px]:text-[16.4px] text-center text-white hover:text-[#4F7A23]
             rounded-[2.8vw] min-[450px]:rounded-[12.6px]
             transition-all duration-200
             cursor-pointer
@@ -52,17 +52,17 @@
         </div>
       </a>
 
-      <div class="hidden md:block font-black text-daorange text-center text-[1.7vw]">
+      <div class="hidden md:block font-black text-daorange text-center text-[1.7vw] min-[820px]:text-[13.94px]">
         Отдых для большой компании друзей
       </div>
 
       <div class="md:flex gap-[4vw] items-center">
         <div class="hidden md:flex gap-[2vw]">
-            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] md:w-[6vw] h-[13.5vw] min-[450px]:h-[60.75px] md:h-[6vw] rounded-full bg-daorange flex items-center justify-center">
+            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] rounded-full bg-daorange flex items-center justify-center">
                 <img src="../../../assets/icons/phone.svg" alt="" class="w-[45%]">
             </div>
 
-            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] md:w-[6vw] h-[13.5vw] min-[450px]:h-[60.75px] md:h-[6vw] rounded-full bg-daorange flex items-center justify-center">
+            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] rounded-full bg-daorange flex items-center justify-center">
                 <img src="../../../assets/icons/mail.svg" alt="" class="w-[50%]">
             </div>
         </div>
@@ -86,7 +86,7 @@
         absolute
         inset-0
         h-screen
-        text-[15px] md:text-[24px]
+        text-[15px] min-[768px]:text-[24px]
         gap-1 md:gap-2
         bg-liorange
         transition duration-500 ease-in-out
@@ -97,11 +97,11 @@
       :class="openMenu ? 'translate-x-0' : ''">
         <div class="
             m-auto
-            max-lg:max-w-[450px]
+            max-w-[450px] min-[768px]:max-w-[550px]
             px-4.5
             min-[380px]:pb-4.5
         ">
-            <div class="relative mt-[120px] min-[380px]:mt-[37%] text-liorange text-[19vw] min-[450px]:text-[85px] font-black leading-[19vw] min-[450px]:leading-[85px] text-center">
+            <div class="relative mt-[120px] min-[380px]:mt-[37%] text-liorange text-[19vw] min-[450px]:text-[85px] min-[768px]:text-[107px] font-black leading-[19vw] min-[450px]:leading-[85px] min-[768px]:leading-[90%] text-center">
                 <div class="stroke_text ">
                     BARNES HOUSE
                 </div>
@@ -115,7 +115,7 @@
 
             </div>
 
-            <div class="flex flex-col gap-[6vw] min-[450px]:gap-[27px] justify-center items-center mt-[11.2%] text-sand uppercase text-[4vw] min-[450px]:text-[18px] font-bold">
+            <div class="flex flex-col gap-[6vw] min-[450px]:gap-[27px] justify-center items-center mt-[11.2%] text-sand uppercase text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2.5vw] min-[820px]:text-[20.5px] font-bold">
                 <div>3D-экскурсия по дому</div>
                 <div>Условия проживания</div>
                 <div>Бронирование</div>
@@ -123,12 +123,12 @@
             </div>
 
             <div class="mt-[11.2%]">
-                <a href="tel:89374541087" class="flex gap-[5vw] min-[450px]:gap-[18px] items-center">
-                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] h-[13.5vw] min-[450px]:h-[60.75px] rounded-full bg-daorange flex items-center justify-center">
+                <a href="tel:89374541087" class="flex gap-[5vw] min-[450px]:gap-[18px] min-[768px]:gap-[32px] items-center">
+                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[82px] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[82px] rounded-full bg-daorange flex items-center justify-center">
                         <img src="../../../assets/icons/phone.svg" alt="" class="w-[40%]">
                     </div>
 
-                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] font-bold">
+                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] min-[768px]:text-[3.5vw] min-[820px]:text-[28.5px] font-bold">
                         <div>
                             +7-937-454-10-87
                         </div>
@@ -143,12 +143,12 @@
                     </div>
                 </a>
 
-                <a href="mailto:Barneshause73@mail.ru" class="flex gap-[5vw] min-[450px]:gap-[18px] items-center mt-[5%] min-[380px]:mt-[7%]">
-                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] h-[13.5vw] min-[450px]:h-[60.75px] rounded-full bg-daorange flex items-center justify-center">
+                <a href="mailto:Barneshause73@mail.ru" class="flex gap-[5vw] min-[450px]:gap-[18px] min-[768px]:gap-[32px] items-center mt-[5%] min-[380px]:mt-[7%]">
+                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[82px]  h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[82px] rounded-full bg-daorange flex items-center justify-center">
                         <img src="../../../assets/icons/mail.svg" alt="" class="w-[50%]">
                     </div>
 
-                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] font-bold">
+                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] min-[768px]:text-[3.5vw] min-[820px]:text-[28.5px] font-bold">
                         <div>
                             Barneshause73@mail.ru
                         </div>

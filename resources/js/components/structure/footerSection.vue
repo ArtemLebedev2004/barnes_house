@@ -5,11 +5,11 @@
       ">
         <div class="
             m-auto
-            max-lg:max-w-[450px]
+            max-w-[450px] md:max-w-[520px]
             px-4.5 py-20
 
         ">
-            <div class="relative text-liorange text-[19vw] min-[450px]:text-[85px] font-black leading-[19vw] min-[450px]:leading-[85px] text-center">
+            <div class="relative text-liorange text-[19vw] min-[450px]:text-[85px] md:text-[107px] font-black leading-[19vw] min-[450px]:leading-[85px] md:leading-[90%] text-center">
                 <div class="stroke_text relative z-2">
                     BARNES HOUSE
                 </div>
@@ -23,7 +23,7 @@
 
             </div>
 
-            <div class="flex flex-col gap-[6vw] min-[450px]:gap-[27px] justify-center items-center mt-[11.2%] text-sand uppercase text-[4vw] min-[450px]:text-[18px] font-bold">
+            <div class="flex flex-col gap-[6vw] min-[450px]:gap-[27px] justify-center items-center mt-[11.2%] text-sand uppercase text-[4vw] min-[450px]:text-[18px] md:text-[2.5vw] font-bold">
                 <div>3D-экскурсия по дому</div>
                 <div>Условия проживания</div>
                 <div>Бронирование</div>
@@ -31,12 +31,12 @@
             </div>
 
             <div class="mt-[11.2%]">
-                <a href="tel:89374541087" class="flex gap-[5vw] min-[450px]:gap-[18px] items-center">
-                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] h-[13.5vw] min-[450px]:h-[60.75px] rounded-full bg-daorange flex items-center justify-center">
+                <a href="tel:89374541087" class="flex gap-[5vw] min-[450px]:gap-[18px] md:gap-[4vw] items-center">
+                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] md:w-[10vw] h-[13.5vw] min-[450px]:h-[60.75px] md:h-[10vw] rounded-full bg-daorange flex items-center justify-center">
                         <img src="../../../assets/icons/phone.svg" alt="" class="w-[40%]">
                     </div>
 
-                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] font-bold">
+                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] md:text-[3.5vw] font-bold">
                         <div>
                             +7-937-454-10-87
                         </div>
@@ -51,12 +51,12 @@
                     </div>
                 </a>
 
-                <a href="mailto:Barneshause73@mail.ru" class="flex gap-[5vw] min-[450px]:gap-[18px] items-center mt-[5%]">
-                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] h-[13.5vw] min-[450px]:h-[60.75px] rounded-full bg-daorange flex items-center justify-center">
+                <a href="mailto:Barneshause73@mail.ru" class="flex gap-[5vw] min-[450px]:gap-[18px] md:gap-[4vw] items-center mt-[5%]">
+                    <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] md:w-[10vw] h-[13.5vw] min-[450px]:h-[60.75px] md:h-[10vw] rounded-full bg-daorange flex items-center justify-center">
                         <img src="../../../assets/icons/mail.svg" alt="" class="w-[50%]">
                     </div>
 
-                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] font-bold">
+                    <div class="text-sand text-[5.5vw] min-[450px]:text-[24.75px] md:text-[3.5vw] font-bold">
                         <div>
                             Barneshause73@mail.ru
                         </div>
@@ -72,7 +72,7 @@
                 </a>
             </div>
 
-            <div class="flex flex-col gap-[6vw] min-[450px]:gap-[26.94px] items-center mt-[11.2%] text-[4vw] min-[450px]:text-[18px] text-sand font-semibold">
+            <div class="flex flex-col gap-[6vw] min-[450px]:gap-[26.94px] md:gap-[5vw] items-center mt-[11.2%] text-[4vw] min-[450px]:text-[18px] md:text-[2.5vw] text-sand font-semibold">
                 <div class="uppercase w-max">
                     Сайт создан совой
                     <div class="bg-daorange h-[2px]">

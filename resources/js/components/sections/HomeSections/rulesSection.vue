@@ -1,21 +1,21 @@
 <template>
     <div class="relative max-w-[450px] md:max-w-[820px] overflow-x-hidden px-4.5 md:px-[23px] m-auto">
-        <div class="md:w-[80%] md:m-auto relative border-daorange border-3 p-[3.5%] md:p-[2.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-[30%]">
+        <div class="md:w-[80%] md:m-auto relative border-daorange border-3 p-[3.5%] md:p-[2.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px]  mt-[140%] md:mt-[30%]">
             <div class="relative">
-                <img src="../../../../assets/img/rules_photo.png" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] pointer-events-none">
+                <img src="../../../../assets/img/rules_photo.png" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[5.5vw] min-[820px]:rounded-[45.1px]  pointer-events-none">
 
                 <div class="absolute top-[5%] font-light text-white inset-x-0 w-max text-center m-auto">
-                    <div class="text-[4.5vw] min-[450px]:text-[20px] md:text-[4vw]">
+                    <div class="text-[4.5vw] min-[450px]:text-[20px] min-[768px]:text-[4vw] min-[820px]:text-[32.8px]">
                         наши правила
                     </div>
 
-                    <svg  viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto mt-[6%] w-[6%] md:w-[10%]">
+                    <svg  viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto mt-[6%] w-[6%] min-[768px]:w-[10%]">
                         <path d="M18 20C17.046 20 15.6214 20.9163 14.4257 21.8438C12.8829 23.0363 11.5367 24.4612 10.5094 26.095C9.73929 27.32 9 28.805 9 30M9 30C9 28.805 8.26071 27.3187 7.49057 26.095C6.462 24.4612 5.11586 23.0362 3.57557 21.8437C2.37857 20.9162 0.951428 20 -5.56284e-07 20M9 30L9 2.07422e-06" stroke="white" stroke-width="0.5"/>
                     </svg>
                 </div>
 
                 <div class="absolute inset-x-0 top-[72.5%] bottom-0 rounded-b-[9.2vw] min-[450px]:rounded-b-[41.4px] bg-linear-to-t from-black/65 from-53% ">
-                    <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] bottom-[20%] leading-[7vw] min-[450px]:leading-[31px] md:leading-[110%] text-white text-[6.5vw] min-[450px]:text-[29px] md:text-[6vw]">
+                    <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] bottom-[20%] leading-[7vw] min-[450px]:leading-[31px] min-[768px]:leading-[110%] text-white text-[6.5vw] min-[450px]:text-[29px] min-[768px]:text-[6vw] min-[820px]:text-[49.2px]">
                         <div class="w-max ">
                             <span class="font-bold italic">Отдыхать</span> нужно
                             <div class="bg-daorange h-[2px]">
@@ -40,7 +40,7 @@
         </div>
 
 
-        <div class="mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] md:text-[9vw] flex flex-col items-center">
+        <div class="mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] flex flex-col items-center">
             <div class=" w-max ">
                 НАШИ
                 <div class="bg-daorange h-[2px]">
@@ -54,15 +54,15 @@
             </div>
         </div>
 
-        <div class="mt-[12.5%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] md:text-[3vw] flex flex-col gap-[8vw] min-[450px]:gap-[36px]">
-            <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] md:gap-[20vw] justify-center md:items-center">
-                <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="md:w-[70%]">
-                <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="md:w-[70%]">
-                <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="md:w-[70%]">
+        <div class="mt-[12.5%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] flex flex-col gap-[8vw] min-[450px]:gap-[36px]">
+            <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] justify-center min-[768px]:items-center">
+                <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
+                <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
+                <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/money.svg" alt="" class="w-full">
 
@@ -75,7 +75,7 @@
 
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/camera.svg" alt="" class="w-full">
 
@@ -88,7 +88,7 @@
 
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/smoking.svg" alt="" class="w-full">
 
@@ -100,7 +100,7 @@
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/petard.svg" alt="" class="w-full">
 
@@ -112,7 +112,7 @@
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/sleep.svg" alt="" class="w-full">
 
@@ -125,7 +125,7 @@
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/animal.svg" alt="" class="w-full">
 
@@ -137,7 +137,7 @@
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/party.svg" alt="" class="w-full">
 
@@ -149,7 +149,7 @@
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/document.svg" alt="" class="w-full">
 
@@ -161,7 +161,7 @@
             </div>
 
             <div class=" flex items-center gap-[5vw]">
-                <div class="w-[43.5%] md:w-[25%]">
+                <div class="w-[43.5%] min-[768px]:w-[25%]">
 
                     <img src="../../../../assets/icons/rules/aromat.svg" alt="" class="w-full">
 
