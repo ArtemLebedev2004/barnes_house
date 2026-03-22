@@ -6,7 +6,7 @@
     bg-liorange min-[1024px]:bg-transparent
     min-[1024px]:mt-[10px]
   ">
-    <div class="min-[1024px]:hidden bg-liorange max-w-[450px] md:max-w-[820px] lg:max-w-full m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
+    <div class="min-[1024px]:hidden bg-liorange max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
       <div class="w-[10%] min-[1024px]:w-[8%]">
         <router-link to="/">
             <img src="../../../assets/icons/main_logo.svg" alt="" class="w-full">
@@ -161,7 +161,7 @@
 
     </div>
 
-    <div class="hidden min-[1024px]:flex justify-between  items-center  max-w-[450px] md:max-w-[820px] lg:max-w-full m-auto  px-4.5 md:px-[23px] py-4 " >
+    <div class="hidden min-[1024px]:flex justify-between  items-center  max-w-[450px] md:max-w-[820px]  lg:max-w-[1030px] m-auto  px-4.5 md:px-[23px] lg:px-[30px] py-4 " >
         <div class="w-[49px] ">
             <router-link to="/">
                 <img src="../../../assets/icons/main_logo.svg" alt="" class="w-full">

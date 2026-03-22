@@ -2,7 +2,7 @@
     <swiper
         :menuButtons="menuButtons"
     />
-    <div class="md:flex flex-row-reverse min-[1024px]:justify-between max-w-[450px] min-[768px]:max-w-[820px] lg:max-w-full px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] m-auto min-[768px]:mt-[5%] min-[820px]:mt-[41px] min-[1024px]:mt-[30px]">
+    <div class="md:flex flex-row-reverse min-[1024px]:justify-between max-w-[450px] min-[768px]:max-w-[820px] lg:max-w-[1030px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] m-auto min-[768px]:mt-[5%] min-[820px]:mt-[41px] min-[1024px]:mt-[30px]">
         <div class="md:hidden relative mt-[9.8%] text-white text-[19vw] min-[450px]:text-[85px] font-black leading-[100%] min-[450px]:leading-[85px] text-center">
             <div class="stroke_text ">
                 BARNES HOUSE
@@ -20,7 +20,7 @@
             Отдых для большой компании друзей
         </div>
 
-        <div class="min-[768px]:w-[43%] min-[1024px]:w-[37%] min-[1024px]:max-w-[398px] relative border-daorange border-3 p-[3.5%] min-[768px]:p-[1.65%] min-[1024px]:p-4 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[6vw]  min-[820px]:rounded-[49.2px]  mt-[9.4%] min-[768px]:mt-0">
+        <div class="min-[768px]:w-[43%] min-[1024px]:w-[35%] relative border-daorange border-3 p-[3.5%] min-[768px]:p-[1.65%] min-[1024px]:p-3 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[6vw]  min-[820px]:rounded-[49.2px]  mt-[9.4%] min-[768px]:mt-0">
             <div class="relative">
                 <img src="../../../../assets/img/main_img.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[4.3vw] min-[820px]:rounded-[35.26px] pointer-events-none">
 
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="absolute inset-x-0 top-[72.5%] bottom-0 rounded-b-[9.2vw] min-[768px]:rounded-b-[4.3vw] min-[820px]:rounded-b-[35.26px] min-[450px]:rounded-b-[41.4px] bg-linear-to-t from-black/65 from-53% ">
-                    <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] min-[768px]:left-[6%] bottom-[20%] min-[768px]:bottom-[22%] leading-[7vw] min-[450px]:leading-[31px] min-[768px]:leading-[120%] text-white text-[6.5vw] min-[450px]:text-[29px] min-[768px]:text-[3vw]  min-[820px]:text-[24.6px] min-[1024px]:text-[28px]">
+                    <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] min-[768px]:left-[6%] bottom-[20%] min-[768px]:bottom-[22%] leading-[7vw] min-[450px]:leading-[31px] min-[768px]:leading-[120%] text-white text-[6.5vw] min-[450px]:text-[29px] min-[768px]:text-[3vw]  min-[820px]:text-[24.6px] min-[1024px]:text-[25px]">
                         <div class="w-max ">
                             <span class="font-bold italic">Место</span> для вашего
                             <div class="bg-daorange h-[2px]">
@@ -57,9 +57,10 @@
         <div class="
             min-[768px]:w-[57%] min-[1024px]:w-[55%]
             relative
-            text-[10vw] min-[450px]:text-[45px] min-[768px]:text-[5.5vw] min-[820px]:text-[45.1px] min-[1024px]:text-[3.9vw]
+            text-[10vw] min-[450px]:text-[45px] min-[768px]:text-[5.5vw] min-[820px]:text-[45.1px] min-[1024px]:text-[39.5px]
             mt-[9.5%] min-[768px]:mt-0
-            pt-[16.7%] min-[768px]:pt-[10%] min-[1024px]:pt-5 min-[768px]:pr-[4.8%] min-[1024px]:pr-0
+            pt-[16.7%] min-[768px]:pt-[10%] min-[1024px]:pt-3
+            min-[768px]:pr-[4.8%] min-[1024px]:pr-0
         ">
             <header class="hidden xl:block">
                 <div class="flex justify-between text-[1.3vw]">
@@ -86,33 +87,33 @@
                 absolute -z-1
                 font-bold italic text-white
                 bg-daorange
-                rounded-r-[4.5vw] min-[450px]:rounded-r-[20.25px] min-[450px]:rounded-l-[20.25px] min-[768px]:rounded-l-none min-[825px]:rounded-l-[20.25px] min-[1024px]:rounded-l-none
-                -left-[6%] min-[450px]:left-0 min-[768px]:-left-[6%] min-[825px]:left-0 min-[1024px]:-left-[6%]
-                top-1 min-[768px]:top-2 min-[1024px]:top-[88px]
-                w-[55%] min-[768px]:w-[53%] min-[1024px]:w-[37%]
-                h-[12.5%] min-[768px]:h-auto min-[1024px]:h-[6vw]
+                rounded-r-[4.5vw] min-[450px]:rounded-r-[20.25px] min-[450px]:rounded-l-[20.25px] min-[768px]:rounded-l-none min-[825px]:rounded-l-[20.25px] min-[1024px]:rounded-l-none min-[1040px]:rounded-l-[20.25px]
+                -left-[6%] min-[450px]:left-0 min-[768px]:-left-[6%] min-[825px]:left-0 min-[1024px]:-left-[6%] min-[1040px]:left-0
+                top-1 min-[768px]:top-2 min-[1024px]:top-[70px]
+                w-[55%] min-[768px]:w-[53%] min-[1024px]:w-[37.9%] min-[1040px]:w-[32%]
+                h-[12.5%] min-[768px]:h-auto min-[1024px]:h-[61.44px]
                 min-[768px]:py-[0.8%] pl-[18px] min-[768px]:pl-[30px]
                 flex items-center
             ">
                 <span class="lg:hidden">Новый</span>
             </div>
 
-            <div class="font-medium min-[1024px]:mt-10">
+            <div class="font-medium min-[1024px]:mt-7 min-[1040px]:pl-2.5">
                 <span class="
                     hidden lg:inline
                     font-bold italic text-white
-                    mr-8 min-[1024px]:mr-6.25
+                    mr-8 min-[1024px]:mr-6.25 min-[1040px]:mr-5
                 ">Новый</span> загородный дом
             </div>
 
-            <div class="hidden min-[768px]:block mt-[4%] min-[820px]:mt-[16.15px] min-[1024px]:mt-8">
+            <div class="hidden min-[768px]:block mt-[4%] min-[820px]:mt-[16.15px] min-[1024px]:mt-6">
                 <img src="../../../../assets/img/barnes_house_md.svg" alt="" class="w-full">
             </div>
 
-            <div class="relative text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[2.25vw] min-[820px]:text-[18.45px] font-light mt-[5%] min-[768px]:mt-[1.5%] min-[1024px]:mt-6">
+            <div class="relative text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[2.25vw] min-[820px]:text-[18.45px] min-[1024px]:text-[16px] font-light mt-[5%] min-[768px]:mt-[1.5%] min-[1024px]:mt-2">
                 Barnes House - это уютная территория с красивым и современным домом со всеми удобствами, <span class="font-black italic text-daorange">БАНЕЙ ИЗ КЕДРА С ЧАНОМ</span> и мангальной зоной для отдыха в кругу семьи или в компании друзей.
 
-                <div class="absolute top-[14%] min-[768px]:top-[16%] bg-daorange w-[31vw] min-[450px]:w-[139.5px] min-[768px]:w-[15.4vw] min-[820px]:w-[126.28px] h-px">
+                <div class="absolute top-[14%] min-[768px]:top-[16%] min-[1024px]:top-[22px] bg-daorange w-[31vw] min-[450px]:w-[139.5px] min-[768px]:w-[15.4vw] min-[820px]:w-[126.28px] min-[1024px]:w-[115px] h-px">
                 </div>
             </div>
 
@@ -128,13 +129,13 @@
         </div>
     </div>
 
-    <div class="max-w-[820px] min-[1024px]:max-w-full px-[23px] min-[1024px]:px-[30px] m-auto mt-[4%] min-[820px]:mt-[32.8px]">
-        <div class="hidden min-[768px]:flex text-[4vw] min-[820px]:text-[32.8px] border-daorange border-2 rounded-full  p-[1.5%] min-[1024px]:p-2.5 text-center">
+    <div class="max-w-[820px] min-[1024px]:max-w-[1030px] px-[23px] min-[1024px]:px-[30px] m-auto mt-[4%] min-[820px]:mt-[32.8px]">
+        <div class="hidden min-[768px]:flex text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[28px] border-daorange border-2 rounded-full  p-[1.5%] min-[1024px]:p-1.75 text-center">
             <div class="w-[50%] px-[20px] py-[2.6%] min-[1024px]:py-4 bg-daorange text-white rounded-full">
                 Забронировать
             </div>
 
-            <div class="w-[50%] px-[31px] min-[768px]:px-[13px] py-[2.6%] min-[1024px]:py-4 bg-white rounded-full">
+            <div class="w-[50%] px-[31px] min-[768px]:px-[13px] py-[2.6%] min-[1024px]:py-4 bg-[#F2F2F2] rounded-full">
                 Посмотреть дом
             </div>
         </div>
