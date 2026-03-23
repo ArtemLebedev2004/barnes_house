@@ -1,6 +1,6 @@
 <template>
   <nav class="
-    fixed min-[1024px]:relative z-20
+    fixed min-[1024px]:relative z-20 xl:hidden
     left-0 right-0 top-0
     text-white
     bg-liorange min-[1024px]:bg-transparent

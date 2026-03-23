@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] m-auto ">
-        <div class="hidden min-[768px]:block mt-[75%] min-[1024px]:mt-120">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto xl:mt-130">
+        <div class="hidden min-[768px]:block xl:hidden mt-[75%] min-[1024px]:mt-120">
             <div class=" mt-[12.5%] relative right-0 font-bold text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] leading-[120%] flex flex-col items-center">
                 <div class=" w-max ">
                     Забронируйте
@@ -51,19 +51,22 @@
             </div>
         </div>
 
-        <div class="min-[768px]:flex min-[768px]:mt-[7%] min-[768px]:gap-[5vw]">
-            <div class="min-[768px]:w-[45%] min-[1024px]:w-90 relative border-daorange border-2 p-[3.5%] min-[768px]:p-[1.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-0">
+        <div class="min-[768px]:flex min-[768px]:mt-[7%] min-[768px]:gap-[5vw] xl:gap-10">
+            <div class="min-[768px]:w-[45%] min-[1024px]:w-90 xl:w-[46%] relative border-daorange border-2 p-[3.5%] min-[768px]:p-[1.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-0">
                 <div class="relative">
                     <img src="../../../../assets/img/booking.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] pointer-events-none">
 
-                    <div class=" absolute top-[5%] min-[768px]:top-[7%] min-[1024px]:top-[30px] font-light text-white inset-x-0 w-max text-center m-auto">
+                    <div class=" absolute top-[5%] min-[768px]:top-[7%] min-[1024px]:top-[30px] xl:top-[40px] font-light text-white inset-x-0 w-max text-center m-auto xl:flex xl:items-center xl:justify-center xl:gap-10">
                         <div class="text-[4.5vw] min-[450px]:text-[20px]  min-[1024px]:text-[16px]">
                             бронирование
                         </div>
 
-                        <svg viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden m-auto mt-[6%] w-[6%]">
-                            <path d="M18 20C17.046 20 15.6214 20.9163 14.4257 21.8438C12.8829 23.0363 11.5367 24.4612 10.5094 26.095C9.73929 27.32 9 28.805 9 30M9 30C9 28.805 8.26071 27.3187 7.49057 26.095C6.462 24.4612 5.11586 23.0362 3.57557 21.8437C2.37857 20.9162 0.951428 20 -5.56284e-07 20M9 30L9 2.07422e-06" stroke="white" stroke-width="0.5"/>
-                        </svg>
+                        <div class="w-[6%] xl:w-[5%]">
+                            <svg viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden xl:block m-auto mt-[6%] xl:mt-0 xl:-rotate-90 w-full">
+                                <path d="M18 20C17.046 20 15.6214 20.9163 14.4257 21.8438C12.8829 23.0363 11.5367 24.4612 10.5094 26.095C9.73929 27.32 9 28.805 9 30M9 30C9 28.805 8.26071 27.3187 7.49057 26.095C6.462 24.4612 5.11586 23.0362 3.57557 21.8437C2.37857 20.9162 0.951428 20 -5.56284e-07 20M9 30L9 2.07422e-06" stroke="white" stroke-width="0.5"/>
+                            </svg>
+                        </div>
+
                     </div>
 
                     <div class="absolute left-[8%] min-[768px]:left-[10%] bottom-[5%] min-[768px]:bottom-[6%] text-white flex flex-col gap-[3.4vw] min-[450px]:gap-[15.3px]">
@@ -101,8 +104,8 @@
                 </div>
             </div>
 
-            <div class="min-[768px]:w-[55%]">
-                <div class="min-[768px]:hidden mt-[12.5%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] leading-[120%] flex flex-col items-end">
+            <div class="min-[768px]:w-[55%] xl:w-[57%]">
+                <div class="min-[768px]:hidden mt-[12.5%] xl:mt-0 relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] xl:text-[70px]  leading-[120%] xl:flex flex-col items-end xl:justify-end">
                     <div class=" w-max ">
                         Забронируйте
                         <div class="bg-daorange h-[2px]">
@@ -117,12 +120,12 @@
                 </div>
 
 
-                <div class="min-[768px]:hidden flex items-center mt-[10%] gap-[3.4vw] min-[450px]:gap-[15.3px] text-[3.9vw] min-[450px]:text-[17.55px] font-light">
-                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[8.6%]">
+                <div class="min-[768px]:hidden xl:flex items-center xl:justify-end mt-[10%] xl:mt-8 gap-[3.4vw] min-[450px]:gap-[15.3px] text-[3.9vw] min-[450px]:text-[17.55px] xl:text-[19px] font-light">
+                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[8.6%] xl:w-10">
                         <path d="M14 19.2H14.0104M14 8.8V15.3M27 14C27 6.8201 21.1799 1 14 1C6.8201 1 1 6.8201 1 14C1 21.1799 6.8201 27 14 27C21.1799 27 27 21.1799 27 14Z" stroke="#D58637" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
-                    <div class="">
+                    <div class="xl:hidden">
                         <div>
                             Перед бронированием ознакомьтесь
                         </div>
@@ -139,36 +142,55 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="hidden xl:block relative">
+                        Перед бронированием ознакомьтесь с правилами дома
+                        <div class="absolute top-7 right-0 w-42">
+                            <div class="w-full h-[1px] bg-daorange">
+
+                            </div>
+
+                            <div class="w-full h-[1px] bg-daorange mt-[2.8%]">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="min-[768px]:h-full relative border-daorange border-2 py-10 px-9 rounded-[10vw] min-[450px]:rounded-[45px] mt-[12%] min-[768px]:mt-0 min-[768px]:flex flex-col justify-center">
+                <div class="min-[768px]:h-full xl:h-auto relative border-daorange border-2 py-10 xl:py-8 px-9 xl:px-8 rounded-[10vw] min-[450px]:rounded-[45px] mt-[12%] min-[768px]:mt-0 xl:mt-8 min-[768px]:flex flex-col xl:flex-row xl:gap-4 xl:items-center justify-center">
                     <div class="absolute w-max inset-x-0 m-auto px-[4%] -top-[2.5%] min-[1024px]:-top-[12px] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] text-daorange">ПЕРВЫЙ ВАРИАНТ</div>
 
-                    <a href="tel:89374541087" class="block text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] px-[69px] py-[5%] min-[1024px]:py-4 bg-daorange rounded-full text-white">
-                        Позвонить
-                    </a>
+                    <div>
+                        <a href="tel:89374541087" class="block text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] px-[69px] py-[5%] min-[1024px]:py-4 xl:py-3 bg-daorange rounded-full text-white">
+                            Позвонить
+                        </a>
 
-                    <a href="tel:89374541087" class="hidden min-[1024px]:block mt-3 text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] px-[69px] py-[5%] min-[1024px]:py-4 bg-[#F2F2F2] border-2 xl:border-3 border-daorange rounded-full text-daorange">
-                        +7-937-454-10-87
-                    </a>
-
-                    <div class="relative mt-[10%] min-[1024px]:mt-7">
-                        <div class="absolute inset-0 h-px w-[60%] m-auto bg-daorange -z-1"></div>
-                        <div class="w-max m-auto px-[3%] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] text-daorange">ИЛИ</div>
+                        <a href="tel:89374541087" class="hidden min-[1024px]:block mt-3 text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] px-[69px] xl:px-[10px] py-[5%] min-[1024px]:py-4 xl:py-3 bg-[#F2F2F2] border-2 border-daorange rounded-full text-daorange">
+                            +7-937-454-10-87
+                        </a>
                     </div>
 
-                    <div class="mt-[10%] min-[1024px]:mt-7">
-                        <input type="text" name="Имя" required class="text-[4.5vw] min-[450px]:text-[20.25px] min-[1024px]:text-[20px] w-full border-2 xl:border-3 border-daorange text-center rounded-full py-[4%] min-[1024px]:py-4 px-4 outline-none placeholder:text-daorange" placeholder="Фамилия и Имя">
 
-                        <input type="phone" name="Телефон" required class="text-[4.5vw] min-[450px]:text-[20.25px] min-[1024px]:text-[20px] w-full border-2 xl:border-3 border-daorange text-center rounded-full py-[4%] min-[1024px]:py-4 px-4 mt-[5%] outline-none placeholder:text-daorange" placeholder="Телефон">
+                    <div class="relative mt-[10%] min-[1024px]:mt-7 xl:mt-0 xl:flex xl:justify-center xl:items-center">
+                        <div class="absolute inset-0 h-px xl:h-[300%] w-[60%] xl:w-px m-auto bg-daorange -z-1"></div>
+                        <div class="w-max m-auto  px-[3%] xl:py-4 bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] text-daorange "><div class="xl:rotate-90">ИЛИ</div></div>
+                    </div>
 
-                        <div class="group mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5">
+                    <div class="mt-[10%] min-[1024px]:mt-7 xl:mt-0">
+                        <input type="text" name="Имя" required class="text-[4.5vw] min-[450px]:text-[20.25px] min-[1024px]:text-[20px] xl:text-[16px] w-full border-2 border-daorange text-center rounded-full py-[4%] min-[1024px]:py-4 px-4 xl:py-2.5 outline-none placeholder:text-daorange" placeholder="Фамилия и Имя">
+
+                        <input type="phone" name="Телефон" required class="text-[4.5vw] min-[450px]:text-[20.25px] min-[1024px]:text-[20px] xl:text-[16px] w-full border-2  border-daorange text-center rounded-full py-[4%] min-[1024px]:py-4 xl:py-2.5 px-4 mt-[5%] outline-none placeholder:text-daorange" placeholder="Телефон">
+
+                        <div class="group mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3">
                             <input id="check_circle" type="checkbox" class="hidden" required>
 
-                            <label for="check_circle" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] min-[1024px]:gap-7 items-center">
-                                <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-[25px] h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-[25px] rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 xl:border-3 border-daorange group-has-checked:bg-[#F2F2F2]"></div>
+                            <label for="check_circle" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] min-[1024px]:gap-7 xl:gap-4 items-center">
+                                <div class="">
+                                    <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-[25px] xl:w-5 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-[25px] xl:h-5 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-daorange group-has-checked:bg-[#F2F2F2]"></div>
 
-                                <div class="min-[1024px]:hidden w-fit text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.2vw] min-[820px]:text-[18px] min-[1024px]:text-[14px] leading-[130%] min-[1024px]:leading-[30px] ">
+                                </div>
+
+                                <div class="min-[1024px]:hidden w-fit text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.2vw] min-[820px]:text-[18px] min-[1024px]:text-[14px]  leading-[130%] min-[1024px]:leading-[30px] ">
                                     <div class="relative">
                                         Даю согласие на обработку
                                         <div class="absolute top-[90%] right-[4%] bg-daorange w-[80%] h-px min-[1024px]:h-[2.5px]">
@@ -180,15 +202,15 @@
                                     </div>
                                 </div>
 
-                                <div class="hidden min-[1024px]:block relative text-[14px]">
+                                <div class="hidden min-[1024px]:block relative text-[14px] xl:text-[12px]">
                                     Даю согласие на обработку своих персональных данных
 
-                                    <div class="absolute top-4.75 left-9 bg-daorange w-40 h-0.5 "></div>
+                                    <div class="absolute top-4.75 xl:top-4 left-9 xl:left-7.75 bg-daorange w-40 xl:w-36 h-0.5  xl:h-px"></div>
                                 </div>
                             </label>
                         </div>
 
-                        <div class="mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[28px] text-center px-[30px] py-[5%] min-[1024px]:py-4 bg-daorange rounded-full text-white">
+                        <div class="mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3 font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] text-center px-[30px] xl:px-5 py-[5%] min-[1024px]:py-4 xl:py-2.5 bg-daorange rounded-full text-white">
                             Заказать звонок
                         </div>
                     </div>

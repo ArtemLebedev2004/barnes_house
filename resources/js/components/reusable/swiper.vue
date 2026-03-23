@@ -13,15 +13,21 @@
                 enabled: menuButtons ? false : true
             },
             1024: {
-                slidesPerView: achievs ? 3.2 : 3.2,
+                slidesPerView: 3.2,
                 spaceBetween: achievs ? '3%' : '2%',
                 enabled: menuButtons ? false : true,
                 grabCursor: true,
+            },
+            1280: {
+                slidesPerView:  4,
+                spaceBetween: achievs ? '3%' : '2%',
+                enabled: menuButtons ? false : true,
+                grabCursor: false,
             }
         }
         "
-        class="w-full px-4.5! min-[768px]:px-[23px]! min-[1024px]:px-[30px]!"
-        :class="menuButtons ? 'lg:hidden! max-w-[450px] menu_buttons mt-[calc(87px+2vw)] min-[450px]:mt-[96px] min-[768px]:max-w-[820px] min-[1024px]:max-w-full m-auto' : (achievs ? 'min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] achievs mt-[8%] min-[768px]:mt-[4%] min-[820px]:mt-[32.8px]' : (Object.keys(imgs).length == 2 ? 'imgs imgs2 ' : 'imgs'))"
+        class="w-full px-4.5! min-[768px]:px-[23px]! min-[1024px]:px-[30px]! xl:px-[47px]!"
+        :class="menuButtons ? 'lg:hidden! max-w-[450px] menu_buttons mt-[calc(87px+2vw)] min-[450px]:mt-[96px] min-[768px]:max-w-[820px] min-[1024px]:max-w-full m-auto' : (achievs ? 'min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] achievs mt-[8%] min-[768px]:mt-[4%] min-[820px]:mt-[32.8px] xl:mt-15' : (Object.keys(imgs).length == 2 ? (imgs.photoCitchen1 ? 'imgs imgs2 imgsCitchen' : ' imgs imgs2') : 'imgs'))"
     >
         <template v-if="menuButtons">
             <swiper-slide v-for="menu in menuButtons" :key="menu" class="w-max! min-[450px]:mr-[16.50px]! rounded-[3.3vw] min-[450px]:rounded-[14.85px] border-daorange border text-[4vw] min-[450px]:text-[18px] text-daorange font-semibold px-[14px] py-[5px]">{{menu.text}}</swiper-slide>
@@ -94,6 +100,10 @@
     .imgs2 > .swiper-wrapper > .swiper-slide {
         width: 40% !important;
     }
+
+    .imgsCitchen > .swiper-wrapper > .swiper-slide {
+        width: 44% !important;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -106,4 +116,17 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .swiper.achievs {
+        background: url(../../../assets/img/bg_barnes_xl.svg) center/80% no-repeat;
+    }
+
+    .imgs2 > .swiper-wrapper > .swiper-slide {
+        width: 340px !important;
+    }
+
+    .imgsCitchen > .swiper-wrapper > .swiper-slide {
+        width: 286px !important;
+    }
+}
 </style>
