@@ -1,31 +1,34 @@
 <template>
-    <div class="relative max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] overflow-x-hidden px-4.5 md:px-[23px] lg:px-[30px] m-auto  ">
-        <div class="hidden min-[1024px]:block mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] flex flex-col items-center">
-            <div class=" w-max m-auto">
+    <div class="relative max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] overflow-x-hidden px-4.5 md:px-[23px] lg:px-[30px] xl:px-[47px] m-auto  ">
+        <div class="hidden min-[1024px]:flex mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] flex-col xl:flex-row xl:gap-5 items-center xl:justify-start">
+            <div class=" w-max m-auto xl:m-0">
                 НАШИ
-                <div class="bg-daorange h-[2px]">
+                <div class="bg-daorange h-[2px] xl:hidden">
                 </div>
             </div>
 
-            <div class=" w-max mt-[3%] m-auto text-daorange italic">
+            <div class=" w-max mt-[3%] xl:mt-0 m-auto xl:m-0 text-daorange italic">
                 ПРАВИЛА
-                <div class="bg-daorange h-[2px] ">
+                <div class="bg-daorange h-[2px] xl:hidden">
                 </div>
+            </div>
+
+            <div class=" hidden w-164 absolute top-18 bg-daorange h-[2px] xl:h-0.75 xl:block">
             </div>
         </div>
 
-        <div class="min-[1024px]:flex justify-between min-[1024px]:mt-20">
-            <div class="md:w-[80%] lg:w-120">
+        <div class="min-[1024px]:flex flex-row-reverse justify-between min-[1024px]:mt-20">
+            <div class="md:w-[80%] lg:w-120 xl:w-[43%]">
                 <div class=" w-full md:m-auto relative border-daorange border-3 p-[3.5%] md:p-[2.5%] lg:p-5 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px] min-[1024px]:rounded-[60px]  mt-[140%] md:mt-[30%] lg:mt-0">
                     <div class="relative">
                         <img src="../../../../assets/img/rules_photo.png" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[5.5vw] min-[820px]:rounded-[45.1px] min-[1024px]:rounded-[40px] pointer-events-none">
 
-                        <div class="absolute top-[5%] font-light text-white inset-x-0 w-max text-center m-auto min-[1024px]:flex gap-10">
+                        <div class="absolute top-[5%] font-light text-white inset-x-0 w-max text-center m-auto min-[1024px]:flex flex-row-reverse gap-10">
                             <div class="text-[4.5vw] min-[450px]:text-[20px] min-[768px]:text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[20px]">
                                 наши правила
                             </div>
 
-                            <svg  viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto mt-[6%] w-[6%] min-[768px]:w-[10%] min-[1024px]:w-[20px] min-[1024px]:mt-0 min-[1024px]:-rotate-90">
+                            <svg  viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto mt-[6%] w-[6%] min-[768px]:w-[10%] min-[1024px]:w-[20px] min-[1024px]:mt-0 min-[1024px]:rotate-90">
                                 <path d="M18 20C17.046 20 15.6214 20.9163 14.4257 21.8438C12.8829 23.0363 11.5367 24.4612 10.5094 26.095C9.73929 27.32 9 28.805 9 30M9 30C9 28.805 8.26071 27.3187 7.49057 26.095C6.462 24.4612 5.11586 23.0362 3.57557 21.8437C2.37857 20.9162 0.951428 20 -5.56284e-07 20M9 30L9 2.07422e-06" stroke="white" stroke-width="0.5"/>
                             </svg>
                         </div>
@@ -72,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="mt-[12.5%] min-[1024px]:mt-0 lg:w-105 relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
+            <div class="mt-[12.5%] min-[1024px]:mt-0 lg:w-105 xl:w-[45%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] xl:text-[16px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
                 <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] min-[1024px]:gap-20 justify-center min-[768px]:items-center">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">

@@ -23,10 +23,6 @@
         <mapSection />
     </section>
 
-    <section id="nowords">
-        <nowordsSection />
-    </section>
-
     <footer>
         <footerSection />
     </footer>

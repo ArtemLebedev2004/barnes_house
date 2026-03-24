@@ -2,7 +2,7 @@
     <swiper
         :menuButtons="menuButtons"
     />
-    <div class="md:flex flex-row-reverse min-[1024px]:justify-between max-w-[450px] min-[768px]:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto min-[768px]:mt-[5%] min-[820px]:mt-[41px] min-[1024px]:mt-[30px]">
+    <div class="md:flex flex-row-reverse min-[1024px]:justify-between max-w-[450px] min-[768px]:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1536px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto min-[768px]:mt-[5%] min-[820px]:mt-[41px] min-[1024px]:mt-[30px]">
         <div class="md:hidden relative mt-[9.8%] text-white text-[19vw] min-[450px]:text-[85px] font-black leading-[100%] min-[450px]:leading-[85px] text-center">
             <div class="stroke_text ">
                 BARNES HOUSE
@@ -103,9 +103,9 @@
                 font-bold italic text-white
                 bg-daorange
                 rounded-r-[4.5vw] min-[450px]:rounded-r-[20.25px] min-[450px]:rounded-l-[20.25px] min-[768px]:rounded-l-none min-[825px]:rounded-l-[20.25px] min-[1024px]:rounded-l-none min-[1040px]:rounded-l-[20.25px]
-                -left-[6%] min-[450px]:left-0 min-[768px]:-left-[6%] min-[825px]:left-0 min-[1024px]:-left-[6%] min-[1040px]:left-0 xl:-left-[15%]
+                -left-[6%] min-[450px]:left-0 min-[768px]:-left-[6%] min-[825px]:left-0 min-[1024px]:-left-[6%] min-[1040px]:left-0 min-[1280px]:-left-[15%] min-[1300px]:left-0
                 top-1 min-[768px]:top-2 min-[1024px]:top-[70px] xl:top-33.5
-                w-[55%] min-[768px]:w-[53%] min-[1024px]:w-[37.9%] min-[1040px]:w-[32%] xl:w-71
+                w-[55%] min-[768px]:w-[53%] min-[1024px]:w-[37.9%] min-[1040px]:w-[32%] min-[1280px]:w-71 min-[1300px]:w-50
                 h-[12.5%] min-[768px]:h-auto min-[1024px]:h-[61.44px] xl:h-[65px]
                 min-[768px]:py-[0.8%] pl-[18px] min-[768px]:pl-[30px]
                 flex items-center
@@ -113,7 +113,7 @@
                 <span class="lg:hidden">Новый</span>
             </div>
 
-            <div class="font-medium min-[1024px]:mt-7 xl:mt-6 min-[1040px]:pl-2.5 xl:pl-0">
+            <div class="font-medium min-[1024px]:mt-7 xl:mt-6 min-[1040px]:pl-2.5 min-[1280px]:pl-0 min-[1300px]:pl-3.5">
                 <span class="
                     hidden lg:inline
                     font-bold italic text-white
