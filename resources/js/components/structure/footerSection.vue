@@ -6,7 +6,7 @@
       ">
         <div class="
             m-auto
-            max-w-[450px] min-[768px]:max-w-[520px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px]
+            max-w-[450px] min-[768px]:max-w-[520px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px]
             px-4.5 min-[1024px]:px-[30px] xl:px-[47px] py-20
 
         ">
@@ -15,7 +15,7 @@
                     BARNES HOUSE
                 </div>
 
-                <div class="stroke_text absolute z-0 top-[7px] left-[14px] xl:left-36 text-transparent ">
+                <div class="stroke_text absolute z-0 top-[7px] left-[14px] xl:left-36 2xl:left- text-transparent ">
                     BARNES HOUSE
                 </div>
             </div>

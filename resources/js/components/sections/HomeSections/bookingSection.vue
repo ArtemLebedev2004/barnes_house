@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto xl:mt-130">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto xl:mt-130 2xl:mt-145">
         <div class="hidden min-[768px]:block xl:hidden mt-[75%] min-[1024px]:mt-120">
             <div class=" mt-[12.5%] relative right-0 font-bold text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] leading-[120%] flex flex-col items-center">
                 <div class=" w-max ">
@@ -51,13 +51,13 @@
             </div>
         </div>
 
-        <div class="min-[768px]:flex min-[768px]:mt-[7%] min-[768px]:gap-[5vw] xl:gap-10">
-            <div class="min-[768px]:w-[45%] min-[1024px]:w-90 xl:w-[46%] relative border-daorange border-2 p-[3.5%] min-[768px]:p-[1.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-0">
+        <div class="min-[768px]:flex min-[768px]:mt-[7%] min-[768px]:gap-[5vw] xl:gap-10 2xl:gap-15">
+            <div class="min-[768px]:w-[45%] min-[1024px]:w-90 xl:w-[46%] 2xl:w-[41.7%] relative border-daorange border-2 p-[3.5%] min-[768px]:p-[1.5%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-0">
                 <div class="relative">
                     <img src="../../../../assets/img/booking.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] pointer-events-none">
 
                     <div class=" absolute top-[5%] min-[768px]:top-[7%] min-[1024px]:top-[30px] xl:top-[40px] font-light text-white inset-x-0 w-max text-center m-auto xl:flex xl:items-center xl:justify-center xl:gap-10">
-                        <div class="text-[4.5vw] min-[450px]:text-[20px]  min-[1024px]:text-[16px]">
+                        <div class="text-[4.5vw] min-[450px]:text-[20px]  min-[1024px]:text-[16px] 2xl:text-[20px]">
                             бронирование
                         </div>
 
@@ -105,7 +105,7 @@
             </div>
 
             <div class="min-[768px]:w-[55%] xl:w-[57%]">
-                <div class="min-[768px]:hidden mt-[12.5%] xl:mt-0 relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] xl:text-[70px]  leading-[120%] xl:flex flex-col items-end xl:justify-end">
+                <div class="min-[768px]:hidden mt-[12.5%] xl:mt-0 relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] xl:text-[70px] 2xl:text-[75px] leading-[120%] xl:flex flex-col items-end xl:justify-end">
                     <div class=" w-max ">
                         Забронируйте
                         <div class="bg-daorange h-[2px]">
@@ -219,7 +219,7 @@
 
                 <div class="hidden xl:block relative border-daorange border-2 p-[4%] min-[768px]:p-[3%] xl:p-[2%] rounded-[10vw] min-[450px]:rounded-[45px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px]  xl:rounded-[40px] mt-[12%] min-[768px]:mt-[6%]">
                     <div class="absolute w-max inset-x-0 m-auto px-[4%] xl:px-4 min-[1024px]:px-6 -top-[2.5%] min-[1024px]:-top-[12px] xl:-top-2.25 bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] xl:text-[12px] text-daorange">ВТОРОЙ ВАРИАНТ</div>
-                    
+
 
                     <div class=" bg-daorange p-[7.3%] min-[1024px]:p-10 xl:p-5 rounded-[7vw] min-[450px]:rounded-[31.5px] min-[768px]:rounded-[5.7vw] min-[820px]:rounded-[46.74px] xl:rounded-[31px] text-white flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3vw] min-[820px]:gap-[24.6px] min-[1024px]:gap-[25px] xl:gap-3">
                         <div class="rounded-full flex items-center justify-between text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] xl:text-[14px] border-white border-[2px] px-[6%] py-[5%] min-[768px]:py-[3.5%] min-[1024px]:py-4 xl:py-3">
@@ -261,7 +261,7 @@
 
 
                         <form @submit.prevent="form.post('booking', {preserveScroll: true})" class="flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3vw] min-[820px]:gap-[24.6px] min-[1024px]:gap-[25px] xl:gap-4" >
-                            
+
                             <div class="hidden xl:flex gap-3">
                                 <input type="text" name="Имя" required v-model="form.name" class="w-full border-2  border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[14px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-3 px-4  outline-none placeholder:text-white" placeholder="Фамилия и Имя">
                                 <input type="phone" name="Телефон" required v-model="form.phone" class="w-full border-2 border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[14px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-3 px-4   outline-none placeholder:text-white" placeholder="Телефон">
@@ -269,7 +269,7 @@
 
                             <input type="text" name="Имя" required v-model="form.name" class="xl:hidden w-full border-2  border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[16px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-5 px-4  outline-none placeholder:text-white" placeholder="Фамилия и Имя">
                             <input type="phone" name="Телефон" required v-model="form.phone" class="xl:hidden w-full border-2 border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[16px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-5 px-4   outline-none placeholder:text-white" placeholder="Телефон">
-                            
+
                             <div class="group">
                                 <input id="check_circle" type="checkbox" class="hidden" >
 
@@ -301,7 +301,7 @@
 
                             <div class="hidden md:block absolute w-max inset-x-0 m-auto px-[4%] xl:px-4 min-[1024px]:px-6  xl:-bottom-2.5 bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] xl:text-[12px] text-daorange">БЕСПЛАТНАЯ ОТМЕНА БРОНИРОВАНИЯ ЗА 7 ДНЕЙ ДО ЗАСЕЛЕНИЯ</div>
         <!--
-                            
+
                             <div v-if="form.errors" class="text-red-500 text-sm mt-1">{{ form.errors}}</div> -->
 
                         </form>

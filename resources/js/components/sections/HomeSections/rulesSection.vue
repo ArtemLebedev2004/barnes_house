@@ -1,6 +1,6 @@
 <template>
-    <div class="relative max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] overflow-x-hidden px-4.5 md:px-[23px] lg:px-[30px] xl:px-[47px] m-auto  ">
-        <div class="hidden min-[1024px]:flex mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] flex-col xl:flex-row xl:gap-5 items-center xl:justify-start">
+    <div class="relative max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] overflow-x-hidden px-4.5 md:px-[23px] lg:px-[30px] xl:px-[47px] m-auto  ">
+        <div class="hidden min-[1024px]:flex mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] 2xl:text-[75px] flex-col xl:flex-row xl:gap-5 items-center xl:justify-start">
             <div class=" w-max m-auto xl:m-0">
                 НАШИ
                 <div class="bg-daorange h-[2px] xl:hidden">
@@ -172,6 +172,18 @@
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
                     <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
 
+                        <img src="../../../../assets/icons/rules/age.svg" alt="" class="w-full">
+
+                    </div>
+
+                    <div class="w-[200%]">
+                        Лицам возраста от 18 до 23 лет дом сдаётся по согласованию
+                    </div>
+                </div>
+
+                <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+
                         <img src="../../../../assets/icons/rules/document.svg" alt="" class="w-full">
 
                     </div>
@@ -189,7 +201,7 @@
                     </div>
 
                     <div class="w-[200%]">
-                        Нельзя пользоваться ароматическими веществами по типу благовонии
+                        Нельзя пользоваться ароматическими веществами по типу благовонии, электронных парогенераторов и восковых свечей
                     </div>
                 </div>
             </div>

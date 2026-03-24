@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] mt-[15%] min-[450px]:mt-[67.5px] min-[768px]:mt-[10%] min-[820px]:mt-[82px] min-[1024px]:mt-[100px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_1.5%] min-[768px]:bg-none bg-no-repeat">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] mt-[15%] min-[450px]:mt-[67.5px] min-[768px]:mt-[10%] min-[820px]:mt-[82px] min-[1024px]:mt-[100px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_1.5%] min-[768px]:bg-none bg-no-repeat">
         <div class="">
-            <div class="leading-[120%] min-[768px]:w-[80%] min-[768px]:m-auto text-center text-[11vw] min-[450px]:text-[45px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] font-semibold">
+            <div class="leading-[120%] min-[768px]:w-[80%] min-[768px]:m-auto text-center text-[11vw] min-[450px]:text-[45px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] 2xl:text-[75px] font-semibold">
                 Условия проживания
             </div>
 
@@ -9,7 +9,7 @@
             </div>
 
             <div class="relative min-[1024px]:w-[80%] min-[1024px]:mx-auto min-[768px]:text-center leading-[170%] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] font-light mt-[10%] min-[768px]:mt-[6%] xl:mt-12">
-                В нашем доме есть всё для вашего комфортного отдыха с семьёй или в компании друзей. На территории находится <span class="font-black text-daorange uppercase">баня из кедрового дерева с чаном, которая топится также кедровыми ДРОВАМИ</span> и мангальная зона, где можно пожарить вкусную еду на костре или просто посидеть вечерком на свежем воздухе
+                В нашем доме есть всё для вашего комфортного отдыха с семьёй или в компании друзей. На территории находится <span class="font-black text-daorange uppercase">баня из кедрового дерева с чаном, которая топится также кедровыми ДРОВАМИ</span> и зона с костром, где можно пожарить вкусную еду или просто посидеть вечерком на свежем воздухе
             </div>
         </div>
 
@@ -36,11 +36,11 @@
         <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] min-[1024px]:gap-[40px] mt-[127%] min-[768px]:mt-[72%]  min-[1024px]:mt-[480px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full xl:w-[80%] m-auto bg-daorange -z-1"></div>
-                <div class="w-max m-auto px-[5%] min-[1024px]:px-[28px] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] text-daorange">МАНГАЛЬНАЯ ЗОНА</div>
+                <div class="w-max m-auto px-[5%] min-[1024px]:px-[28px] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] text-daorange">ЗОНА С КОСТРОМ</div>
             </div>
 
             <div class="min-[768px]:w-[50%] min-[1024px]:w-[500px] xl:w-full min-[768px]:m-auto text-center text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px]">
-                В мангальной зоне есть шампуры и решетка, а также печь-казан с дровами
+                В зоне с костром есть шампуры и решетка, а также печь-казан с дровами
             </div>
 
             <div class="absolute -inset-x-4.5 min-[768px]:-inset-x-[23px] min-[1024px]:-inset-x-[30px] xl:-inset-x-[47px] top-[127%] min-[1024px]:top-[160px] xl:top-[155%]">
@@ -57,7 +57,7 @@
             </div>
 
             <div class=" text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] xl:text-center xl:w-[80%] xl:mx-auto">
-                Большой банный чан на 6-8 чел оплачивается отдельно - <span class="font-black text-daorange uppercase">4000 рублей</span>. Разогреваем до +38-40 градусов далее пользуетесь пока не остынет. <span class="font-black text-daorange uppercase">Топим кедровыми дровами</span>. Наполнение чана в стоимость не входит и обговаривается отдельно. Вместимая баня-бочка из кедра с верандой и выходом в чан оплачивается отдельно - <span class="font-black text-daorange uppercase">4000 рублей за 3 часа</span>. В продаже также имеются веники, цены на которые обговариваются отдельно
+                Большой банный чан из нержавеющей стали на 6-8 чел оплачивается отдельно - <span class="font-black text-daorange uppercase">4000 рублей</span>. Разогреваем до +38-40 градусов далее пользуетесь пока не остынет. <span class="font-black text-daorange uppercase">Топим кедровыми дровами</span>. Наполнение чана в стоимость не входит и обговаривается отдельно. Вместимая баня-бочка из кедра с верандой и выходом в чан оплачивается отдельно - <span class="font-black text-daorange uppercase">4000 рублей за 3 часа</span>. В продаже также имеются веники, цены на которые обговариваются отдельно
             </div>
 
             <div class="flex items-center min-[1024px]:justify-center gap-[3.4vw] min-[450px]:gap-[15.3px] min-[768px]:gap-[3vw] min-[1024px]:gap-[20px] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] font-light">
@@ -88,14 +88,15 @@
         </div>
     </div>
 
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1000px] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] xl:text-center leading-[170%] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] mt-[285%]  min-[450px]:mt-[1279px] min-[768px]:mt-[160%] min-[820px]:mt-[1312px] min-[1024px]:mt-[1140px] xl:mt-[1170px]  m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_80%] min-[1024px]:bg-center min-[768px]:bg-size-[80%] min-[1024px]:bg-size-[60%] bg-no-repeat">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1000px] 2xl:max-w-[1150px] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] xl:text-center leading-[170%] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] mt-[285%]  min-[450px]:mt-[1279px] min-[768px]:mt-[160%] min-[820px]:mt-[1312px] min-[1024px]:mt-[1140px] xl:mt-[1170px] 2xl:mt-[1200px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_80%] min-[1024px]:bg-center min-[768px]:bg-size-[80%] min-[1024px]:bg-size-[60%] bg-no-repeat">
         <div>
             В уютной гостиной можно расслабиться на диване и посмотреть телевизор.
             Красивая современная кухня, чтобы готовить с комфортом. На первом этаже также находится душевая кабина с туалетом и стиральной машиной. На втором этаже две спальни с большими кроватями и телевизорами.
+            В доме также есть утюг, фен, гладильная доска и обувь для дома и бани
         </div>
 
         <div class="hidden min-[1024px]:block font-black text-daorange uppercase mt-10">
-            Мы регулярно проводим генеральную уборку и готовим для вас чистые белоснежные полотенца с резиновыми тапочками
+            Мы регулярно проводим генеральную уборку и готовим для вас чистое белоснежное постельное бельё и полотенца с ароматом альпийской свежести
         </div>
 
         <div class="hidden min-[1024px]:flex w-max m-auto  gap-15 items-center mt-10">
@@ -145,7 +146,7 @@
     <div class="min-[1024px]:hidden max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] leading-[170%] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] mt-[8%] min-[450px]:mt-[36px] m-auto bg-[url(/resources/assets/img/bg_barnes_sm.svg)] bg-position-[center_top_60%] min-[768px]:bg-size-[80%] bg-no-repeat">
 
         <div class="font-black text-daorange uppercase ">
-            Мы регулярно проводим генеральную уборку и готовим для вас чистые белоснежные полотенца с резиновыми тапочками
+            Мы регулярно проводим генеральную уборку и готовим для вас чистое белоснежное постельное бельё и полотенца с ароматом альпийской свежести
         </div>
 
         <div class="mt-[11.2%] min-[768px]:mt-[6%] min-[768px]:w-max min-[768px]:m-auto min-[1024px]:flex gap-15 items-center">
@@ -191,7 +192,7 @@
         </div>
     </div>
 
-    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] leading-[170%] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] mt-[17%] min-[450px]:mt-[67.5px] min-[768px]:mt-[13%] min-[820px]:mt-[106.6px] m-auto">
+    <div class="max-w-[450px] min-[768px]:max-w-[820px] min-[1024px]:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] leading-[170%] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] mt-[17%] min-[450px]:mt-[67.5px] min-[768px]:mt-[13%] min-[820px]:mt-[106.6px] m-auto">
         <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full xl:w-[80%] m-auto bg-daorange -z-1"></div>
@@ -238,8 +239,7 @@
             </div>
 
             <div class="min-[768px]:w-[90%] xl:w-[80%] min-[768px]:m-auto text-center text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] min-[768px]:leading-[170%]">
-                У нас есть всё для вашего комфортного приготовления еды:
-                духовой шкаф, микроволновка, холодильник, варочная поверхность. <br class="min-[768px]:hidden" /> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
+                У нас есть всё необходимое: современная кухонная техника для приготовления Вашего праздничного стола, холодильник, духовой шкаф, варочная панель, микроволновая печь, кухонная вытяжка, холодильник, варочная поверхность. <br class="min-[768px]:hidden" /> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
             </div>
 
             <div class="absolute -inset-x-4.5 min-[1024px]:-inset-x-[30px] xl:-inset-x-[47px] top-[120%] min-[1024px]:top-[160px]">
