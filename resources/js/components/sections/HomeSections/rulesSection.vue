@@ -17,8 +17,8 @@
             </div>
         </div>
 
-        <div class="min-[1024px]:flex flex-row-reverse justify-between min-[1024px]:mt-20">
-            <div class="md:w-[80%] lg:w-120 xl:w-[43%]">
+        <div class="min-[1024px]:flex flex-row-reverse justify-between min-[1024px]:gap-12 min-[1024px]:mt-20">
+            <div class="md:w-[80%] min-[768px]:mx-auto lg:w-130 xl:w-[43%]">
                 <div class=" w-full md:m-auto relative border-daorange border-3 p-[3.5%] md:p-[2.5%] lg:p-5 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px] min-[1024px]:rounded-[60px]  mt-[140%] md:mt-[30%] lg:mt-0">
                     <div class="relative">
                         <img src="../../../../assets/img/rules_photo.png" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[5.5vw] min-[820px]:rounded-[45.1px] min-[1024px]:rounded-[40px] pointer-events-none">
@@ -75,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="mt-[12.5%] min-[1024px]:mt-0 lg:w-105 xl:w-[45%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] xl:text-[16px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
+            <div class="mt-[12.5%] min-[768px]:mt-[8%] min-[1024px]:mt-0 lg:w-130 xl:w-[45%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] xl:text-[16px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
                 <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] min-[1024px]:gap-20 justify-center min-[768px]:items-center">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">

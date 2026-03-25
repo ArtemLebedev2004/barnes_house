@@ -20,7 +20,7 @@
             Отдых для большой компании друзей
         </div>
 
-        <div class="min-[768px]:w-[43%] min-[1024px]:w-[35%] xl:w-[38.5%] 2xl:w-[37.2%] relative border-daorange border-3 p-[3.5%] min-[768px]:p-[1.65%] min-[1024px]:p-3 xl:p-3.5 2xl:p-4 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[6vw]  min-[820px]:rounded-[49.2px] 2xl:rounded-[55px]  mt-[9.4%] min-[768px]:mt-0">
+        <div class="min-[768px]:w-[43%] min-[1024px]:w-[36%] xl:w-[38.5%] 2xl:w-[37.2%] relative border-daorange border-3 p-[3.5%] min-[768px]:p-[1.65%] min-[1024px]:p-3 xl:p-3.5 2xl:p-4 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[6vw]  min-[820px]:rounded-[49.2px] 2xl:rounded-[55px]  mt-[9.4%] min-[768px]:mt-0">
             <div class="relative">
                 <img src="../../../../assets/img/main_img.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[4.3vw] min-[820px]:rounded-[35.26px] xl:rounded-[38px] 2xl:rounded-[42px] pointer-events-none">
 
@@ -58,7 +58,7 @@
         </div>
 
         <div class="
-            min-[768px]:w-[57%] min-[1024px]:w-[55%]
+            min-[768px]:w-[57%] min-[1024px]:w-[56.5%]
             relative
             text-[10vw] min-[450px]:text-[45px] min-[768px]:text-[5.5vw] min-[820px]:text-[45.1px] min-[1024px]:text-[39.5px] xl:text-[45px] 2xl:text-[50px]
             mt-[9.5%] min-[768px]:mt-0

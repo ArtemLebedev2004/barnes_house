@@ -2,7 +2,7 @@
     <div class="
         text-[15px] min-[768px]:text-[24px]
         bg-liorange
-        xl:mt-20
+        mt-20
       ">
         <div class="
             m-auto
