@@ -238,11 +238,11 @@
                 <div class="w-max m-auto px-[5%] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] text-daorange">СОВРЕМЕННАЯ КУХНЯ</div>
             </div>
 
-            <div class="min-[768px]:w-[90%] xl:w-[80%] min-[768px]:m-auto text-center text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] min-[768px]:leading-[170%]">
-                У нас есть всё необходимое: современная кухонная техника для приготовления Вашего праздничного стола, холодильник, духовой шкаф, варочная панель, микроволновая печь, кухонная вытяжка, холодильник, варочная поверхность. <br class="min-[768px]:hidden" /> И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
+            <div class="min-[768px]:w-[90%] xl:w-[80%] min-[768px]:m-auto text-left text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] min-[768px]:leading-[170%]">
+                У нас есть всё необходимое: современная кухонная техника для приготовления Вашего праздничного стола, холодильник, духовой шкаф, варочная панель, микроволновая печь, кухонная вытяжка, холодильник, варочная поверхность. И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
             </div>
 
-            <div class="absolute -inset-x-4.5 min-[1024px]:-inset-x-[30px] xl:-inset-x-[47px] top-[120%] min-[1024px]:top-[160px]">
+            <div class="absolute -inset-x-4.5 min-[1024px]:-inset-x-[30px] xl:-inset-x-[47px] top-[112%] min-[1024px]:top-[160px]">
                 <swiper
                     :imgs="modernCitchen"
                 />

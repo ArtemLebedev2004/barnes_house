@@ -105,9 +105,9 @@
             </div>
 
             <div class="flex flex-col gap-[6vw] min-[450px]:gap-[27px] justify-center items-center mt-[11.2%] text-sand uppercase text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2.5vw] min-[820px]:text-[20.5px] font-bold">
-                <div>3D-экскурсия по дому</div>
                 <div>Условия проживания</div>
                 <div>Бронирование</div>
+                <div>Наши правила</div>
                 <div>Наш адрес</div>
             </div>
 
@@ -153,10 +153,6 @@
                 </a>
             </div>
         </div>
-
-
-
-
       </div>
 
     </div>

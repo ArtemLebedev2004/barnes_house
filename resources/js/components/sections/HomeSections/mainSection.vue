@@ -3,7 +3,7 @@
         :menuButtons="menuButtons"
     />
     <div class="md:flex flex-row-reverse min-[1024px]:justify-between max-w-[450px] min-[768px]:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto min-[768px]:mt-[5%] min-[820px]:mt-[41px] min-[1024px]:mt-[30px]">
-        <div class="md:hidden relative mt-[9.8%] text-white text-[19vw] min-[450px]:text-[85px] font-black leading-[100%] min-[450px]:leading-[85px] text-center">
+        <div class="md:hidden relative mt-[9.8%] text-[#F2F2F2] text-[19vw] min-[450px]:text-[85px] font-black leading-[100%] min-[450px]:leading-[85px] text-center">
             <div class="stroke_text ">
                 BARNES HOUSE
             </div>
@@ -166,17 +166,17 @@
 import swiper from '@/components/reusable/swiper.vue';
 
 let menuButtons = {
-    '3d': {
-        id: 1,
-        text: '3D-экскурсия'
-    },
     'living': {
-        id: 2,
-        text: 'Проживание'
+        id: 1,
+        text: 'Условия'
     },
     'booking': {
-        id: 3,
+        id: 2,
         text: 'Бронирование'
+    },
+    'rules': {
+        id: 3,
+        text: 'Правила'
     },
     'adress': {
         id: 4,
