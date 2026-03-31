@@ -8,12 +8,12 @@
   ">
     <div class="min-[1024px]:hidden bg-liorange max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] m-auto flex justify-between md:gap-[4vw] items-center px-4.5 md:px-[23px] py-4 " >
       <div class="w-[10%] min-[1024px]:w-[8%]">
-        <router-link to="/">
+        <a @click.prevent="SmoothVerticalScrolling('main', 275, 'top')">
             <img src="../../../assets/icons/main_logo.svg" alt="" class="w-full">
-        </router-link>
+        </a>
       </div>
 
-      <a href="" class="
+      <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="
         min-w-[176px]
         w-[55%]
         p-1.25
@@ -40,11 +40,11 @@
 
       <div class="md:flex gap-[4vw] items-center">
         <div class="hidden md:flex gap-[2vw]">
-            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] min-[1024px]:w-[5.5vw] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] min-[1024px]:h-[5.5vw] rounded-full bg-daorange flex items-center justify-center">
+            <div @click.prevent="SmoothVerticalScrolling('footer', 275, 'top')" class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] min-[1024px]:w-[5.5vw] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] min-[1024px]:h-[5.5vw] rounded-full bg-daorange flex items-center justify-center">
                 <img src="../../../assets/icons/phone.svg" alt="" class="w-[45%]">
             </div>
 
-            <div class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] min-[1024px]:w-[5.5vw] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] min-[1024px]:h-[5.5vw] rounded-full bg-daorange flex items-center justify-center">
+            <div @click.prevent="SmoothVerticalScrolling('footer', 275, 'top')" class="relative w-[13.5vw] min-[450px]:w-[60.75px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] min-[1024px]:w-[5.5vw] h-[13.5vw] min-[450px]:h-[60.75px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] min-[1024px]:h-[5.5vw] rounded-full bg-daorange flex items-center justify-center">
                 <img src="../../../assets/icons/mail.svg" alt="" class="w-[50%]">
             </div>
         </div>
@@ -105,10 +105,18 @@
             </div>
 
             <div class="flex flex-col gap-[6vw] min-[450px]:gap-[27px] justify-center items-center mt-[11.2%] text-sand uppercase text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2.5vw] min-[820px]:text-[20.5px] font-bold">
-                <div>Условия проживания</div>
-                <div>Бронирование</div>
-                <div>Наши правила</div>
-                <div>Наш адрес</div>
+                <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services">
+                    Условия проживания
+                </a>
+                <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking">
+                    Бронирование
+                </a>
+                <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules">
+                    Наши правила
+                </a>
+                <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map">
+                    Наш адрес
+                </a>
             </div>
 
             <div class="mt-[11.2%]">
@@ -165,25 +173,25 @@
         </div>
 
         <div class="flex gap-[3vw] text-[16.3px] text-black">
-            <div>
+            <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')">
                 Условия проживания
                 <div class="bg-daorange h-[1px]"></div>
-            </div>
-            <div>
+            </a>
+            <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')">
                 Бронирование
                 <div class="bg-daorange h-[1px]"></div>
-            </div>
-            <div>
+            </a>
+            <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')">
                 Наши правила
                 <div class="bg-daorange h-[1px]"></div>
-            </div>
-            <div>
+            </a>
+            <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')">
                 Наш адрес
                 <div class="bg-daorange h-[1px]"></div>
-            </div>
+            </a>
         </div>
 
-        <a href="" class="
+        <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="
             min-w-[176px]
 
             p-1.25
@@ -217,13 +225,35 @@ import { ref, watch } from 'vue';
 
 let openMenu = ref(false)
 
-watch(openMenu, (newValue) => {
-    if (newValue) {
-        document.body.style.overflowY='hidden'
-    } else {
-        document.body.style.overflowY='auto'
+// watch(openMenu, (newValue) => {
+//     if (newValue) {
+//         document.body.style.overflowY='hidden'
+//     } else {
+//         document.body.style.overflowY='auto'
+//     }
+// })
+
+function SmoothVerticalScrolling(e, time, where) {
+    let el = document.getElementById(e);
+    console.log(el)
+    let eTop = el.getBoundingClientRect().top;
+    let eAmt = eTop/102;
+    let curTime = 0;
+    while (curTime <= time) {
+        window.setTimeout(SVS_B, curTime, eAmt, where);
+        curTime += time / 100;
     }
-})
+    if (openMenu.value) {
+        openMenu.value = false
+    }
+}
+
+function SVS_B(eAmt, where) {
+    if(where == "center" || where == "")
+        window.scrollBy(0, eAmt / 2);
+    if (where == "top")
+        window.scrollBy(0, eAmt);
+}
 
 // let changeBgNav = ref(false)
 

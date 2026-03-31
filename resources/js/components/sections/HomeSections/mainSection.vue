@@ -20,7 +20,7 @@
             Отдых для большой компании друзей
         </div>
 
-        <div class="min-[768px]:w-[43%] min-[1024px]:w-[36%] xl:w-[38.5%] 2xl:w-[37.2%] relative border-daorange border-3 p-[3.5%] min-[768px]:p-[1.65%] min-[1024px]:p-3 xl:p-3.5 2xl:p-4 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[6vw]  min-[820px]:rounded-[49.2px] 2xl:rounded-[55px]  mt-[9.4%] min-[768px]:mt-0">
+        <div class="min-[768px]:w-[43%] min-[1024px]:w-[36%] xl:w-[38.5%] 2xl:w-[37.7%] relative border-daorange border-3 p-[3.5%] min-[768px]:p-[1.65%] min-[1024px]:p-3 xl:p-3.5 2xl:p-4 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[6vw]  min-[820px]:rounded-[49.2px] 2xl:rounded-[55px]  mt-[9.4%] min-[768px]:mt-0">
             <div class="relative">
                 <img src="../../../../assets/img/main_img.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[4.3vw] min-[820px]:rounded-[35.26px] xl:rounded-[38px] 2xl:rounded-[42px] pointer-events-none">
 
@@ -33,7 +33,7 @@
                         <img src="../../../../assets/icons/phone.svg" alt="" class="w-[40%]">
                     </a>
 
-                    <div class="hidden relative w-[12vw] min-[450px]:w-[53.5px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] 2xl:w-[60px] h-[12vw]  min-[450px]:h-[53.5px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] 2xl:h-[60px] rounded-full bg-daorange md:flex items-center justify-center">
+                    <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="hidden relative w-[12vw] min-[450px]:w-[53.5px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] 2xl:w-[60px] h-[12vw]  min-[450px]:h-[53.5px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] 2xl:h-[60px] rounded-full bg-daorange md:flex items-center justify-center cursor-pointer">
                         <img src="../../../../assets/icons/phone.svg" alt="" class="w-[40%]">
                     </div>
                 </div>
@@ -74,22 +74,22 @@
                     </div>
 
                     <div class="flex gap-8">
-                        <div>
+                        <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services">
                             Условия проживания
                             <div class="bg-daorange h-[1px]"></div>
-                        </div>
-                        <div>
+                        </a>
+                        <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking">
                             Бронирование
                             <div class="bg-daorange h-[1px]"></div>
-                        </div>
-                        <div>
+                        </a>
+                        <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules">
                             Наши правила
                             <div class="bg-daorange h-[1px]"></div>
-                        </div>
-                        <div>
+                        </a>
+                        <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map">
                             Наш адрес
                             <div class="bg-daorange h-[1px]"></div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -128,16 +128,16 @@
             <div class="relative text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[2.25vw] min-[820px]:text-[18.45px] min-[1024px]:text-[16px] font-light mt-[5%] min-[768px]:mt-[1.5%] min-[1024px]:mt-2">
                 Barnes House - это уютная территория с красивым и современным домом со всеми удобствами, <span class="font-black italic text-daorange">БАНЕЙ ИЗ КЕДРА С ЧАНОМ</span> и мангальной зоной для отдыха в кругу семьи или в компании друзей.
 
-                <div class="absolute top-[14%] min-[768px]:top-[16%] min-[1024px]:top-[22px] bg-daorange w-[31vw] min-[450px]:w-[139.5px] min-[768px]:w-[15.4vw] min-[820px]:w-[126.28px] min-[1024px]:w-[115px] h-px">
+                <div class="absolute top-[14%] min-[768px]:top-[16%] min-[1024px]:top-[22px] bg-daorange w-[31vw] min-[450px]:w-[139.5px] min-[768px]:w-[15.4vw] min-[820px]:w-[126.28px] min-[1024px]:w-[112px] h-px">
                 </div>
             </div>
 
             <div class="md:hidden xl:flex xl:justify-between text-[7vw] min-[450px]:text-[31.5px] md:text-[2.35vw] xl:text-[24px] mt-[8%] md:mt-[6%] xl:mt-6 2xl:mt-6.5 border-daorange border-2 rounded-[10.7vw] min-[450px]:rounded-[48.15px] xl:rounded-full p-[2.8%] md:p-[1.5%] xl:p-1.5 2xl:p-2 text-center">
-                <div class="xl:w-full px-[31px] md:px-[13px] py-[3.6%] xl:py-4 bg-daorange text-white rounded-full">
+                <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="xl:w-full px-[31px] md:px-[13px] py-[3.6%] xl:py-4 bg-daorange text-white rounded-full cursor-pointer">
                     Забронировать
                 </div>
 
-                <div class="xl:w-full px-[31px] md:px-[13px] py-[3.3%] xl:py-4 bg-[#F2F2F2] rounded-full">
+                <div @click.prevent="SmoothVerticalScrolling('services', 275, 'top')" class="xl:w-full px-[31px] md:px-[13px] py-[3.3%] xl:py-4 bg-[#F2F2F2] rounded-full cursor-pointer">
                     Посмотреть дом
                 </div>
             </div>
@@ -146,11 +146,11 @@
 
     <div class="max-w-[820px] min-[1024px]:max-w-[1030px] px-[23px] min-[1024px]:px-[30px] m-auto mt-[4%] min-[820px]:mt-[32.8px] ">
         <div class="hidden min-[768px]:flex xl:hidden text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[28px] border-daorange border-2 rounded-full  p-[1.5%] min-[1024px]:p-1.75  text-center">
-            <div class="w-[50%] px-[20px] py-[2.6%] min-[1024px]:py-4 bg-daorange text-white rounded-full">
+            <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="w-[50%] px-[20px] py-[2.6%] min-[1024px]:py-4 bg-daorange text-white rounded-full">
                 Забронировать
             </div>
 
-            <div class="w-[50%] px-[31px] min-[768px]:px-[13px] py-[2.6%] min-[1024px]:py-4 bg-[#F2F2F2] rounded-full">
+            <div @click.prevent="SmoothVerticalScrolling('services', 275, 'top')" class="w-[50%] px-[31px] min-[768px]:px-[13px] py-[2.6%] min-[1024px]:py-4 bg-[#F2F2F2] rounded-full">
                 Посмотреть дом
             </div>
         </div>
@@ -165,22 +165,83 @@
 <script setup>
 import swiper from '@/components/reusable/swiper.vue';
 
+// document.querySelectorAll('a[href^="#"').forEach(link => {
+//     console.log(link)
+// link.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     console.log('asfadf')
+
+//     let href = this.getAttribute('href').substring(1);
+
+//     const scrollTarget = document.getElementById(href);
+
+//     // const topOffset = document.querySelector(href).offsetHeight;
+//     const topOffset = 0; // если не нужен отступ сверху 
+//     const elementPosition = scrollTarget.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition - topOffset;
+
+//     window.scrollBy({
+//         top: offsetPosition,
+//         behavior: 'smooth'
+//     });
+// });
+// });
+
+// function func(href) {
+
+//     const scrollTarget = document.getElementById(href);
+//     console.log(scrollTarget)
+//     // const topOffset = document.querySelector(href).offsetHeight;
+//     const topOffset = 0; // если не нужен отступ сверху 
+//     const elementPosition = scrollTarget.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition - topOffset;
+
+//     window.scrollBy({
+//         top: offsetPosition,
+//         behavior: 'smooth'
+//     });
+// }
+
+
+function SmoothVerticalScrolling(e, time, where) {
+    let el = document.getElementById(e);
+    console.log(el)
+    let eTop = el.getBoundingClientRect().top;
+    let eAmt = eTop / 101;
+    let curTime = 0;
+    while (curTime <= time) {
+        window.setTimeout(SVS_B, curTime, eAmt, where);
+        curTime += time / 100;
+    }
+}
+
+function SVS_B(eAmt, where) {
+    if(where == "center" || where == "")
+        window.scrollBy(0, eAmt / 2);
+    if (where == "top")
+        window.scrollBy(0, eAmt);
+}
+
 let menuButtons = {
-    'living': {
+    'services': {
         id: 1,
-        text: 'Условия'
+        text: 'Условия',
+        class: 'services'
     },
     'booking': {
         id: 2,
-        text: 'Бронирование'
+        text: 'Бронирование',
+        class: 'booking'
     },
     'rules': {
         id: 3,
-        text: 'Правила'
+        text: 'Правила',
+        class: 'rules'
     },
-    'adress': {
+    'map': {
         id: 4,
-        text: 'Адрес'
+        text: 'Адрес',
+        class: 'map'
     }
 }
 

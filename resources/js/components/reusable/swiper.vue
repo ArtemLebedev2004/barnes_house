@@ -37,7 +37,7 @@
         :class="menuButtons ? 'lg:hidden! max-w-[450px]  menu_buttons mt-[calc(87px+2vw)] min-[450px]:mt-[96px]  min-[1024px]:max-w-full m-auto' : (achievs ? '    achievs mt-[8%] min-[768px]:mt-[4%] min-[820px]:mt-[32.8px] xl:mt-15' : (Object.keys(imgs).length == 2 ? (imgs.photoCitchen1 ? 'imgs imgs2 imgsCitchen' : ' imgs imgs2') : 'imgs'))"
     >
         <template v-if="menuButtons">
-            <swiper-slide v-for="menu in menuButtons" :key="menu" class="w-max! min-[450px]:mr-[16.50px]! rounded-[3.3vw] min-[450px]:rounded-[14.85px] border-daorange border text-[4vw] min-[450px]:text-[18px] text-daorange font-semibold px-[14px] py-[5px]">{{menu.text}}</swiper-slide>
+            <swiper-slide  v-for="menu in menuButtons" :key="menu" @click.prevent="SmoothVerticalScrolling(menu.class, 275, 'top')" class="w-max! min-[450px]:mr-[16.50px]! rounded-[3.3vw] min-[450px]:rounded-[14.85px] border-daorange border text-[4vw] min-[450px]:text-[18px] text-daorange font-semibold px-[14px] py-[5px]">{{menu.text}}</swiper-slide>
         </template>
 
         <template v-if="achievs">
@@ -74,6 +74,25 @@
 
     // Import Swiper styles
     import { toRefs } from 'vue';
+
+    function SmoothVerticalScrolling(e, time, where) {
+    let el = document.getElementById(e);
+    console.log(el)
+    let eTop = el.getBoundingClientRect().top;
+    let eAmt = eTop/102;
+    let curTime = 0;
+    while (curTime <= time) {
+        window.setTimeout(SVS_B, curTime, eAmt, where);
+        curTime += time / 100;
+    }
+}
+
+function SVS_B(eAmt, where) {
+    if(where == "center" || where == "")
+        window.scrollBy(0, eAmt / 2);
+    if (where == "top")
+        window.scrollBy(0, eAmt);
+}
 </script>
 
 

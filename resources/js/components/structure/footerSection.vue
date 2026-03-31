@@ -15,7 +15,7 @@
                     BARNES HOUSE
                 </div>
 
-                <div class="stroke_text absolute z-0 top-[7px] left-[14px] xl:left-36 2xl:left- text-transparent ">
+                <div class="stroke_text absolute z-0 top-[7px] left-[14px] xl:left-36 2xl:left-51 text-transparent ">
                     BARNES HOUSE
                 </div>
             </div>
@@ -25,10 +25,18 @@
             </div>
 
             <div class="flex flex-col min-[1024px]:flex-row gap-[6vw] min-[450px]:gap-[27px] min-[1024px]:gap-[55px] justify-center items-center mt-[11.2%] min-[1024px]:mt-18 xl:mt-12 text-sand uppercase text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2.5vw] min-[820px]:text-[20.5px] min-[1024px]:text-[16px] font-bold">
-                <div>3D-экскурсия по дому</div>
-                <div>Условия проживания</div>
-                <div>Бронирование</div>
-                <div>Наш адрес</div>
+                <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services">
+                    Условия проживания
+                </a>
+                <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking">
+                    Бронирование
+                </a>
+                <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules">
+                    Наши правила
+                </a>
+                <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map">
+                    Наш адрес
+                </a>
             </div>
 
             <div class="mt-[11.2%] min-[1024px]:mt-18 xl:mt-12 min-[1024px]:flex justify-center gap-18">
@@ -144,6 +152,27 @@
 
       </div>
 </template>
+
+<script setup>
+function SmoothVerticalScrolling(e, time, where) {
+    let el = document.getElementById(e);
+    console.log(el)
+    let eTop = el.getBoundingClientRect().top;
+    let eAmt = eTop/100;
+    let curTime = 0;
+    while (curTime <= time) {
+        window.setTimeout(SVS_B, curTime, eAmt, where);
+        curTime += time / 100;
+    }
+}
+
+function SVS_B(eAmt, where) {
+    if(where == "center" || where == "")
+        window.scrollBy(0, eAmt / 2);
+    if (where == "top")
+        window.scrollBy(0, eAmt);
+}
+</script>
 
 <style scoped>
 .stroke_text {

@@ -1,20 +1,20 @@
 <template>
     <div class="max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto">
 
-        <div class=" min-[1024px]:flex mt-[24%] min-[768px]:mt-[18%] min-[1024px]:mt-[120px] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] flex-col xl:flex-row xl:gap-5 items-center xl:justify-center">
-            <div class=" w-max m-auto xl:m-0 text-daorange">
+        <div class=" min-[1024px]:flex mt-[24%] min-[768px]:mt-[18%] min-[1024px]:mt-[120px] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] flex-col lg:flex-row lg:gap-5 items-center lg:justify-center">
+            <div class=" w-max m-auto lg:m-0 text-daorange">
                 BARNES HOUSE
-                <div class="bg-daorange h-[2px] xl:hidden">
+                <div class="bg-daorange h-[2px] lg:hidden">
                 </div>
             </div>
 
-            <div class=" w-max mt-[3%] xl:mt-0 m-auto xl:m-0 italic">
+            <div class=" w-max mt-[3%] lg:mt-0 m-auto lg:m-0 italic">
                 на карте
-                <div class="bg-daorange h-[2px] xl:hidden">
+                <div class="bg-daorange h-[2px] lg:hidden">
                 </div>
             </div>
 
-            <div class=" hidden w-234 absolute top-18 bg-daorange h-[2px] xl:h-0.75 xl:block">
+            <div class=" hidden w-200 xl:w-234 absolute lg:top-16 xl:top-18 bg-daorange h-0.75 lg:block">
             </div>
         </div>
 

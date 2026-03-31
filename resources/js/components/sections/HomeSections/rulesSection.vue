@@ -1,27 +1,27 @@
 <template>
     <div class="relative max-w-[450px] md:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] overflow-x-hidden px-4.5 md:px-[23px] lg:px-[30px] xl:px-[47px] m-auto  ">
-        <div class="hidden min-[1024px]:flex mt-[12.5%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] 2xl:text-[75px] flex-col xl:flex-row xl:gap-5 items-center xl:justify-start">
-            <div class=" w-max m-auto xl:m-0">
+        <div class="hidden min-[1024px]:flex mt-[10%] leading-[100%] relative right-0 font-bold text-[11vw] min-[450px]:text-[49.5px] min-[768px]:text-[9vw] min-[820px]:text-[73.8px] min-[1024px]:text-[60px] xl:text-[70px] 2xl:text-[75px] min-[1024px]:flex-row min-[1024px]:gap-5 items-center min-[1024px]:justify-start">
+            <div class=" w-max m-auto min-[1024px]:m-0">
                 НАШИ
-                <div class="bg-daorange h-[2px] xl:hidden">
+                <div class="bg-daorange h-[2px] min-[1024px]:hidden">
                 </div>
             </div>
 
-            <div class=" w-max mt-[3%] xl:mt-0 m-auto xl:m-0 text-daorange italic">
+            <div class=" w-max mt-[3%] min-[1024px]:m-0 m-auto text-daorange italic">
                 ПРАВИЛА
-                <div class="bg-daorange h-[2px] xl:hidden">
+                <div class="bg-daorange h-[2px] min-[1024px]:hidden">
                 </div>
             </div>
 
-            <div class=" hidden w-164 absolute top-18 bg-daorange h-[2px] xl:h-0.75 xl:block">
+            <div class=" hidden w-142 xl:w-164 absolute top-16 xl:top-18 bg-daorange h-0.75 min-[1024px]:block">
             </div>
         </div>
 
         <div class="min-[1024px]:flex flex-row-reverse justify-between min-[1024px]:gap-12 min-[1024px]:mt-20">
-            <div class="md:w-[80%] min-[768px]:mx-auto lg:w-130 xl:w-[43%]">
-                <div class=" w-full md:m-auto relative border-daorange border-3 p-[3.5%] md:p-[2.5%] lg:p-5 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px] min-[1024px]:rounded-[60px]  mt-[140%] md:mt-[30%] lg:mt-0">
+            <div class="md:w-[80%] min-[768px]:mx-auto lg:m-0 lg:w-130 xl:w-[42%] 2xl:w-[36%]">
+                <div class=" w-full md:m-auto relative border-daorange border-3 p-[3.5%] md:p-[2.5%] lg:p-5 rounded-[12.3vw] min-[450px]:rounded-[55.35px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px] min-[1024px]:rounded-[60px]  mt-[20%] md:mt-[20%] lg:mt-0">
                     <div class="relative">
-                        <img src="../../../../assets/img/rules_photo.png" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[5.5vw] min-[820px]:rounded-[45.1px] min-[1024px]:rounded-[40px] pointer-events-none">
+                        <img src="../../../../assets/img/rules_photo.png" alt="" class=" rounded-[9.2vw] min-[450px]:rounded-[41.4px] min-[768px]:rounded-[6vw] min-[820px]:rounded-[51px] min-[1024px]:rounded-[40px] pointer-events-none">
 
                         <div class="absolute top-[5%] font-light text-white inset-x-0 w-max text-center m-auto min-[1024px]:flex flex-row-reverse gap-10">
                             <div class="text-[4.5vw] min-[450px]:text-[20px] min-[768px]:text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[20px]">
@@ -33,7 +33,7 @@
                             </svg>
                         </div>
 
-                        <div class="absolute inset-x-0 top-[72.5%] bottom-0 rounded-b-[9.2vw] min-[450px]:rounded-b-[41.4px] min-[1024px]:rounded-b-[40px] bg-linear-to-t from-black/65 from-53% ">
+                        <div class="absolute inset-x-0 top-[72.5%] bottom-0 rounded-b-[9.2vw] min-[450px]:rounded-b-[41.4px] min-[768px]:rounded-[6vw] min-[820px]:rounded-[51px] min-[1024px]:rounded-b-[40px] bg-linear-to-t from-black/65 from-53% ">
                             <div class="flex flex-col gap-[1vw] min-[450px]:gap-[4.5px] absolute left-[8%] bottom-[20%] leading-[7vw] min-[450px]:leading-[31px] min-[768px]:leading-[110%] min-[1024px]:leading-[43px] text-white text-[6.5vw] min-[450px]:text-[29px] min-[768px]:text-[6vw] min-[820px]:text-[49.2px] min-[1024px]:text-[35px]">
                                 <div class="w-max ">
                                     <span class="font-bold italic">Отдыхать</span> нужно
@@ -75,11 +75,11 @@
                 </div>
             </div>
 
-            <div class="mt-[12.5%] min-[768px]:mt-[8%] min-[1024px]:mt-0 lg:w-130 xl:w-[45%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] xl:text-[16px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
-                <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] min-[1024px]:gap-20 justify-center min-[768px]:items-center">
-                    <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
-                    <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
-                    <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%]">
+            <div class="mt-[12.5%] min-[768px]:mt-[8%] min-[1024px]:mt-0 lg:w-130 xl:w-[45%] 2xl:w-[55%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] xl:text-[16px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
+                <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] min-[1024px]:gap-40 xl:gap-30 2xl:gap-26 justify-center min-[768px]:items-center">
+                    <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%] 2xl:w-[55%]">
+                    <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%] 2xl:w-[55%]">
+                    <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%] 2xl:w-[55%]">
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">

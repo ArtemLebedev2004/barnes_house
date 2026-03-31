@@ -3,6 +3,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import type { DefineComponent } from 'vue';
 import { createApp, h, ref } from 'vue';
 import '../css/app.css';
+// import { VueRouter } from 'vue-router';
 import { initializeTheme } from '@/composables/useAppearance';
 import { state, dispatch } from './store/store.js'
 
@@ -23,6 +24,7 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
             .use(plugin)
+            // .use(VueRouter)
             .provide('store', date)
             .provide('store', state)
             .provide('store', { state, dispatch })

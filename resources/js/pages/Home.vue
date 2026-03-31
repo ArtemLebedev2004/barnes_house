@@ -23,7 +23,7 @@
         <mapSection />
     </section>
 
-    <footer>
+    <footer id="footer">
         <footerSection />
     </footer>
 

@@ -197,8 +197,13 @@
     * {
         @apply border-border outline-ring/50;
     }
+    html {
+      scroll-behavior: smooth;
+
+    }
     body {
         background-color: #F2F2F2;
+        scroll-behavior: smooth;
         /* @apply bg-background text-foreground; */
     }
 }

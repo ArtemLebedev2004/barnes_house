@@ -206,7 +206,7 @@
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[120%] min-[768px]:mt-[69%] min-[1024px]:mt-[470px] xl:mt-[460px]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[120%] min-[768px]:mt-[69%] min-[1024px]:mt-[470px] xl:mt-[460px] 2xl:mt-[480px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full xl:w-[80%] m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] text-daorange">БОЛЬШИЕ СПАЛЬНИ</div>
@@ -219,7 +219,7 @@
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[120%] min-[768px]:mt-[69%] min-[1024px]:mt-[470px] xl:mt-[460px]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[120%] min-[768px]:mt-[69%] min-[1024px]:mt-[470px] xl:mt-[460px] 2xl:mt-[480px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full xl:w-[80%] m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] text-daorange">ДУШ И ТУАЛЕТ</div>
@@ -232,13 +232,13 @@
             </div>
         </div>
 
-        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[120%] min-[768px]:mt-[69%] min-[1024px]:mt-[470px] xl:mt-[460px]">
+        <div class="relative flex flex-col gap-[7.5vw] min-[450px]:gap-[33.75px] mt-[120%] min-[768px]:mt-[69%] min-[1024px]:mt-[470px] xl:mt-[460px] 2xl:mt-[480px]">
             <div class="relative">
                 <div class="absolute inset-0 h-px w-full xl:w-[80%] m-auto bg-daorange -z-1"></div>
                 <div class="w-max m-auto px-[5%] bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] text-daorange">СОВРЕМЕННАЯ КУХНЯ</div>
             </div>
 
-            <div class=" xl:w-[80%] min-[768px]:m-auto text-left text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] leading-[170%] min-[768px]:leading-[170%]">
+            <div class=" xl:w-[80%] min-[768px]:m-auto text-left text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] leading-[170%] min-[768px]:leading-[170%] lg:text-center">
                 У нас есть всё необходимое: современная кухонная техника для приготовления Вашего праздничного стола, холодильник, духовой шкаф, варочная панель, микроволновая печь, кухонная вытяжка, холодильник, варочная поверхность. И, что самое главное, <span class="font-black text-daorange uppercase">всё в отличном состоянии</span>
             </div>
 
