@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="min-[768px]:w-[55%] xl:w-[57%]">
@@ -147,7 +147,7 @@
                     </div>
 
                     <div class="hidden xl:block relative">
-                        Перед бронированием ознакомьтесь с <span @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" class="cursor-pointer">правилами дома</span> 
+                        Перед бронированием ознакомьтесь с <span @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" class="cursor-pointer">правилами дома</span>
                         <div class="absolute top-7 right-0 w-42">
                             <div class="w-full h-[1px] bg-daorange">
 
@@ -182,11 +182,11 @@
                     <form @submit.prevent="submitOrderCall()" class="mt-[10%] min-[1024px]:mt-7 xl:mt-0">
                         <input type="text" name="Имя" v-model="inputNameOrderCall" class="text-[4.5vw] min-[450px]:text-[20.25px] min-[1024px]:text-[20px] xl:text-[14px] w-full border-2 border-daorange text-center rounded-full py-[4%] min-[1024px]:py-4 px-4 xl:py-2 outline-none placeholder:text-daorange" placeholder="Фамилия и Имя">
                         <div v-if="formCalling.errors.name" class="text-red-500 text-sm mt-1">{{ formCalling.errors.name}}</div>
-                        <div v-if="clickOrderCallSubmit && !inputNameOrderCall" class="text-red-500 text-sm mt-1">Поле не заполнено</div>
+                        <div v-if="clickOrderCallSubmit && !inputNameOrderCall" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
 
                         <input type="tel" name="Телефон" v-model="inputPhoneOrderCall" class="text-[4.5vw] min-[450px]:text-[20.25px] min-[1024px]:text-[20px] xl:text-[14px] w-full border-2  border-daorange text-center rounded-full py-[4%] min-[1024px]:py-4 xl:py-2 px-4 mt-[5%] 2xl:mt-[4%] outline-none placeholder:text-daorange" placeholder="Телефон">
                         <div v-if="formCalling.errors.phone" class="text-red-500 text-sm mt-1">{{ formCalling.errors.phone}}</div>
-                        <div v-if="clickOrderCallSubmit && !inputPhoneOrderCall" class="text-red-500 text-sm mt-1">Поле не заполнено</div>
+                        <div v-if="clickOrderCallSubmit && !inputPhoneOrderCall" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
 
                         <div class="group mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3">
                             <input ref="check_circle4" id="check_circle4" type="checkbox" name="Согласие" class="hidden">
@@ -217,7 +217,7 @@
                             </label>
                         </div>
 
-                        <div v-if="clickOrderCallSubmit && !inputCheckedOrderCall" class="text-red-800 font-bold text-sm mt-1">Для заказа звонка нужно согласиться</div>
+                        <div v-if="clickOrderCallSubmit && !inputCheckedOrderCall" class="text-red-800 font-bold text-[12px] mt-1">Для заказа звонка нужно согласиться</div>
 
                         <button @click="clickOrderCallSubmit = true" type="submit" class="w-full mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3 font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] xl:text-[16px] text-center px-[30px] xl:px-5 py-[5%] min-[1024px]:py-4 xl:py-2 bg-daorange rounded-full text-white">
                             Заказать звонок
@@ -251,7 +251,7 @@
 
                                     </template>
 
-                                    <div v-if="clickBookingSubmit && !dateText.length" class="text-red-800 font-bold text-sm mt-1">Поле не заполнено</div>
+                                    <div v-if="clickBookingSubmit && !dateText.length" class="text-red-800 font-bold text-[12px] mt-1">Поле не заполнено</div>
 
                                 </div>
                             </div>
@@ -293,7 +293,7 @@
                                     </div>
                                 </label>
                             </div>
-                            
+
                             <div class="group">
                                 <input id="check_circle3" type="checkbox" class="hidden" >
 
@@ -313,27 +313,27 @@
                             <div class="hidden xl:flex gap-3">
                                 <div class="w-full">
                                     <input type="text" name="Имя" v-model="inputNameBooking" class="w-full border-2  border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[14px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-3 px-4  outline-none placeholder:text-white" placeholder="Фамилия и Имя">
-                                    <div v-if="formBooking.errors.name" class="text-red-800 text-sm font-bold mt-1">{{ formBooking.errors.name}}</div>
-                                    <div v-if="clickBookingSubmit && !inputNameBooking" class="text-red-800 text-sm font-bold mt-1">Поле не заполнено</div>
+                                    <div v-if="formBooking.errors.name" class="text-red-800 text-[12px] font-bold mt-1">{{ formBooking.errors.name}}</div>
+                                    <div v-if="clickBookingSubmit && !inputNameBooking" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
                                 </div>
-                               
+
                                 <div class="w-full">
                                     <input type="phone" name="Телефон" v-model="inputPhoneBooking" class="w-full border-2 border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[14px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-3 px-4   outline-none placeholder:text-white" placeholder="Телефон">
-                                    <div v-if="formBooking.errors.phone" class="text-red-800 text-sm font-bold mt-1">{{ formBooking.errors.phone}}</div>
-                                    <div v-if="clickBookingSubmit && !inputPhoneBooking" class="text-red-800 text-sm font-bold mt-1">Поле не заполнено</div>
+                                    <div v-if="formBooking.errors.phone" class="text-red-800 text-[12px] font-bold mt-1">{{ formBooking.errors.phone}}</div>
+                                    <div v-if="clickBookingSubmit && !inputPhoneBooking" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
                                 </div>
                             </div>
 
                             <div class="xl:hidden">
                                 <input type="text" name="Имя" v-model="inputNameBooking" class=" w-full border-2  border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[16px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-5 px-4  outline-none placeholder:text-white" placeholder="Фамилия и Имя">
-                                <div v-if="formBooking.errors.name" class="text-red-800 text-sm font-bold mt-1">{{ formBooking.errors.name}}</div>
-                                <div v-if="clickBookingSubmit && !inputNameBooking" class="text-red-800 text-sm font-bold mt-1">Поле не заполнено</div>
+                                <div v-if="formBooking.errors.name" class="text-red-800 text-[12px] font-bold mt-1">{{ formBooking.errors.name}}</div>
+                                <div v-if="clickBookingSubmit && !inputNameBooking" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
                             </div>
-                            
+
                             <div class="xl:hidden">
                                 <input type="phone" name="Телефон" v-model="inputPhoneBooking" class="w-full border-2 border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[16px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 xl:py-5 px-4   outline-none placeholder:text-white" placeholder="Телефон">
-                                <div v-if="formBooking.errors.phone" class="text-red-800 text-sm font-bold mt-1">{{ formBooking.errors.phone}}</div>
-                                <div v-if="clickBookingSubmit && !inputPhoneBooking" class="text-red-800 text-sm font-bold mt-1">Поле не заполнено</div>
+                                <div v-if="formBooking.errors.phone" class="text-red-800 text-[12px] font-bold mt-1">{{ formBooking.errors.phone}}</div>
+                                <div v-if="clickBookingSubmit && !inputPhoneBooking" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
                             </div>
 
                             <div class="group">
@@ -355,7 +355,7 @@
                                     </div>
                                 </label>
 
-                                <div v-if="clickBookingSubmit && !inputCheckedBooking" class="text-red-800 text-sm font-bold mt-1">Для бронирования нужно согласиться</div>
+                                <div v-if="clickBookingSubmit && !inputCheckedBooking" class="text-red-800 text-[12px] font-bold mt-1">Для бронирования нужно согласиться</div>
 
                             </div>
 
@@ -398,13 +398,13 @@
                                 {{date}} <br />
                             </template>
 
-                            <template v-if="!dateText">
-                                ВЫБЕРИТЕ ДАТЫ
+                            <template v-if="!dateText.length" >
+                                <div :class="clickBookingSubmit && !dateText.length ? 'text-red-800 font-bold underline' : ''">
+                                    ВЫБЕРИТЕ ДАТЫ
+                                </div>
                             </template>
                         </div>
                     </div>
-
-
 
                     <div class="bg-white w-[2px] h-[25px] min-[768px]:h-[45px]">
 
@@ -417,11 +417,13 @@
                             <path d="M8.5 6.5C10.1569 6.5 11.5 5.15685 11.5 3.5C11.5 1.84315 10.1569 0.5 8.5 0.5C6.84315 0.5 5.5 1.84315 5.5 3.5C5.5 5.15685 6.84315 6.5 8.5 6.5Z" stroke="white"/>
                         </svg>
 
-                        <div class="text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px]">
+                        <div class="text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px]"
+                            :class="clickBookingSubmit && !activeCountOfPerson ? 'text-red-800 font-bold underline' : ''"
+                        >
                             <span>{{activeCountOfPerson}}</span> ЧЕЛ.
                         </div>
 
-                        <div v-if="openCountOfPerson" class="absolute bg-liorange w-full h-[1150%] min-[1024px]:h-80 text-center text-daorange text-[3.4vw] min-[450px]:text-[12.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] overflow-auto rounded-xl top-[220%] z-1">
+                        <div v-if="openCountOfPerson" class="absolute bg-white w-full h-[1150%] min-[1024px]:h-80 text-center text-daorange text-[3.4vw] min-[450px]:text-[12.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] overflow-auto rounded-xl top-[220%] z-1">
                             <div v-for="count in countOfPerson" :key="count" @click="activeCountOfPerson = count" class="py-2 min-[768px]:py-3 border-daorange border-b last:border-b-0">
                                 {{ count }}
                             </div>
@@ -429,45 +431,52 @@
                     </div>
                 </div>
 
-                <div class="flex gap-10">
-                    <div class="group">
-                        <input id="check_circle5" type="checkbox" class="hidden" >
 
-                        <label for="check_circle5" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
-                            <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
-                            <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
-                                Баня
-                            </div>
-                        </label>
+                    <div v-for="(date, index) in dateText" :key="date" class="flex gap-10">
+                        <div  class="group">
+                            <input :id="'check_circle' + 5 + index" type="checkbox" class="hidden" >
+
+                            <label @click="datesAndAdds(date, 0)" :for="'check_circle' + 5 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
+                                <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
+
+                                <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
+                                    Баня
+                                </div>
+                            </label>
+                        </div>
+
+                        <div  class="group">
+                            <input :id="'check_circle' + 6 + index" type="checkbox" class="hidden" >
+
+                            <label @click="datesAndAdds(date, 1)" :for="'check_circle' + 6 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
+                                <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
+
+                                <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
+                                    Чан
+                                </div>
+                            </label>
+                        </div>
+
+                        <div v-if="dateText.length > 1">
+                            {{ date }}
+                        </div>
                     </div>
-                    
-                    <div class="group">
-                        <input id="check_circle6" type="checkbox" class="hidden" >
 
-                        <label for="check_circle6" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
-                            <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
-                            <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
-                                Чан
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                
 
 
                 <form @submit.prevent="submitBooking()" class="flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3vw] min-[820px]:gap-[24.6px] min-[1024px]:gap-[25px]" >
                     <div>
                         <input type="text" name="Имя" v-model="inputNameBooking" class="w-full border-2  border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 px-4  outline-none placeholder:text-white" placeholder="Фамилия и Имя">
-                        <div v-if="formBooking.errors.name" class="text-red-800 text-sm font-bold mt-1">{{ formBooking.errors.name}}</div>
-                        <div v-if="clickBookingSubmit && !inputNameBooking" class="text-red-800 text-sm font-bold mt-1">Поле не заполнено</div>
+                        <div v-if="formBooking.errors.name" class="text-red-800 text-[12px] font-bold mt-1">{{ formBooking.errors.name}}</div>
+                        <div v-if="clickBookingSubmit && !inputNameBooking" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
                     </div>
-                    
+
                     <div>
                         <input type="phone" name="Телефон" v-model="inputPhoneBooking" class="w-full border-2 border-white text-[4.5vw] min-[450px]:text-[20.25px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] text-center rounded-full py-[5%] min-[768px]:py-[4.4%] min-[1024px]:py-6 px-4   outline-none placeholder:text-white" placeholder="Телефон">
-                        <div v-if="formBooking.errors.phone" class="text-red-800 text-sm font-bold mt-1">{{ formBooking.errors.phone}}</div>
-                        <div v-if="clickBookingSubmit && !inputPhoneBooking" class="text-red-800 text-sm font-bold mt-1">Поле не заполнено</div>
+                        <div v-if="formBooking.errors.phone" class="text-red-800 text-[12px] font-bold mt-1">{{ formBooking.errors.phone}}</div>
+                        <div v-if="clickBookingSubmit && !inputPhoneBooking" class="text-red-800 text-[12px] font-bold mt-1">Поле не заполнено</div>
                     </div>
 
                     <div class="group">
@@ -489,7 +498,7 @@
                             </div>
                         </label>
 
-                        <div v-if="clickBookingSubmit && !inputCheckedBooking" class="text-red-800 text-sm font-bold mt-1">Для бронирования нужно согласиться</div>
+                        <div v-if="clickBookingSubmit && !inputCheckedBooking" class="text-red-800 text-[12px] font-bold mt-1">Для бронирования нужно согласиться</div>
 
                     </div>
 
@@ -516,7 +525,7 @@
 
             </div>
         </div>
-        
+
     </div>
 </template>
 
@@ -597,13 +606,13 @@
 
                 formCalling.post('orderCalls', {preserveScroll: true})
             }
-            
+
         } else {
             console.log(false)
             inputCheckedOrderCall.value = false
         }
 
-        
+
     }
 
     const submitBooking = () => {
@@ -619,12 +628,12 @@
 
                 formBooking.post('booking', {preserveScroll: true})
             }
-            
+
         } else {
             console.log(false)
             inputCheckedBooking.value = false
         }
-  
+
     }
 
     // const submit = (event) => {
@@ -634,6 +643,40 @@
     // };
 
     let dateText = ref([])
+    let datesWithAdds =ref([])
+
+    function datesAndAdds(date, add) {
+        if (datesWithAdds.value.length) {
+            console.log('length > 0' + add + date)
+            for (let index1 = 0; index1 < datesWithAdds.value.length; index1++) {
+                for (let index2 = 0; index2 < datesWithAdds.value[index1].length; index2++) {
+                    if (datesWithAdds.value[index1][0] == date && datesWithAdds.value[index1].indexOf(add) == -1 ) {
+                        console.log('asdasd')
+                        datesWithAdds.value[index1].push(add)
+                        index1 = datesWithAdds.value.length - 1
+                        index2 = datesWithAdds.value[index1].length - 1
+                        break;
+                    } else if (datesWithAdds.value[index1][0] == date && datesWithAdds.value[index1].indexOf(add) != -1) {
+                        console.log(datesWithAdds.value[index1].indexOf(add))
+                        datesWithAdds.value[index1].splice(datesWithAdds.value[index1].indexOf(add), 1)
+                        index1 = datesWithAdds.value.length - 1
+                        index2 = datesWithAdds.value[index1].length - 1
+                        break;
+                    } else if (datesWithAdds.value[index1][0] != date && index1 == datesWithAdds.value.length - 1) {
+                        datesWithAdds.value.push([date, add])
+                        index1 = datesWithAdds.value.length - 1
+                        index2 = datesWithAdds.value[index1].length - 1
+                        break;
+                    }
+                }
+            }
+        } else {
+            console.log('length = 0' + add + date)
+            datesWithAdds.value.push([date, add])
+
+        }
+        console.log(datesWithAdds.value)
+    }
 
     let openCountOfPerson = ref(false)
     let countOfPerson = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -650,28 +693,42 @@
             disableAllDates: true,
             enableDates: ['2026-03-20:2030-03-23'],
             onClickDate(self, event) {
-                if (self.context.selectedDates[0]) {
-                    form.date_of_arrival = new Date(self.context.selectedDates[0])
-                    dateText.value = []
-                    for (let index = 0; index < self.context.selectedDates.length; index++) {
-                        let date = new Date(self.context.selectedDates[index])
-                        // dateText.value = strDate[9]
-                        let day = (date.getDate() < 10) ? '0' + date.getDate() : date.getDate()
-                        let month = (date.getMonth() + 1 < 10) ? '0' + (date.getMonth() + 1) : date.getMonth() + 1
-                        let year = date.getFullYear() - 2000
 
-                        dateText.value.push(day + '.' + month + '.' + year)
-                    }
-                } else {
-                    dateText.value = ['ВЫБЕРИТЕ ДАТЫ']
+                dateText.value = []
+                for (let index = 0; index < self.context.selectedDates.length; index++) {
+                    let date = new Date(self.context.selectedDates[index])
+                    // dateText.value = strDate[9]
+
+
+                    let day = (date.getDate() < 10) ? '0' + date.getDate() : date.getDate()
+                    let month = (date.getMonth() + 1 < 10) ? '0' + (date.getMonth() + 1) : date.getMonth() + 1
+                    let year = date.getFullYear() - 2000
+
+                    dateText.value.push(day + '.' + month + '.' + year)
                 }
 
-                if (self.context.selectedDates[1]) {
-                    form.date_of_departure = self.context.selectedDates[1]
-                } else {
-                    form.date_of_departure = new Date()
-                    form.date_of_departure.setDate(form.date_of_arrival.getDate() + 1)
-                }
+                // if (self.context.selectedDates[0]) {
+                //     form.date_of_arrival = new Date(self.context.selectedDates[0])
+                //     dateText.value = []
+                //     for (let index = 0; index < self.context.selectedDates.length; index++) {
+                //         let date = new Date(self.context.selectedDates[index])
+                //         // dateText.value = strDate[9]
+                //         let day = (date.getDate() < 10) ? '0' + date.getDate() : date.getDate()
+                //         let month = (date.getMonth() + 1 < 10) ? '0' + (date.getMonth() + 1) : date.getMonth() + 1
+                //         let year = date.getFullYear() - 2000
+
+                //         dateText.value.push(day + '.' + month + '.' + year)
+                //     }
+                // } else {
+                //     dateText.value = ['ВЫБЕРИТЕ ДАТЫ']
+                // }
+
+                // if (self.context.selectedDates[1]) {
+                //     form.date_of_departure = self.context.selectedDates[1]
+                // } else {
+                //     form.date_of_departure = new Date()
+                //     form.date_of_departure.setDate(form.date_of_arrival.getDate() + 1)
+                // }
 
 
                 console.log(self.context.selectedDates, event)
@@ -687,29 +744,19 @@
             disableAllDates: true,
             enableDates: ['2026-03-20:2030-03-23'],
             onClickDate(self, event) {
-                if (self.context.selectedDates[0]) {
-                    form.date_of_arrival = new Date(self.context.selectedDates[0])
-                    dateText.value = []
-                    for (let index = 0; index < self.context.selectedDates.length; index++) {
-                        let date = new Date(self.context.selectedDates[index])
-                        // dateText.value = strDate[9]
-                        let day = (date.getDate() < 10) ? '0' + date.getDate() : date.getDate()
-                        let month = (date.getMonth() + 1 < 10) ? '0' + (date.getMonth() + 1) : date.getMonth() + 1
-                        let year = date.getFullYear() - 2000
 
-                        dateText.value.push(day + '.' + month + '.' + year)
-                    }
-                } else {
-                    dateText.value = ['ВЫБЕРИТЕ ДАТЫ']
+                dateText.value = []
+                for (let index = 0; index < self.context.selectedDates.length; index++) {
+                    let date = new Date(self.context.selectedDates[index])
+                    // dateText.value = strDate[9]
+                    let day = (date.getDate() < 10) ? '0' + date.getDate() : date.getDate()
+                    let month = (date.getMonth() + 1 < 10) ? '0' + (date.getMonth() + 1) : date.getMonth() + 1
+                    let year = date.getFullYear() - 2000
+
+                    dateText.value.push(day + '.' + month + '.' + year)
                 }
 
-                if (self.context.selectedDates[1]) {
-                    form.date_of_departure = self.context.selectedDates[1]
-                } else {
-                    form.date_of_departure = new Date()
-                    form.date_of_departure.setDate(form.date_of_arrival.getDate() + 1)
-                }
-
+                
 
                 console.log(self.context.selectedDates, event)
             },
@@ -717,7 +764,7 @@
 
         calendar.init();
         calendar2.init();
-        
+
     })
 
     watch(inputNameOrderCall, (newValue) => {
@@ -748,5 +795,5 @@
     //     console.log('asdas')
     //     inputCheckedOrderCall.value = newValue
     // })
-    
+
 </script>
