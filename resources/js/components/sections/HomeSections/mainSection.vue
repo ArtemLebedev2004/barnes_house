@@ -206,7 +206,6 @@ import swiper from '@/components/reusable/swiper.vue';
 
 function SmoothVerticalScrolling(e, time, where) {
     let el = document.getElementById(e);
-    console.log(el)
     let eTop = el.getBoundingClientRect().top;
     let eAmt = eTop / 101;
     let curTime = 0;

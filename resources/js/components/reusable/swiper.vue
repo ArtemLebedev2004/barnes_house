@@ -77,7 +77,6 @@
 
     function SmoothVerticalScrolling(e, time, where) {
     let el = document.getElementById(e);
-    console.log(el)
     let eTop = el.getBoundingClientRect().top;
     let eAmt = eTop/102;
     let curTime = 0;

@@ -69,11 +69,9 @@ let bookings = ref(null)
 let fetchUsers = async() => {
   try {
     const response = await axios.get('/orderCalls')  // GET-запрос к API
-    console.log(response)
     orderCalls.value = response.data               // Сохраняем данные
 
     const response2 = await axios.get('/booking')  // GET-запрос к API
-    console.log(response2)
     bookings.value = response2.data
 
       for (let index1 = 0; index1 < bookings.value.length - 1; index1++) {

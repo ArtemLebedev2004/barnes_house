@@ -647,7 +647,6 @@ import axios from 'axios';
         clickOrderCallSubmit.value = true
 
         if (check_circle4.value.checked) {
-            console.log(true)
             inputCheckedOrderCall.value = true
 
             if (inputNameOrderCall.value && inputPhoneOrderCall.value) {
@@ -661,7 +660,6 @@ import axios from 'axios';
             }
 
         } else {
-            console.log(false)
             inputCheckedOrderCall.value = false
         }
 
@@ -679,7 +677,6 @@ import axios from 'axios';
         arr = []
         clickBookingSubmit.value = true
         if (check_circle2.value.checked || check_circle.value.checked) {
-            console.log(true)
             inputCheckedBooking.value = true
 
             if (inputNameBooking.value && inputPhoneBooking.value && dateText.value && activeCountOfPerson.value) {
@@ -731,7 +728,6 @@ import axios from 'axios';
 
         }  
         else {
-            console.log(false)
             inputCheckedBooking.value = false
         }
 
@@ -748,7 +744,6 @@ import axios from 'axios';
     let fetchUsers = async() => {
         try {
             const response2 = await axios.get('/booking')  // GET-запрос к API
-            console.log(response2)
             bookings.value = response2.data
             
             for (let index1 = 0; index1 < bookings.value.length; index1++) {
@@ -757,7 +752,6 @@ import axios from 'axios';
                 disableDates.value.push(date1)
             }
 
-            console.log(disableDates.value)
             
         } catch (err) {
             console.log(err) // Обрабатываем ошибку
@@ -769,11 +763,9 @@ import axios from 'axios';
 
     function datesAndAdds(date, add) {
         if (datesWithAdds.value.length) {
-            console.log('length > 0' + add + date)
             for (let index1 = 0; index1 < datesWithAdds.value.length; index1++) {
                 for (let index2 = 0; index2 < datesWithAdds.value[index1].length; index2++) {
                     if (datesWithAdds.value[index1][0] == date && datesWithAdds.value[index1].indexOf(add) == -1 ) {
-                        console.log('asdasd')
                         if (add == 0) {
                             saunaCount.value += 1
                         } else {
@@ -784,7 +776,6 @@ import axios from 'axios';
                         index2 = datesWithAdds.value[index1].length - 1
                         break;
                     } else if (datesWithAdds.value[index1][0] == date && datesWithAdds.value[index1].indexOf(add) != -1) {
-                        console.log(datesWithAdds.value[index1].indexOf(add))
                         if (add == 0) {
                             saunaCount.value -= 1
                             priceSauna.value -= 4000
@@ -810,7 +801,6 @@ import axios from 'axios';
                 }
             }
         } else {
-            console.log('length = 0' + add + date)
             if (add == 0) {
                 saunaCount.value += 1
             } else {
@@ -819,13 +809,11 @@ import axios from 'axios';
             datesWithAdds.value.push([date, add])
 
         }
-        console.log(datesWithAdds.value)
     }
 
     let openCountOfPerson = ref(false)
     let countOfPerson = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-    console.log(new Date().getFullYear() + '-0' + new Date().getMonth() + '-0' + new Date().getDate() + '1')
 
     onMounted(async() => {
             // document.addEventListener('click', () => {
@@ -867,23 +855,18 @@ import axios from 'axios';
                                 datesWithAdds.value.push([day + '.' + month + '.' + year])
                             } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length > dateText.value.length) {
                                 if (datesWithAdds.value[index2].indexOf(0) != -1) {
-                                    console.log('saunaCount.value -= 1')
                                     saunaCount.value -= 1
                                     priceSauna.value -= 4000
                                 }
                                 
                                 if (datesWithAdds.value[index2].indexOf(1) != -1) {
-                                    console.log('vatCount.value -= 1')
                                     vatCount.value -= 1
                                     priceVat.value -= 4000
 
                                 }
 
-                                console.log(datesWithAdds.value[index2])
-
                                 datesWithAdds.value.splice(index2, 1)
 
-                                
                             }
                         }
                     }
@@ -898,13 +881,11 @@ import axios from 'axios';
                             break;
                         } else if (index2 == dateText.value.length - 1) {
                             if (datesWithAdds.value[index1].indexOf(0) != -1) {
-                                    console.log('saunaCount.value -= 1')
                                     saunaCount.value -= 1
                                     priceSauna.value -= 4000
                                 }
                                 
                                 if (datesWithAdds.value[index1].indexOf(1) != -1) {
-                                    console.log('vatCount.value -= 1')
                                     vatCount.value -= 1
                                     priceVat.value -= 4000
 
@@ -931,7 +912,6 @@ import axios from 'axios';
                         datesWithAdds.value = []
                     }
 
-                console.log(datesWithAdds.value)
 
                 // if (self.context.selectedDates[0]) {
                 //     form.date_of_arrival = new Date(self.context.selectedDates[0])
@@ -957,7 +937,6 @@ import axios from 'axios';
                 // }
 
 
-                console.log(self.context.selectedDates, event)
             },
         });
 
@@ -992,19 +971,16 @@ import axios from 'axios';
                                 datesWithAdds.value.push([day + '.' + month + '.' + year])
                             } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length > dateText.value.length) {
                                 if (datesWithAdds.value[index2].indexOf(0) != -1) {
-                                    console.log('saunaCount.value -= 1')
                                     saunaCount.value -= 1
                                     priceSauna.value -= 4000
                                 }
                                 
                                 if (datesWithAdds.value[index2].indexOf(1) != -1) {
-                                    console.log('vatCount.value -= 1')
                                     vatCount.value -= 1
                                     priceVat.value -= 4000
 
                                 }
 
-                                console.log(datesWithAdds.value[index2])
 
                                 datesWithAdds.value.splice(index2, 1)
 
@@ -1023,13 +999,11 @@ import axios from 'axios';
                             break;
                         } else if (index2 == dateText.value.length - 1) {
                             if (datesWithAdds.value[index1].indexOf(0) != -1) {
-                                    console.log('saunaCount.value -= 1')
                                     saunaCount.value -= 1
                                     priceSauna.value -= 4000
                                 }
                                 
                                 if (datesWithAdds.value[index1].indexOf(1) != -1) {
-                                    console.log('vatCount.value -= 1')
                                     vatCount.value -= 1
                                     priceVat.value -= 4000
 
@@ -1056,10 +1030,6 @@ import axios from 'axios';
                         datesWithAdds.value = []
                     }
 
-                    console.log(datesWithAdds.value)
-                console.log(priceSauna.value, saunaCount.value, priceVat.value, vatCount.value)
-
-                console.log(self.context.selectedDates, event)
             },
         });
 
@@ -1107,7 +1077,6 @@ import axios from 'axios';
             priceDates.value = 0
         }
         
-        console.log(newValue)
     })
 
     watch(saunaCount, (newValue) => {
@@ -1115,14 +1084,12 @@ import axios from 'axios';
             priceSauna.value = 4000 * newValue
         }
 
-        console.log('watchSaunaCount', newValue)
     })
 
     watch(vatCount, (newValue) => {
         if (priceDates.value) {
             priceVat.value = 4000 * newValue
         }
-        console.log('watchVatCount', newValue)
 
     })
 
