@@ -2,6 +2,7 @@
     <swiper
         :menuButtons="menuButtons"
     />
+
     <div class="md:flex flex-row-reverse min-[1024px]:justify-between max-w-[450px] min-[768px]:max-w-[820px] lg:max-w-[1030px] xl:max-w-[1280px] 2xl:max-w-[1400px] px-4.5 min-[768px]:px-[23px] min-[1024px]:px-[30px] xl:px-[47px] m-auto min-[768px]:mt-[5%] min-[820px]:mt-[41px] min-[1024px]:mt-[30px]">
         <div class="md:hidden relative mt-[9.8%] text-[#F2F2F2] text-[19vw] min-[450px]:text-[85px] font-black leading-[100%] min-[450px]:leading-[85px] text-center">
             <div class="stroke_text ">
@@ -29,11 +30,11 @@
                         Консультация
                     </div>
 
-                    <a href="tel:89374541087" class="md:hidden relative w-[12vw] min-[450px]:w-[53.5px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] h-[12vw]  min-[450px]:h-[53.5px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] rounded-full bg-daorange flex items-center justify-center">
+                    <a href="tel:89374541087" class="md:hidden relative w-[12vw] min-[450px]:w-[53.5px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] h-[12vw]  min-[450px]:h-[53.5px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] rounded-full bg-daorange  flex items-center justify-center">
                         <img src="../../../../assets/icons/phone.svg" alt="" class="w-[40%]">
                     </a>
 
-                    <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="hidden relative w-[12vw] min-[450px]:w-[53.5px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] 2xl:w-[60px] h-[12vw]  min-[450px]:h-[53.5px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] 2xl:h-[60px] rounded-full bg-daorange md:flex items-center justify-center cursor-pointer">
+                    <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="hidden relative w-[12vw] min-[450px]:w-[53.5px] min-[768px]:w-[6vw] min-[820px]:w-[49.19px] 2xl:w-[60px] h-[12vw]  min-[450px]:h-[53.5px] min-[768px]:h-[6vw] min-[820px]:h-[49.19px] 2xl:h-[60px] rounded-full bg-daorange transition-all duration-150 hover:bg-white md:flex items-center justify-center cursor-pointer">
                         <img src="../../../../assets/icons/phone.svg" alt="" class="w-[40%]">
                     </div>
                 </div>
@@ -74,21 +75,21 @@
                     </div>
 
                     <div class="flex gap-8">
-                        <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services">
+                        <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services" class="group">
                             Условия проживания
-                            <div class="bg-daorange h-[1px]"></div>
+                            <div class="bg-daorange h-[1px] w-full transition-all duration-175 group-hover:w-1/2"></div>
                         </a>
-                        <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking">
+                        <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking" class="group">
                             Бронирование
-                            <div class="bg-daorange h-[1px]"></div>
+                            <div class="bg-daorange h-[1px] w-full transition-all duration-175 group-hover:w-1/2"></div>
                         </a>
-                        <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules">
+                        <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules" class="group">
                             Наши правила
-                            <div class="bg-daorange h-[1px]"></div>
+                            <div class="bg-daorange h-[1px] w-full transition-all duration-175 group-hover:w-1/2"></div>
                         </a>
-                        <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map">
+                        <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map" class="group">
                             Наш адрес
-                            <div class="bg-daorange h-[1px]"></div>
+                            <div class="bg-daorange h-[1px] w-full transition-all duration-175 group-hover:w-1/2"></div>
                         </a>
                     </div>
                 </div>
@@ -133,11 +134,11 @@
             </div>
 
             <div class="md:hidden xl:flex xl:justify-between text-[7vw] min-[450px]:text-[31.5px] md:text-[2.35vw] xl:text-[24px] mt-[8%] md:mt-[6%] xl:mt-6 2xl:mt-6.5 border-daorange border-2 rounded-[10.7vw] min-[450px]:rounded-[48.15px] xl:rounded-full p-[2.8%] md:p-[1.5%] xl:p-1.5 2xl:p-2 text-center">
-                <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="xl:w-full px-[31px] md:px-[13px] py-[3.6%] xl:py-4 bg-daorange text-white rounded-full cursor-pointer">
+                <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="xl:w-full px-[31px] md:px-[13px] py-[3.6%] xl:py-4 bg-daorange w-full transition-all duration-175 hover:bg-inherit hover:text-black text-white rounded-full cursor-pointer">
                     Забронировать
                 </div>
 
-                <div @click.prevent="SmoothVerticalScrolling('services', 275, 'top')" class="xl:w-full px-[31px] md:px-[13px] py-[3.3%] xl:py-4 bg-[#F2F2F2] rounded-full cursor-pointer">
+                <div @click.prevent="SmoothVerticalScrolling('services', 275, 'top')" class="xl:w-full px-[31px] md:px-[13px] py-[3.3%] xl:py-4 bg-[#F2F2F2] transition-all duration-175 hover:font-bold hover:text-daorange rounded-full cursor-pointer">
                     Посмотреть дом
                 </div>
             </div>
@@ -146,11 +147,11 @@
 
     <div class="max-w-[820px] min-[1024px]:max-w-[1030px] px-[23px] min-[1024px]:px-[30px] m-auto mt-[4%] min-[820px]:mt-[32.8px] ">
         <div class="hidden min-[768px]:flex xl:hidden text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[28px] border-daorange border-2 rounded-full  p-[1.5%] min-[1024px]:p-1.75  text-center">
-            <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="w-[50%] px-[20px] py-[2.6%] min-[1024px]:py-4 bg-daorange text-white rounded-full">
+            <div @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" class="w-[50%] px-[20px] py-[2.6%] min-[1024px]:py-4 bg-daorange text-white transition-all duration-175 hover:bg-inherit hover:text-black rounded-full">
                 Забронировать
             </div>
 
-            <div @click.prevent="SmoothVerticalScrolling('services', 275, 'top')" class="w-[50%] px-[31px] min-[768px]:px-[13px] py-[2.6%] min-[1024px]:py-4 bg-[#F2F2F2] rounded-full">
+            <div @click.prevent="SmoothVerticalScrolling('services', 275, 'top')" class="w-[50%] px-[31px] min-[768px]:px-[13px] py-[2.6%] min-[1024px]:py-4 bg-[#F2F2F2] transition-all duration-175 hover:bg-daorange rounded-full">
                 Посмотреть дом
             </div>
         </div>

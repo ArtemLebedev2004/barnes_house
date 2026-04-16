@@ -52,7 +52,7 @@
         </div>
 
         <div class="min-[768px]:flex min-[768px]:mt-[7%] min-[768px]:gap-[3vw] xl:gap-10 2xl:gap-15">
-            <div class="min-[768px]:w-[52%] min-[1024px]:w-90 xl:w-[51%] 2xl:w-[44%] relative ">
+            <div class="min-[768px]:w-[52%] min-[1024px]:w-90 xl:w-[47%] 2xl:w-[41.2%] relative ">
                 <div class="border-daorange border-2 p-[3.5%] min-[768px]:p-[3%] rounded-[12.3vw] min-[450px]:rounded-[55.35px] mt-[140%] md:mt-0">
                     <div class="relative">
                         <img src="../../../../assets/img/booking.jpg" alt="" class="rounded-[9.2vw] min-[450px]:rounded-[41.4px] md:rounded-[45px] pointer-events-none">
@@ -133,27 +133,27 @@
                             Перед бронированием ознакомьтесь
                         </div>
 
-                        <div @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" class="w-max leading-[115%] cursor-pointer">
+                        <div @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" class="w-max leading-[115%] cursor-pointer group">
                             с правилами дома
 
-                            <div class=" h-[1px] bg-daorange">
+                            <div class=" h-[1px] bg-daorange w-full transition-all duration-175 group-hover:w-[50%]">
 
                             </div>
 
-                            <div class=" h-[1px] bg-daorange mt-[2.8%]">
+                            <div class=" h-[1px] bg-daorange w-full mt-[2.8%] transition-all duration-175 group-hover:w-[50%]">
 
                             </div>
                         </div>
                     </div>
 
-                    <div class="hidden xl:block relative">
-                        Перед бронированием ознакомьтесь с <span @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" class="cursor-pointer">правилами дома</span>
+                    <div class="hidden xl:block relative group cursor-pointer">
+                        Перед бронированием ознакомьтесь с <span @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" class="cursor-pointer ">правилами дома</span>
                         <div class="absolute top-7 right-0 w-42">
-                            <div class="w-full h-[1px] bg-daorange">
+                            <div class="w-full h-[1px] bg-daorange  transition-all duration-175 group-hover:w-[50%]">
 
                             </div>
 
-                            <div class="w-full h-[1px] bg-daorange mt-[2.8%]">
+                            <div class="w-full h-[1px] bg-daorange mt-[2.8%]  transition-all duration-175 group-hover:w-[50%]">
 
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                     <div class="absolute w-max inset-x-0 m-auto px-[4%] xl:px-4 -top-[2.5%] min-[1024px]:-top-[12px] xl:-top-2.5 bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] xl:text-[12px] text-daorange">ПЕРВЫЙ ВАРИАНТ</div>
 
                     <div>
-                        <a href="tel:89374541087" class="block text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] xl:text-[16px] px-[69px] py-[5%] min-[1024px]:py-4 xl:py-3 bg-daorange rounded-full text-white">
+                        <a href="tel:89374541087" class="block text-center font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] xl:text-[16px] px-[69px] py-[5%] min-[1024px]:py-4 xl:py-3 bg-daorange transition-all duration-150 lg:hover:bg-liorange lg:hover:text-daorange rounded-full text-white">
                             Позвонить
                         </a>
 
@@ -191,13 +191,13 @@
                         <div class="group mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3">
                             <input ref="check_circle4" id="check_circle4" type="checkbox" name="Согласие" class="hidden">
 
-                            <label for="check_circle4" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] min-[1024px]:gap-7 xl:gap-4 items-center">
+                            <label for="check_circle4" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] min-[1024px]:gap-7 xl:gap-4 items-center cursor-pointer">
                                 <div class="">
                                     <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-[25px] xl:w-5 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-[25px] xl:h-5 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-daorange group-has-checked:bg-daorange"></div>
 
                                 </div>
 
-                                <div class="min-[1024px]:hidden w-fit text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[14px]  leading-[130%] min-[1024px]:leading-[30px] ">
+                                <a href="/site-rules" class="min-[1024px]:hidden w-fit text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[14px]  leading-[130%] min-[1024px]:leading-[30px] ">
                                     <div class="relative">
                                         Даю согласие на обработку
                                         <div class="absolute top-[90%] right-[4%] bg-daorange w-[80%] h-px min-[1024px]:h-[2.5px]">
@@ -207,52 +207,47 @@
                                     <div>
                                         своих персональных данных
                                     </div>
-                                </div>
+                                </a>
 
-                                <div class="hidden min-[1024px]:block relative text-[14px] xl:text-[10px]">
+                                <a href="/site-rules" class="hidden min-[1024px]:block relative text-[14px] xl:text-[10px]">
                                     Даю согласие на обработку своих персональных данных
 
                                     <div class="absolute top-4.75 xl:top-3 left-9 xl:left-6 bg-daorange w-40 xl:w-31 h-0.5  xl:h-px"></div>
-                                </div>
+                                </a>
                             </label>
                         </div>
 
                         <div v-if="clickOrderCallSubmit && !inputCheckedOrderCall" class="text-red-800 font-bold text-[12px] mt-1">Для заказа звонка нужно согласиться</div>
 
-                        <button @click="clickOrderCallSubmit = true" type="submit" class="w-full mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3 font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] xl:text-[16px] text-center px-[30px] xl:px-5 py-[5%] min-[1024px]:py-4 xl:py-2 bg-daorange rounded-full text-white">
+                        <button @click="clickOrderCallSubmit = true" type="submit" class="w-full mt-[7%] min-[768px]:mt-[9%] min-[1024px]:mt-5 xl:mt-3 font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[1024px]:text-[20px] xl:text-[16px] text-center px-[30px] xl:px-5 py-[5%] min-[1024px]:py-4 xl:py-2 bg-daorange transition-all duration-150 lg:hover:bg-liorange lg:hover:text-daorange rounded-full text-white cursor-pointer">
                             Заказать звонок
                         </button>
                     </form>
                 </div>
 
 
-                <div class="hidden xl:block relative border-daorange border-2 p-[4%] min-[768px]:p-[3%] xl:p-[2%] rounded-[10vw] min-[450px]:rounded-[45px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px]  xl:rounded-[40px] mt-[12%] min-[768px]:mt-[6%]">
+                <div class="bookingXL hidden xl:block relative border-daorange border-2 p-[4%] min-[768px]:p-[3%] xl:p-[2%] rounded-[10vw] min-[450px]:rounded-[45px] min-[768px]:rounded-[8vw] min-[820px]:rounded-[65.6px]  xl:rounded-[40px] mt-[12%] min-[768px]:mt-[6%]">
                     <div class="absolute w-max inset-x-0 m-auto px-[4%] xl:px-4 min-[1024px]:px-6 -top-[2.5%] min-[1024px]:-top-[12px] xl:-top-2.25 bg-[#F2F2F2] text-[3.9vw] min-[450px]:text-[17.55px] min-[1024px]:text-[16px] xl:text-[12px] text-daorange">ВТОРОЙ ВАРИАНТ</div>
 
 
-                    <div class=" bg-daorange p-[7.3%] min-[1024px]:p-10 xl:p-5 rounded-[7vw] min-[450px]:rounded-[31.5px] min-[768px]:rounded-[5.7vw] min-[820px]:rounded-[46.74px] xl:rounded-[31px] text-white flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3vw] min-[820px]:gap-[24.6px] min-[1024px]:gap-[25px] xl:gap-3">
+                    <div  class=" bg-daorange p-[7.3%] min-[1024px]:p-10 xl:p-5 rounded-[7vw] min-[450px]:rounded-[31.5px] min-[768px]:rounded-[5.7vw] min-[820px]:rounded-[46.74px] xl:rounded-[31px] text-white flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3vw] min-[820px]:gap-[24.6px] min-[1024px]:gap-[25px] xl:gap-3">
                         <div class="rounded-full flex items-center justify-between text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] xl:text-[14px] border-white border-[2px] px-[6%] py-[5%] min-[768px]:py-[3.5%] min-[1024px]:py-4 xl:py-3">
                             <div id="calendar" class="w-[66%] min-[768px]:w-[64%] min-[1024px]:w-[60%] flex gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3.5vw] min-[820px]:gap-[28.7px] items-center">
-                                <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[15.3%] min-[768px]:w-[13%] min-[1024px]:w-10  xl:w-6">
+                                <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[15.3%] min-[768px]:w-[13%] min-[1024px]:w-10  xl:w-6 cursor-pointer">
                                     <path d="M11.3 18.05H7.7C4.3061 18.05 2.6087 18.05 1.5548 16.9952C0.5009 15.9404 0.5 14.2439 0.5 10.85V9.05C0.5 5.6561 0.5 3.9587 1.5548 2.9048C2.6096 1.8509 4.3061 1.85 7.7 1.85H11.3C14.6939 1.85 16.3913 1.85 17.4452 2.9048C18.4991 3.9596 18.5 5.6561 18.5 9.05V10.85C18.5 14.2439 18.5 15.9413 17.4452 16.9952C16.8575 17.5838 16.07 17.8439 14.9 17.9582M5 1.85V0.5M14 1.85V0.5M18.05 6.35H8.375M0.5 6.35H3.9875" stroke="white" stroke-linecap="round"/>
                                     <path d="M14.9 13.5498C14.9 13.7885 14.8052 14.0174 14.6364 14.1862C14.4676 14.355 14.2387 14.4498 14 14.4498C13.7613 14.4498 13.5324 14.355 13.3636 14.1862C13.1948 14.0174 13.1 13.7885 13.1 13.5498C13.1 13.3111 13.1948 13.0822 13.3636 12.9134C13.5324 12.7446 13.7613 12.6498 14 12.6498C14.2387 12.6498 14.4676 12.7446 14.6364 12.9134C14.8052 13.0822 14.9 13.3111 14.9 13.5498ZM14.9 9.9498C14.9 10.1885 14.8052 10.4174 14.6364 10.5862C14.4676 10.755 14.2387 10.8498 14 10.8498C13.7613 10.8498 13.5324 10.755 13.3636 10.5862C13.1948 10.4174 13.1 10.1885 13.1 9.9498C13.1 9.71111 13.1948 9.48219 13.3636 9.31341C13.5324 9.14463 13.7613 9.0498 14 9.0498C14.2387 9.0498 14.4676 9.14463 14.6364 9.31341C14.8052 9.48219 14.9 9.71111 14.9 9.9498ZM10.4 13.5498C10.4 13.7885 10.3052 14.0174 10.1364 14.1862C9.96759 14.355 9.73867 14.4498 9.49998 14.4498C9.26128 14.4498 9.03236 14.355 8.86358 14.1862C8.6948 14.0174 8.59998 13.7885 8.59998 13.5498C8.59998 13.3111 8.6948 13.0822 8.86358 12.9134C9.03236 12.7446 9.26128 12.6498 9.49998 12.6498C9.73867 12.6498 9.96759 12.7446 10.1364 12.9134C10.3052 13.0822 10.4 13.3111 10.4 13.5498ZM10.4 9.9498C10.4 10.1885 10.3052 10.4174 10.1364 10.5862C9.96759 10.755 9.73867 10.8498 9.49998 10.8498C9.26128 10.8498 9.03236 10.755 8.86358 10.5862C8.6948 10.4174 8.59998 10.1885 8.59998 9.9498C8.59998 9.71111 8.6948 9.48219 8.86358 9.31341C9.03236 9.14463 9.26128 9.0498 9.49998 9.0498C9.73867 9.0498 9.96759 9.14463 10.1364 9.31341C10.3052 9.48219 10.4 9.71111 10.4 9.9498ZM5.89998 13.5498C5.89998 13.7885 5.80515 14.0174 5.63637 14.1862C5.46759 14.355 5.23867 14.4498 4.99998 14.4498C4.76128 14.4498 4.53236 14.355 4.36358 14.1862C4.1948 14.0174 4.09998 13.7885 4.09998 13.5498C4.09998 13.3111 4.1948 13.0822 4.36358 12.9134C4.53236 12.7446 4.76128 12.6498 4.99998 12.6498C5.23867 12.6498 5.46759 12.7446 5.63637 12.9134C5.80515 13.0822 5.89998 13.3111 5.89998 13.5498ZM5.89998 9.9498C5.89998 10.1885 5.80515 10.4174 5.63637 10.5862C5.46759 10.755 5.23867 10.8498 4.99998 10.8498C4.76128 10.8498 4.53236 10.755 4.36358 10.5862C4.1948 10.4174 4.09998 10.1885 4.09998 9.9498C4.09998 9.71111 4.1948 9.48219 4.36358 9.31341C4.53236 9.14463 4.76128 9.0498 4.99998 9.0498C5.23867 9.0498 5.46759 9.14463 5.63637 9.31341C5.80515 9.48219 5.89998 9.71111 5.89998 9.9498Z" fill="white"/>
                                 </svg>
 
-                                <div class="">
+                                <div class="cursor-pointer">
                                     <template v-for="date in dateText" :key="date">
                                         {{date}} <br />
                                     </template>
 
-                                    <template v-if="!dateText.length">
-                                        <div>
+                                    <template v-if="!dateText.length" >
+                                        <div :class="clickBookingSubmit && !dateText.length ? 'text-red-800 font-bold underline' : ''">
                                             ВЫБЕРИТЕ ДАТЫ
                                         </div>
-
-
                                     </template>
-
-                                    <div v-if="clickBookingSubmit && !dateText.length" class="text-red-800 font-bold text-[12px] mt-1">Поле не заполнено</div>
-
                                 </div>
                             </div>
 
@@ -262,18 +257,20 @@
 
                             </div>
 
-                            <div @click="openCountOfPerson = !openCountOfPerson" class="relative w-[18%] min-[768px]:w-[22%] flex items-center justify-between">
+                            <div @click="openCountOfPerson = !openCountOfPerson" class="relative w-[18%] min-[768px]:w-[22%] flex items-center justify-between cursor-pointer">
 
                                 <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[29%] min-[1024px]:w-9 xl:w-6">
                                     <path d="M0.5 14.5C0.5 13.4391 0.921427 12.4217 1.67157 11.6716C2.42172 10.9214 3.43913 10.5 4.5 10.5H12.5C13.5609 10.5 14.5783 10.9214 15.3284 11.6716C16.0786 12.4217 16.5 13.4391 16.5 14.5C16.5 15.0304 16.2893 15.5391 15.9142 15.9142C15.5391 16.2893 15.0304 16.5 14.5 16.5H2.5C1.96957 16.5 1.46086 16.2893 1.08579 15.9142C0.710714 15.5391 0.5 15.0304 0.5 14.5Z" stroke="white" stroke-linejoin="round"/>
                                     <path d="M8.5 6.5C10.1569 6.5 11.5 5.15685 11.5 3.5C11.5 1.84315 10.1569 0.5 8.5 0.5C6.84315 0.5 5.5 1.84315 5.5 3.5C5.5 5.15685 6.84315 6.5 8.5 6.5Z" stroke="white"/>
                                 </svg>
 
-                                <div class="text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] xl:text-[14px]">
+                                <div class="text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] xl:text-[14px]"
+                                    :class="clickBookingSubmit && !activeCountOfPerson ? 'text-red-800 font-bold underline' : ''"
+                                >
                                     <span>{{activeCountOfPerson}}</span> ЧЕЛ.
                                 </div>
 
-                                <div v-if="openCountOfPerson" class="absolute bg-liorange w-full h-[1150%] min-[1024px]:h-80 text-center text-daorange text-[3.4vw] min-[450px]:text-[12.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] xl:text-[14px] overflow-auto rounded-xl top-[220%] z-1">
+                                <div v-if="openCountOfPerson" class="absolute bg-white w-full h-[1150%] min-[1024px]:h-80 text-center text-daorange text-[3.4vw] min-[450px]:text-[12.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[16px] xl:text-[14px] overflow-auto rounded-xl top-[220%] z-1">
                                     <div v-for="count in countOfPerson" :key="count" @click="activeCountOfPerson = count" class="py-2 min-[768px]:py-3 border-daorange border-b last:border-b-0">
                                         {{ count }}
                                     </div>
@@ -281,12 +278,12 @@
                             </div>
                         </div>
 
-                        <div class="flex gap-10">
-                            <div class="group">
-                                <input id="check_circle1" type="checkbox" class="hidden" >
+                        <div v-for="(date, index) in dateText" :key="date" class="flex gap-10">
+                            <div  class="group">
+                                <input :id="'check_circle' + 1 + index" type="checkbox" class="hidden" >
 
-                                <label for="check_circle1" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
-                                    <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 xl:w-5 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 xl:h-5 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
+                                <label @click="datesAndAdds(date, 0)" :for="'check_circle' + 1 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center cursor-pointer">
+                                    <div class="w-6 h-6 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
                                     <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
                                         Баня
@@ -294,16 +291,20 @@
                                 </label>
                             </div>
 
-                            <div class="group">
-                                <input id="check_circle3" type="checkbox" class="hidden" >
+                            <div  class="group">
+                                <input :id="'check_circle' + 3 + index" type="checkbox" class="hidden" >
 
-                                <label for="check_circle3" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
-                                    <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 xl:w-5 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 xl:h-5 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
+                                <label @click="datesAndAdds(date, 1)" :for="'check_circle' + 3 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center cursor-pointer">
+                                    <div class="w-6 h-6 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
                                     <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
                                         Чан
                                     </div>
                                 </label>
+                            </div>
+
+                            <div v-if="dateText.length > 1">
+                                {{ date }}
                             </div>
                         </div>
 
@@ -337,12 +338,12 @@
                             </div>
 
                             <div class="group">
-                                <input id="check_circle" type="checkbox" class="hidden" >
+                                <input ref="check_circle" id="check_circle" type="checkbox" class="hidden" >
 
-                                <label for="check_circle" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] items-center">
+                                <label for="check_circle" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] items-center cursor-pointer">
                                     <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 xl:w-5 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 xl:h-5 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
-                                    <div class=" w-fit min-[768px]:w-auto text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[19.2px] min-[1024px]:text-[16px] xl:text-[12px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px] xl:gap-1">
+                                    <a href="/site-rules" class=" w-fit min-[768px]:w-auto text-[3.9vw] min-[450px]:text-[17.55px] min-[768px]:text-[2.3vw] min-[820px]:text-[19.2px] min-[1024px]:text-[16px] xl:text-[12px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px] xl:gap-1">
                                         <div class="relative">
                                             Даю согласие на обработку
                                             <div class="absolute top-[90%] min-[1024px]:top-[22px] xl:top-[15px] right-[4%] min-[768px]:right-0 min-[768px]:left-[17%] bg-white w-[80%] min-[1024px]:w-48.75 xl:w-36 h-px xl:h-[0.5px]">
@@ -352,18 +353,32 @@
                                         <div>
                                             своих персональных данных
                                         </div>
-                                    </div>
+                                    </a>
                                 </label>
 
                                 <div v-if="clickBookingSubmit && !inputCheckedBooking" class="text-red-800 text-[12px] font-bold mt-1">Для бронирования нужно согласиться</div>
 
                             </div>
 
-
-                            <button type="submit" class="font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[18px] text-center px-[30px] py-[5%] min-[768px]:py-[4.9%] min-[1024px]:py-6 xl:py-3 bg-white rounded-full text-daorange">
+                            <button type="submit" class="transition-all duration-150 hover:bg-white/90 font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] xl:text-[18px] text-center px-[15px] py-[5%] min-[768px]:py-[4.9%] min-[1024px]:py-6 xl:py-3 bg-white rounded-full text-daorange cursor-pointer">
                                 Забронировать
                             </button>
 
+                            <div v-if="priceDates" class="text-[16px]">
+                                <div class="flex gap-10">
+                                    <div>
+                                        <span class="font-bold">ИТОГО:</span>
+                                        {{ priceDates + priceSauna + priceVat }}
+                                    </div>
+                                    
+                                    <div>
+                                        дней х {{ dateText.length }} ({{ priceDates }})<span v-if="saunaCount">, баня х {{ saunaCount }} ({{ priceSauna }})</span><span v-if="vatCount">, чан х {{ vatCount }} ({{ priceVat }})</span>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            
                             <div class="text-[16px]">
                                 После бронирования Вам позвонят, чтобы его подтвердить
                             </div>
@@ -387,13 +402,13 @@
 
             <div class=" bg-daorange p-[7.3%] min-[1024px]:p-10 rounded-[7vw] min-[450px]:rounded-[31.5px] min-[768px]:rounded-[5.7vw] min-[820px]:rounded-[46.74px] text-white flex flex-col gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3vw] min-[820px]:gap-[24.6px] min-[1024px]:gap-[25px]">
                 <div class="rounded-full flex items-center justify-between text-[2.8vw] min-[450px]:text-[12.6px] min-[768px]:text-[2.3vw] min-[820px]:text-[18.86px] min-[1024px]:text-[16px] border-white border-[2px] px-[6%] py-[5%] min-[768px]:py-[3.5%] min-[1024px]:py-4">
-                    <div id="calendar2" class="w-[64%] min-[768px]:w-[64%] min-[1024px]:w-[60%] flex gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3.5vw] min-[820px]:gap-[28.7px] items-center">
+                    <div id="calendar2" class="w-[64%] min-[768px]:w-[64%] min-[1024px]:w-[60%] flex gap-[3.8vw] min-[450px]:gap-[17.1px] min-[768px]:gap-[3.5vw] min-[820px]:gap-[28.7px] items-center cursor-pointer">
                         <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[15.3%] min-[768px]:w-[13%] min-[1024px]:w-10">
                             <path d="M11.3 18.05H7.7C4.3061 18.05 2.6087 18.05 1.5548 16.9952C0.5009 15.9404 0.5 14.2439 0.5 10.85V9.05C0.5 5.6561 0.5 3.9587 1.5548 2.9048C2.6096 1.8509 4.3061 1.85 7.7 1.85H11.3C14.6939 1.85 16.3913 1.85 17.4452 2.9048C18.4991 3.9596 18.5 5.6561 18.5 9.05V10.85C18.5 14.2439 18.5 15.9413 17.4452 16.9952C16.8575 17.5838 16.07 17.8439 14.9 17.9582M5 1.85V0.5M14 1.85V0.5M18.05 6.35H8.375M0.5 6.35H3.9875" stroke="white" stroke-linecap="round"/>
                             <path d="M14.9 13.5498C14.9 13.7885 14.8052 14.0174 14.6364 14.1862C14.4676 14.355 14.2387 14.4498 14 14.4498C13.7613 14.4498 13.5324 14.355 13.3636 14.1862C13.1948 14.0174 13.1 13.7885 13.1 13.5498C13.1 13.3111 13.1948 13.0822 13.3636 12.9134C13.5324 12.7446 13.7613 12.6498 14 12.6498C14.2387 12.6498 14.4676 12.7446 14.6364 12.9134C14.8052 13.0822 14.9 13.3111 14.9 13.5498ZM14.9 9.9498C14.9 10.1885 14.8052 10.4174 14.6364 10.5862C14.4676 10.755 14.2387 10.8498 14 10.8498C13.7613 10.8498 13.5324 10.755 13.3636 10.5862C13.1948 10.4174 13.1 10.1885 13.1 9.9498C13.1 9.71111 13.1948 9.48219 13.3636 9.31341C13.5324 9.14463 13.7613 9.0498 14 9.0498C14.2387 9.0498 14.4676 9.14463 14.6364 9.31341C14.8052 9.48219 14.9 9.71111 14.9 9.9498ZM10.4 13.5498C10.4 13.7885 10.3052 14.0174 10.1364 14.1862C9.96759 14.355 9.73867 14.4498 9.49998 14.4498C9.26128 14.4498 9.03236 14.355 8.86358 14.1862C8.6948 14.0174 8.59998 13.7885 8.59998 13.5498C8.59998 13.3111 8.6948 13.0822 8.86358 12.9134C9.03236 12.7446 9.26128 12.6498 9.49998 12.6498C9.73867 12.6498 9.96759 12.7446 10.1364 12.9134C10.3052 13.0822 10.4 13.3111 10.4 13.5498ZM10.4 9.9498C10.4 10.1885 10.3052 10.4174 10.1364 10.5862C9.96759 10.755 9.73867 10.8498 9.49998 10.8498C9.26128 10.8498 9.03236 10.755 8.86358 10.5862C8.6948 10.4174 8.59998 10.1885 8.59998 9.9498C8.59998 9.71111 8.6948 9.48219 8.86358 9.31341C9.03236 9.14463 9.26128 9.0498 9.49998 9.0498C9.73867 9.0498 9.96759 9.14463 10.1364 9.31341C10.3052 9.48219 10.4 9.71111 10.4 9.9498ZM5.89998 13.5498C5.89998 13.7885 5.80515 14.0174 5.63637 14.1862C5.46759 14.355 5.23867 14.4498 4.99998 14.4498C4.76128 14.4498 4.53236 14.355 4.36358 14.1862C4.1948 14.0174 4.09998 13.7885 4.09998 13.5498C4.09998 13.3111 4.1948 13.0822 4.36358 12.9134C4.53236 12.7446 4.76128 12.6498 4.99998 12.6498C5.23867 12.6498 5.46759 12.7446 5.63637 12.9134C5.80515 13.0822 5.89998 13.3111 5.89998 13.5498ZM5.89998 9.9498C5.89998 10.1885 5.80515 10.4174 5.63637 10.5862C5.46759 10.755 5.23867 10.8498 4.99998 10.8498C4.76128 10.8498 4.53236 10.755 4.36358 10.5862C4.1948 10.4174 4.09998 10.1885 4.09998 9.9498C4.09998 9.71111 4.1948 9.48219 4.36358 9.31341C4.53236 9.14463 4.76128 9.0498 4.99998 9.0498C5.23867 9.0498 5.46759 9.14463 5.63637 9.31341C5.80515 9.48219 5.89998 9.71111 5.89998 9.9498Z" fill="white"/>
                         </svg>
 
-                        <div class="">
+                        <div class="cursor-pointer">
                             <template v-for="date in dateText" :key="date">
                                 {{date}} <br />
                             </template>
@@ -410,7 +425,7 @@
 
                     </div>
 
-                    <div @click="openCountOfPerson = !openCountOfPerson" class="relative w-[27%] min-[768px]:w-[22%] flex items-center justify-between">
+                    <div @click="openCountOfPerson = !openCountOfPerson" class="relative w-[27%] min-[768px]:w-[22%] flex items-center justify-between cursor-pointer">
 
                         <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[29%] min-[1024px]:w-9">
                             <path d="M0.5 14.5C0.5 13.4391 0.921427 12.4217 1.67157 11.6716C2.42172 10.9214 3.43913 10.5 4.5 10.5H12.5C13.5609 10.5 14.5783 10.9214 15.3284 11.6716C16.0786 12.4217 16.5 13.4391 16.5 14.5C16.5 15.0304 16.2893 15.5391 15.9142 15.9142C15.5391 16.2893 15.0304 16.5 14.5 16.5H2.5C1.96957 16.5 1.46086 16.2893 1.08579 15.9142C0.710714 15.5391 0.5 15.0304 0.5 14.5Z" stroke="white" stroke-linejoin="round"/>
@@ -437,7 +452,7 @@
                         <div  class="group">
                             <input :id="'check_circle' + 5 + index" type="checkbox" class="hidden" >
 
-                            <label @click="datesAndAdds(date, 0)" :for="'check_circle' + 5 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
+                            <label @click="datesAndAdds(date, 0)" :for="'check_circle' + 5 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center cursor-pointer">
                                 <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
                                 <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
@@ -449,7 +464,7 @@
                         <div  class="group">
                             <input :id="'check_circle' + 6 + index" type="checkbox" class="hidden" >
 
-                            <label @click="datesAndAdds(date, 1)" :for="'check_circle' + 6 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center">
+                            <label @click="datesAndAdds(date, 1)" :for="'check_circle' + 6 + index" class="flex gap-[2vw] min-[450px]:gap-[13px] items-center cursor-pointer">
                                 <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
                                 <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
@@ -480,12 +495,12 @@
                     </div>
 
                     <div class="group">
-                        <input id="check_circle2" type="checkbox" class="hidden" >
+                        <input ref="check_circle2" id="check_circle2" type="checkbox" class="hidden" >
 
-                        <label for="check_circle2" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] items-center">
+                        <label for="check_circle2" class="flex gap-[3.4vw] min-[450px]:gap-[15.3px] items-center cursor-pointer">
                             <div class="w-[6vw] min-[450px]:w-[27px] min-[1024px]:w-8 h-[6vw] min-[450px]:h-[27px] min-[1024px]:h-8 rounded-[1.5vw] min-[450px]:rounded-[6.75px] border-2 border-white group-has-checked:bg-white"></div>
 
-                            <div class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
+                            <a href="/site-rules" class=" w-fit min-[768px]:w-auto text-[3.5vw] min-[450px]:text-[16px] min-[768px]:text-[2vw] min-[820px]:text-[16px] min-[1024px]:text-[16px] leading-[130%] min-[768px]:flex min-[768px]:gap-[0.8vw] min-[820px]:gap-[6.56px]">
                                 <div class="relative">
                                     Даю согласие на обработку
                                     <div class="absolute top-[90%] min-[1024px]:top-[22px] right-[4%] min-[768px]:right-0 min-[768px]:left-[17%] bg-white w-[80%] min-[1024px]:w-48.75 h-px">
@@ -495,17 +510,27 @@
                                 <div>
                                     своих персональных данных
                                 </div>
-                            </div>
+                            </a>
                         </label>
 
                         <div v-if="clickBookingSubmit && !inputCheckedBooking" class="text-red-800 text-[12px] font-bold mt-1">Для бронирования нужно согласиться</div>
 
                     </div>
 
-
-                    <button type="submit" class="font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] text-center px-[30px] py-[5%] min-[768px]:py-[4.9%] min-[1024px]:py-6 bg-white rounded-full text-daorange">
+                    <button type="submit" class=" font-semibold text-[4.8vw] min-[450px]:text-[21.6px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px]  min-[1024px]:text-[20px] text-center px-[30px] py-[5%] min-[768px]:py-[4.9%] min-[1024px]:py-6 bg-white rounded-full text-daorange cursor-pointer">
                         Забронировать
                     </button>
+
+                    <div v-if="priceDates" class="text-[20px]">
+                        <div>
+                            <span class="font-bold">ИТОГО:</span>
+                            {{ priceDates + priceSauna + priceVat }}
+                        </div>
+                        
+                        <div>
+                            дней х {{ dateText.length }} ({{ priceDates }})<span v-if="saunaCount">, баня х {{ saunaCount }} ({{ priceSauna }})</span><span v-if="vatCount">, чан х {{ vatCount }} ({{ priceVat }})</span>
+                        </div>
+                    </div>
 
                     <div class="text-[14px] md:text-[16px]">
                         После бронирования Вам позвонят, чтобы его подтвердить
@@ -521,16 +546,35 @@
 
                 </form>
 
-
-
             </div>
         </div>
+
+    </div>
+
+    <div v-if="successOrderCall" class="fixed z-2 w-[90%] md:w-[600px] h-max px-5 py-10 m-auto inset-0 rounded-[20px] bg-white">
+        <img src="../../../../assets/icons/check_mark.svg" alt="" class="mx-auto">
+        <div class="text-center mt-5">Вы успешно заказали звонок</div>
+    </div>
+
+    <div v-if="successOrderCall" @click="successOrderCall = false" class="fixed inset-0 bg-black/60">
+
+    </div>
+
+
+    <div v-if="successBooking" class="fixed z-3 w-[90%] md:w-[600px] h-max px-5 py-10 m-auto inset-0 rounded-[20px] bg-white">
+        <img src="../../../../assets/icons/check_mark.svg" alt="" class="mx-auto">
+        <div class="text-center mt-5">Вы успешно забронировали дом</div>
+        <div class="text-center mt-5">Эта страница сейчас перезагрузится</div>
+    </div>
+
+    <div v-if="successBooking" class="fixed inset-0 z-2 bg-black/60">
 
     </div>
 </template>
 
 <script setup>
     import { useForm } from '@inertiajs/vue3';
+import axios from 'axios';
     import { Circle } from 'lucide-vue-next';
     import { Calendar } from 'vanilla-calendar-pro';
     import 'vanilla-calendar-pro/styles/index.css';
@@ -568,6 +612,11 @@
     // }
 
     let check_circle4 = useTemplateRef('check_circle4')
+    let check_circle2 = useTemplateRef('check_circle2')
+    let check_circle = useTemplateRef('check_circle')
+
+    let bookingXL = document.getElementsByClassName('bookingXL')
+
 
     let clickOrderCallSubmit = ref(false)
     let clickBookingSubmit = ref(false)
@@ -579,20 +628,21 @@
     let inputCheckedOrderCall = ref(false)
     let inputCheckedBooking = ref(false)
 
+    let saunaCount = ref(0)
+    let vatCount = ref(0)
 
-    const formCalling = useForm(reactive({
+    let priceDates = ref(0)
+    let priceSauna = ref(0)
+    let priceVat = ref(0)
+
+    const formCalling = useForm({
         name: '',
         phone: ''
-    }));
-
-    const formBooking = useForm({
-        name: '',
-        phone: '',
-        date_of_arrival: "",
-        date_of_departure: "",
-        count_of_persons: activeCountOfPerson.value,
     });
 
+    let successOrderCall = ref(false)
+    let successBooking = ref(false)
+    
     const submitOrderCall = () => {
         clickOrderCallSubmit.value = true
 
@@ -604,7 +654,10 @@
                 formCalling.name = inputNameOrderCall.value
                 formCalling.phone = inputPhoneOrderCall.value
 
-                formCalling.post('orderCalls', {preserveScroll: true})
+                formCalling.post('orderCalls', {preserveScroll: true, onSuccess: () => {
+                    successOrderCall.value = true
+                }})
+                
             }
 
         } else {
@@ -613,23 +666,71 @@
         }
 
 
+
     }
 
-    const submitBooking = () => {
-        clickBookingSubmit.value = true
+    let arr = []
 
-        if (check_circle4.value.checked) {
+    const formBooking = useForm({
+        arr: []
+    });
+
+    const submitBooking = () => {
+        arr = []
+        clickBookingSubmit.value = true
+        if (check_circle2.value.checked || check_circle.value.checked) {
             console.log(true)
             inputCheckedBooking.value = true
 
-            if (inputNameOrderCall.value && inputPhoneOrderCall.value) {
-                formBooking.name = inputNameBooking.value
-                formBooking.phone = inputPhoneBooking.value
+            if (inputNameBooking.value && inputPhoneBooking.value && dateText.value && activeCountOfPerson.value) {
+                for (let index1 = 0; index1 < datesWithAdds.value.length; index1++) {
+                    arr.push([])
+                    arr[index1].push(inputNameBooking.value)
+                    arr[index1].push(inputPhoneBooking.value)
+                    arr[index1].push(datesWithAdds.value[index1][0])
+                    arr[index1].push(activeCountOfPerson.value)
+                    arr[index1].push(priceDates.value + priceSauna.value + priceVat.value)
+                    arr[index1].push(false)
+                    if (datesWithAdds.value[index1][1] == 0) {
+                        arr[index1].push(true)
 
-                formBooking.post('booking', {preserveScroll: true})
+                    } else if (datesWithAdds.value[index1][1] == 1) {
+                        arr[index1].push(false)
+                        arr[index1].push(true)
+
+                        continue;
+
+                    } else {
+                        arr[index1].push(false)
+                        arr[index1].push(false)
+
+                        continue;
+                    }
+
+                    if (datesWithAdds.value[index1][2]) {
+                        arr[index1].push(true)
+
+                    } else {
+                        arr[index1].push(false)
+
+                    }
+                    
+                }
+
+                formBooking.arr=arr
+
+                formBooking.post('booking', {preserveScroll: true, onSuccess: async() => {
+                    successBooking.value = true
+                }})
+
+                setTimeout(function(){
+                    location = ''
+                }, 3000)
+                
             }
 
-        } else {
+        }  
+        else {
             console.log(false)
             inputCheckedBooking.value = false
         }
@@ -642,6 +743,27 @@
 
     // };
 
+    let bookings = ref([])
+    let disableDates = ref([])
+    let fetchUsers = async() => {
+        try {
+            const response2 = await axios.get('/booking')  // GET-запрос к API
+            console.log(response2)
+            bookings.value = response2.data
+            
+            for (let index1 = 0; index1 < bookings.value.length; index1++) {
+                let date1 = '20' + bookings.value[index1].date[6] + bookings.value[index1].date[7] + '-' + bookings.value[index1].date[3] + bookings.value[index1].date[4] + '-' +  + bookings.value[index1].date[0] + bookings.value[index1].date[1]
+
+                disableDates.value.push(date1)
+            }
+
+            console.log(disableDates.value)
+            
+        } catch (err) {
+            console.log(err) // Обрабатываем ошибку
+        }
+    }
+
     let dateText = ref([])
     let datesWithAdds =ref([])
 
@@ -652,17 +774,34 @@
                 for (let index2 = 0; index2 < datesWithAdds.value[index1].length; index2++) {
                     if (datesWithAdds.value[index1][0] == date && datesWithAdds.value[index1].indexOf(add) == -1 ) {
                         console.log('asdasd')
+                        if (add == 0) {
+                            saunaCount.value += 1
+                        } else {
+                            vatCount.value += 1
+                        }
                         datesWithAdds.value[index1].push(add)
                         index1 = datesWithAdds.value.length - 1
                         index2 = datesWithAdds.value[index1].length - 1
                         break;
                     } else if (datesWithAdds.value[index1][0] == date && datesWithAdds.value[index1].indexOf(add) != -1) {
                         console.log(datesWithAdds.value[index1].indexOf(add))
+                        if (add == 0) {
+                            saunaCount.value -= 1
+                            priceSauna.value -= 4000
+                        } else {
+                            vatCount.value -= 1
+                            priceVat.value -= 4000
+                        }
                         datesWithAdds.value[index1].splice(datesWithAdds.value[index1].indexOf(add), 1)
                         index1 = datesWithAdds.value.length - 1
                         index2 = datesWithAdds.value[index1].length - 1
                         break;
                     } else if (datesWithAdds.value[index1][0] != date && index1 == datesWithAdds.value.length - 1) {
+                        if (add == 0) {
+                            saunaCount.value += 1
+                        } else {
+                            vatCount.value += 1
+                        }
                         datesWithAdds.value.push([date, add])
                         index1 = datesWithAdds.value.length - 1
                         index2 = datesWithAdds.value[index1].length - 1
@@ -672,6 +811,11 @@
             }
         } else {
             console.log('length = 0' + add + date)
+            if (add == 0) {
+                saunaCount.value += 1
+            } else {
+                vatCount.value += 1
+            }
             datesWithAdds.value.push([date, add])
 
         }
@@ -681,31 +825,113 @@
     let openCountOfPerson = ref(false)
     let countOfPerson = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-    onMounted(() => {
-        check_circle4.value.focus()
+    console.log(new Date().getFullYear() + '-0' + new Date().getMonth() + '-0' + new Date().getDate() + '1')
 
+    onMounted(async() => {
+            // document.addEventListener('click', () => {
+            //     if (openCountOfPerson.value) {
+            //         openCountOfPerson.value = false
+            //     }
+            // })
+
+        check_circle4.value.focus()
+        await fetchUsers()
         const calendar = new Calendar('#calendar', {
             locale: 'ru-RU',
             selectionDatesMode: 'multiple',
             inputMode: true,
+            displayDateMin: new Date().getDate() > 8 ? new Date().getFullYear() + '-0' + (new Date().getMonth()+1) + '-' + (new Date().getDate() + 1) : new Date().getFullYear() + '-0' + (new Date().getMonth()+1) + '-0' + (new Date().getDate() + 1) ,
             openOnFocus: true,
             selectedTheme: 'light',
-            disableAllDates: true,
-            enableDates: ['2026-03-20:2030-03-23'],
+            disableDates: disableDates.value,
+            
             onClickDate(self, event) {
-
                 dateText.value = []
                 for (let index = 0; index < self.context.selectedDates.length; index++) {
                     let date = new Date(self.context.selectedDates[index])
                     // dateText.value = strDate[9]
-
-
                     let day = (date.getDate() < 10) ? '0' + date.getDate() : date.getDate()
                     let month = (date.getMonth() + 1 < 10) ? '0' + (date.getMonth() + 1) : date.getMonth() + 1
                     let year = date.getFullYear() - 2000
 
                     dateText.value.push(day + '.' + month + '.' + year)
+
+                    if (!datesWithAdds.value.length) {
+                        datesWithAdds.value.push([day + '.' + month + '.' + year])
+                    } else {
+                        for (let index2 = 0; index2 < datesWithAdds.value.length; index2++) {
+                            if (datesWithAdds.value[index2].indexOf(day + '.' + month + '.' + year) != -1) {
+                                
+                                break;
+                            } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length < dateText.value.length) {
+                                datesWithAdds.value.push([day + '.' + month + '.' + year])
+                            } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length > dateText.value.length) {
+                                if (datesWithAdds.value[index2].indexOf(0) != -1) {
+                                    console.log('saunaCount.value -= 1')
+                                    saunaCount.value -= 1
+                                    priceSauna.value -= 4000
+                                }
+                                
+                                if (datesWithAdds.value[index2].indexOf(1) != -1) {
+                                    console.log('vatCount.value -= 1')
+                                    vatCount.value -= 1
+                                    priceVat.value -= 4000
+
+                                }
+
+                                console.log(datesWithAdds.value[index2])
+
+                                datesWithAdds.value.splice(index2, 1)
+
+                                
+                            }
+                        }
+                    }
+
+                   
+
                 }
+
+                for (let index1 = 0; index1 < datesWithAdds.value.length; index1++) {
+                    for (let index2 = 0; index2 < dateText.value.length; index2++) {
+                        if (datesWithAdds.value[index1].indexOf(dateText.value[index2]) != -1) {
+                            break;
+                        } else if (index2 == dateText.value.length - 1) {
+                            if (datesWithAdds.value[index1].indexOf(0) != -1) {
+                                    console.log('saunaCount.value -= 1')
+                                    saunaCount.value -= 1
+                                    priceSauna.value -= 4000
+                                }
+                                
+                                if (datesWithAdds.value[index1].indexOf(1) != -1) {
+                                    console.log('vatCount.value -= 1')
+                                    vatCount.value -= 1
+                                    priceVat.value -= 4000
+
+                                }
+                            datesWithAdds.value.splice(index1, 1)
+                            index1 = datesWithAdds.value.length - 1
+                            break;
+                        }
+                    } 
+                }
+
+                if (!dateText.value.length) {
+                        if (datesWithAdds.value[0].indexOf(0) != -1) {
+                            saunaCount.value -= 1
+                            priceSauna.value -= 4000
+
+                        }
+                        
+                        if (datesWithAdds.value[0].indexOf(1) != -1) {
+                            vatCount.value -= 1
+                            priceVat.value -= 4000
+
+                        }
+                        datesWithAdds.value = []
+                    }
+
+                console.log(datesWithAdds.value)
 
                 // if (self.context.selectedDates[0]) {
                 //     form.date_of_arrival = new Date(self.context.selectedDates[0])
@@ -740,9 +966,9 @@
             selectionDatesMode: 'multiple',
             inputMode: true,
             openOnFocus: true,
+            displayDateMin: new Date().getDate() > 8 ? new Date().getFullYear() + '-0' + (new Date().getMonth()+1) + '-' + (new Date().getDate() + 1) : new Date().getFullYear() + '-0' + (new Date().getMonth()+1) + '-0' + (new Date().getDate() + 1) ,
             selectedTheme: 'light',
-            disableAllDates: true,
-            enableDates: ['2026-03-20:2030-03-23'],
+            disableDates: disableDates.value,
             onClickDate(self, event) {
 
                 dateText.value = []
@@ -754,9 +980,84 @@
                     let year = date.getFullYear() - 2000
 
                     dateText.value.push(day + '.' + month + '.' + year)
+
+                    if (!datesWithAdds.value.length) {
+                        datesWithAdds.value.push([day + '.' + month + '.' + year])
+                    } else {
+                        for (let index2 = 0; index2 < datesWithAdds.value.length; index2++) {
+                            if (datesWithAdds.value[index2].indexOf(day + '.' + month + '.' + year) != -1) {
+                                
+                                break;
+                            } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length < dateText.value.length) {
+                                datesWithAdds.value.push([day + '.' + month + '.' + year])
+                            } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length > dateText.value.length) {
+                                if (datesWithAdds.value[index2].indexOf(0) != -1) {
+                                    console.log('saunaCount.value -= 1')
+                                    saunaCount.value -= 1
+                                    priceSauna.value -= 4000
+                                }
+                                
+                                if (datesWithAdds.value[index2].indexOf(1) != -1) {
+                                    console.log('vatCount.value -= 1')
+                                    vatCount.value -= 1
+                                    priceVat.value -= 4000
+
+                                }
+
+                                console.log(datesWithAdds.value[index2])
+
+                                datesWithAdds.value.splice(index2, 1)
+
+                                
+                            }
+                        }
+                    }
+
+                   
+
                 }
 
-                
+                for (let index1 = 0; index1 < datesWithAdds.value.length; index1++) {
+                    for (let index2 = 0; index2 < dateText.value.length; index2++) {
+                        if (datesWithAdds.value[index1].indexOf(dateText.value[index2]) != -1) {
+                            break;
+                        } else if (index2 == dateText.value.length - 1) {
+                            if (datesWithAdds.value[index1].indexOf(0) != -1) {
+                                    console.log('saunaCount.value -= 1')
+                                    saunaCount.value -= 1
+                                    priceSauna.value -= 4000
+                                }
+                                
+                                if (datesWithAdds.value[index1].indexOf(1) != -1) {
+                                    console.log('vatCount.value -= 1')
+                                    vatCount.value -= 1
+                                    priceVat.value -= 4000
+
+                                }
+                            datesWithAdds.value.splice(index1, 1)
+                            index1 = datesWithAdds.value.length - 1
+                            break;
+                        }
+                    } 
+                }
+
+                if (!dateText.value.length) {
+                        if (datesWithAdds.value[0].indexOf(0) != -1) {
+                            saunaCount.value -= 1
+                            priceSauna.value -= 4000
+
+                        }
+                        
+                        if (datesWithAdds.value[0].indexOf(1) != -1) {
+                            vatCount.value -= 1
+                            priceVat.value -= 4000
+
+                        }
+                        datesWithAdds.value = []
+                    }
+
+                    console.log(datesWithAdds.value)
+                console.log(priceSauna.value, saunaCount.value, priceVat.value, vatCount.value)
 
                 console.log(self.context.selectedDates, event)
             },
@@ -795,5 +1096,35 @@
     //     console.log('asdas')
     //     inputCheckedOrderCall.value = newValue
     // })
+
+    watch(dateText, (newValue) => {
+        if (newValue.length) {
+            // if (saunaCount.value > newValue.length) {
+                
+            // }
+            priceDates.value = 12000 * newValue.length
+        } else {
+            priceDates.value = 0
+        }
+        
+        console.log(newValue)
+    })
+
+    watch(saunaCount, (newValue) => {
+        if (priceDates.value ) {
+            priceSauna.value = 4000 * newValue
+        }
+
+        console.log('watchSaunaCount', newValue)
+    })
+
+    watch(vatCount, (newValue) => {
+        if (priceDates.value) {
+            priceVat.value = 4000 * newValue
+        }
+        console.log('watchVatCount', newValue)
+
+    })
+
 
 </script>

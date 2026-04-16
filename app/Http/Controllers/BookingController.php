@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Booking;
 use App\Http\Requests\StoreBookingRequest;
 use App\Http\Requests\UpdateBookingRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BookingController extends Controller
 {
@@ -13,7 +15,9 @@ class BookingController extends Controller
      */
     public function index()
     {
-        //
+        $bookings = Booking::all();
+
+        return $bookings;
     }
 
     /**
@@ -27,10 +31,26 @@ class BookingController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreBookingRequest $request)
+    public function store(Request $request)
     {
-        $data = $request->validated();
-        $post = Booking::create($data);
+        // echo($request);
+        foreach ($request->arr as $item) {
+            $booking = new Booking;
+            // echo($request->arr);
+            $booking->name = $item[0];
+            $booking->phone = $item[1];
+            $booking->date = $item[2];
+            $booking->count_of_persons = $item[3];
+            $booking->cost = $item[4];
+            $booking->isConfirm = $item[5];
+            $booking->sauna = $item[6];
+            $booking->vat = $item[7];
+
+            $booking->save();
+        }
+        // $post = Booking::create([
+
+        // ]);
         // return redirect()->route('index');
     }
 
@@ -63,6 +83,6 @@ class BookingController extends Controller
      */
     public function destroy(Booking $booking)
     {
-        //
+        $booking->delete();
     }
 }

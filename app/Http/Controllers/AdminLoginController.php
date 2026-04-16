@@ -12,6 +12,16 @@ class AdminLoginController extends Controller
 {
     public function login(Request $request)
     {
+        // $validated = $request->validate([
+        //     'login' => 'required',
+        //     'password' => 'required',
+        // ]);
+
+        // $user = User::create([
+        //     'login' => $validated['login'],
+        //     'password' => Hash::make($validated['password']),
+        // ]);
+
         $credentials = $request->validate([
             'login' => ['required'],
             'password' => ['required'],

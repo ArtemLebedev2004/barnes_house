@@ -64,6 +64,7 @@ class OrderCallController extends Controller
      */
     public function destroy(OrderCall $orderCall)
     {
-        //
+        $orderCall->delete();
+        
     }
 }

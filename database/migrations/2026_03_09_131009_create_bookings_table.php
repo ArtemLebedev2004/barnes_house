@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->string('surname')->nullable();
             $table->string('phone')->nullable();
-            $table->string('date_of_arrival')->nullable();
-            $table->string('date_of_departure')->nullable();
-            $table->string('count_of_persons')->nullable();
+            $table->string('date')->nullable();
+            $table->boolean('sauna')->nullable();
+            $table->boolean('vat')->nullable();
+            $table->integer('cost')->nullable();
+            $table->integer('count_of_persons')->nullable();
+            $table->boolean('isConfirm')->nullable();
             $table->timestamps();
         });
     }

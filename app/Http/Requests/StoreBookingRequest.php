@@ -22,12 +22,18 @@ class StoreBookingRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'string',
-            'surname' => 'string',
-            'phone' => 'min:3',
-            'date_of_arrival' => 'string',
-            'date_of_departure' => 'string',
-            'count_of_persons' => 'integer',
+            // foreach ($variable as $key => $value) {
+            //     # code...
+            // }
+            // 'name' => 'string',
+            // 'surname' => 'string',
+            // 'phone' => 'min:11',
+            // 'date' => 'string',
+            // 'sauna' => 'boolean',
+            // 'vat' => 'boolean',
+            // 'cost' => 'integer',
+            // 'count_of_persons' => 'integer',
+            // 'isConfirm' => 'boolean'
         ];
     }
 }

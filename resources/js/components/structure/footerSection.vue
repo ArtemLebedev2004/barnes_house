@@ -25,16 +25,16 @@
             </div>
 
             <div class="flex flex-col min-[1024px]:flex-row gap-[6vw] min-[450px]:gap-[27px] min-[1024px]:gap-[55px] justify-center items-center mt-[11.2%] min-[1024px]:mt-18 xl:mt-12 text-sand uppercase text-[4vw] min-[450px]:text-[18px] min-[768px]:text-[2.5vw] min-[820px]:text-[20.5px] min-[1024px]:text-[16px] font-bold">
-                <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services">
+                <a @click.prevent="SmoothVerticalScrolling('services', 275, 'top')"  href="#services" class="  transition-all duration-150 lg:hover:rotate-4">
                     Условия проживания
                 </a>
-                <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking">
+                <a @click.prevent="SmoothVerticalScrolling('booking', 275, 'top')" href="#booking" class="  transition-all duration-150 lg:hover:rotate-4">
                     Бронирование
                 </a>
-                <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules">
+                <a @click.prevent="SmoothVerticalScrolling('rules', 275, 'top')" href="#rules" class="  transition-all duration-150 lg:hover:rotate-4">
                     Наши правила
                 </a>
-                <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map">
+                <a @click.prevent="SmoothVerticalScrolling('map', 275, 'top')"  href="#map" class="  transition-all duration-150 lg:hover:rotate-4">
                     Наш адрес
                 </a>
             </div>
@@ -89,7 +89,8 @@
                 </div>
 
                 <div class="uppercase w-max">
-                    ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ
+                    <a href="/site-rules" target="_blank">правила пользования сайтом</a>
+                    
                     <div class="bg-daorange h-[2px]">
                     </div>
                 </div>
@@ -140,11 +141,11 @@
                     </div>
                 </div>
 
-                <div class="uppercase w-max">
-                    ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ
+                <a href="/site-rules" class="uppercase w-max block">
+                    Правила пользования сайтом
                     <div class="bg-daorange h-[2px]">
                     </div>
-                </div>
+                </a>
 
 
             </div>

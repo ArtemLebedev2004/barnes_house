@@ -76,14 +76,14 @@
             </div>
 
             <div class="mt-[12.5%] min-[768px]:mt-[8%] min-[1024px]:mt-0 lg:w-130 xl:w-[45%] 2xl:w-[55%] relative right-0 text-[4.45vw] min-[450px]:text-[20px] min-[768px]:text-[3vw] min-[820px]:text-[24.6px] min-[1024px]:text-[15px] xl:text-[16px] flex flex-col gap-[8vw] min-[450px]:gap-[36px] min-[1024px]:gap-7">
-                <div class="absolute -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] min-[1024px]:gap-40 xl:gap-30 2xl:gap-26 justify-center min-[768px]:items-center">
+                <div class="absolute -z-2 -inset-x-10 min-[450px]:inset-x-0 inset-y-0 flex flex-col gap-[54vw] min-[450px]:gap-[243px] min-[768px]:gap-[20vw] min-[820px]:gap-[164px] min-[1024px]:gap-40 xl:gap-30 2xl:gap-26 justify-center min-[768px]:items-center">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%] 2xl:w-[55%]">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%] 2xl:w-[55%]">
                     <img src="../../../../assets/img/bg_barnes_sm.svg" alt="" class="min-[768px]:w-[70%] 2xl:w-[55%]">
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/money.svg" alt="" class="w-full">
 
@@ -96,7 +96,7 @@
 
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/camera.svg" alt="" class="w-full">
 
@@ -109,7 +109,7 @@
 
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/smoking.svg" alt="" class="w-full">
 
@@ -121,7 +121,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/petard.svg" alt="" class="w-full">
 
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/sleep.svg" alt="" class="w-full">
 
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/animal.svg" alt="" class="w-full">
 
@@ -158,7 +158,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/party.svg" alt="" class="w-full">
 
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/age.svg" alt="" class="w-full">
 
@@ -182,7 +182,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/document.svg" alt="" class="w-full">
 
@@ -194,7 +194,7 @@
                 </div>
 
                 <div class=" flex items-center gap-[5vw] min-[1024px]:gap-6">
-                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28">
+                    <div class="w-[43.5%] min-[768px]:w-[25%] min-[1024px]:w-28 transition-all duration-150 lg:hover:rotate-10">
 
                         <img src="../../../../assets/icons/rules/aromat.svg" alt="" class="w-full">
 

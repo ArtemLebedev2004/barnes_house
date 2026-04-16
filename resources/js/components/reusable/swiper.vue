@@ -41,15 +41,15 @@
         </template>
 
         <template v-if="achievs">
-            <swiper-slide v-for="achiev in achievs" :key="achiev" class="h-[95vw]! min-[450px]:h-[430px]! min-[768px]:h-auto! rounded-[8vw] min-[450px]:rounded-[48.15px] min-[1024px]:rounded-[37px] border-daorange border-2  px-[6.9%] min-[768px]:px-[4%] min-[1024px]:px-7 py-[6%] min-[768px]:py-[4%] min-[1024px]:py-5">
-                <div class="text-[8vw] min-[450px]:text-[36px] min-[768px]:text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[28px] text-daorange font-semibold">{{achiev.title}}</div>
+            <swiper-slide v-for="achiev in achievs" :key="achiev" class="h-[95vw]! min-[450px]:h-[430px]! min-[768px]:h-auto! rounded-[8vw] min-[450px]:rounded-[48.15px] min-[1024px]:rounded-[37px]  border-daorange border-2  px-[6.9%] min-[768px]:px-[4%] min-[1024px]:px-7 py-[6%] min-[768px]:py-[4%] min-[1024px]:py-5">
+                <div class="text-[8vw] min-[450px]:text-[36px] min-[768px]:text-[4vw] min-[820px]:text-[32.8px] min-[1024px]:text-[28px] text-daorange font-semibold transition-all duration-150 lg:hover:rotate-[5deg]">{{achiev.title}}</div>
                 <div class="text-[3.9vw] min-[450px]:text-[17.5px] min-[768px]:text-[2.25vw] min-[820px]:text-[18.45px] min-[1024px]:text-[14px] font-light mt-[8%] min-[1024px]:mt-3" v-html="achiev.description"></div>
             </swiper-slide>
         </template>
 
         <template v-if="imgs">
             <swiper-slide v-for="img in imgs" :key="img.id" >
-                <img :src="getImageUrl(img.src)" alt="" class="">
+                <img :src="getImageUrl(img.src)" alt="" class="transition-all duration-150 lg:hover:rotate-[3deg]">
             </swiper-slide>
         </template>
     </swiper>
