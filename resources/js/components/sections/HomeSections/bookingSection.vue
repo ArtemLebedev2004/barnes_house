@@ -835,6 +835,8 @@ import axios from 'axios';
             
             onClickDate(self, event) {
                 dateText.value = []
+                datesWithAdds.value = []
+
                 for (let index = 0; index < self.context.selectedDates.length; index++) {
                     let date = new Date(self.context.selectedDates[index])
                     // dateText.value = strDate[9]
@@ -845,14 +847,14 @@ import axios from 'axios';
                     dateText.value.push(day + '.' + month + '.' + year)
 
                     if (!datesWithAdds.value.length) {
-                        datesWithAdds.value.push([day + '.' + month + '.' + year])
+                        datesWithAdds.value.push([day + '.' + month + '.' + year, date.getDay() + ''])
                     } else {
                         for (let index2 = 0; index2 < datesWithAdds.value.length; index2++) {
                             if (datesWithAdds.value[index2].indexOf(day + '.' + month + '.' + year) != -1) {
                                 
                                 break;
                             } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length < dateText.value.length) {
-                                datesWithAdds.value.push([day + '.' + month + '.' + year])
+                                datesWithAdds.value.push([day + '.' + month + '.' + year, date.getDay() + ''])
                             } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length > dateText.value.length) {
                                 if (datesWithAdds.value[index2].indexOf(0) != -1) {
                                     saunaCount.value -= 1
@@ -888,7 +890,6 @@ import axios from 'axios';
                                 if (datesWithAdds.value[index1].indexOf(1) != -1) {
                                     vatCount.value -= 1
                                     priceVat.value -= 4000
-
                                 }
                             datesWithAdds.value.splice(index1, 1)
                             index1 = datesWithAdds.value.length - 1
@@ -951,6 +952,7 @@ import axios from 'axios';
             onClickDate(self, event) {
 
                 dateText.value = []
+                datesWithAdds.value = []
                 for (let index = 0; index < self.context.selectedDates.length; index++) {
                     let date = new Date(self.context.selectedDates[index])
                     // dateText.value = strDate[9]
@@ -961,14 +963,14 @@ import axios from 'axios';
                     dateText.value.push(day + '.' + month + '.' + year)
 
                     if (!datesWithAdds.value.length) {
-                        datesWithAdds.value.push([day + '.' + month + '.' + year])
+                        datesWithAdds.value.push([day + '.' + month + '.' + year, date.getDay() + ''])
                     } else {
                         for (let index2 = 0; index2 < datesWithAdds.value.length; index2++) {
                             if (datesWithAdds.value[index2].indexOf(day + '.' + month + '.' + year) != -1) {
                                 
                                 break;
                             } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length < dateText.value.length) {
-                                datesWithAdds.value.push([day + '.' + month + '.' + year])
+                                datesWithAdds.value.push([day + '.' + month + '.' + year, date.getDay() + ''])
                             } else if (index2 == datesWithAdds.value.length - 1 && datesWithAdds.value.length > dateText.value.length) {
                                 if (datesWithAdds.value[index2].indexOf(0) != -1) {
                                     saunaCount.value -= 1
@@ -1068,11 +1070,22 @@ import axios from 'axios';
     // })
 
     watch(dateText, (newValue) => {
+        priceDates.value = 0
+        console.log(datesWithAdds.value)
         if (newValue.length) {
+            for (let index = 0; index < datesWithAdds.value.length; index++) {
+                if (datesWithAdds.value[index].indexOf('5') != -1) {
+                    priceDates.value += 14000
+                } else if ((datesWithAdds.value[index].indexOf('6') != -1) || (datesWithAdds.value[index].indexOf('0') != -1)) {
+                    priceDates.value += 16000
+                } else {
+                    priceDates.value += 12000
+                }
+            }
+            
             // if (saunaCount.value > newValue.length) {
                 
             // }
-            priceDates.value = 12000 * newValue.length
         } else {
             priceDates.value = 0
         }
